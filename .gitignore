@@ -1,0 +1,27 @@
+# Node modules
+node_modules
+
+# .env files
+.env.*
+
+# Log files
+*.log
+
+# Filesystem descriptors
+.DS_Store
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+
+# Use either yarn.lock or package-lock.json
+# Uncomment one of them to mainain a single lockfile
+# package-lock.json
+# yarn.lock
+
+## Project-specific files
