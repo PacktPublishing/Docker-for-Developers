@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# run the container in the background
+
 docker run \
     --detach \
     --rm \
