@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# shell.sh
+
 # This script starts a shell in an already built container.  Sometimes you need to poke around using the shell
 # to diagnose problems.
 
