@@ -11,6 +11,7 @@ RUN useradd --user-group --create-home --shell /bin/false app
 ENV HOME=/usr/app
 WORKDIR /home/app
 COPY . /home/app
+RUN mkdir /data && chown -R app /data && chmod 777 /data
 # we need custom php configuration file to enable userdirs
 COPY php.conf /etc/apache2/mods-available/php7.3.conf
 # enable userdir and php

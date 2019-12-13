@@ -1,14 +1,16 @@
 <?php
+print("<pre>");
 // uncomment these two lines to enable warnings/errors to the page
-//ini_set('display_errors', 1);
-//error_reporting(E_ALL);
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
 
 // filename to store counter value.  sys_get_temp_dir() returns a directory with write permissions.
-$COUNTER_FILE = sys_get_temp_dir() . '/' . 'counter.txt';
-print("<pre>");
+//$COUNTER_FILE = sys_get_temp_dir() . '/' . 'counter.txt';
+$COUNTER_FILE = '/data/counter.txt';
 
 // print a message
-print("Hello, world\n");
+print("Hello, world $COUNTER_FILE\n");
 
 // get the counter
 $counter = file_get_contents($COUNTER_FILE);
