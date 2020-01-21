@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="generator" content="HTML Tidy for HTML5 for Apple macOS version 5.6.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, height=device-height, minmal-ui">
+  <title>ShipIt Clicker</title>
+  <style>
+    body { margin: 0 }
+    h1, h2, h3, noscript, .about {
+      background-color: white;
+      float: left;
+      width: 100%;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    .about {
+      width: 50%;
+      margin: 8px;
+    }
+    body {
+      font-family:  Sans-Serif;
+      font-size: 16px;
+    }
+    h1, noscript { font-size: 24px }
+    h3 { font-size: 12px }
+    h1, h2 { font-weight: bold }
+    h1 { 
+      position: fixed; 
+      top: 0;
+      left: 0;
+      margin-top: 0;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      background-color: black;
+      color: white;
+    }
+    #background {
+      position: fixed;
+      top: 32px;
+      left: 0;
+      width: 100%;
+      height: 32em;
+      background-color: lightgrey;
+    }
+    #game,#store,#credits,#splash,#start_button,#restart_button,#resume_button,#restart_button,#statusBar { display: none; }
+    #deploy_button,#resume_button,#start_button,#restart_button,#buy_button,#continue_button,#credits_button,#ok_button { 
+      float: left;
+      width: 100%;
+      box-sizing: border-box;
+      font-size: 24px; 
+      line-height: 48px;
+      margin-top: 16px;
+      margin-bottom: 16px;
+      touch-action: none;
+      left: 0;
+    }
+    #restart_button {
+      position: fixed;
+      bottom: 96px;
+    }
+    #deploy_button,#start_button,#resume_button,#buy_button,#ok_button {
+      position: fixed;
+      bottom: 32px;
+    }
+    #store_button, #quit_button {
+      position: fixed;
+      top: 64px;
+      font-size: 18px; 
+      line-height: 36px;
+    }
+    #store_button {
+      left: 1em;
+    }
+    #quit_button {
+      right: 1em;
+    }
+    #continue_button, #credits_button {
+      width: 100%;
+      position: fixed;
+      top: 32px;
+      left: 0;
+    }
+    #statusBar {
+      font-size: 12px;
+      width: 100%;
+      position: fixed;
+      bottom: 96px;
+      background-color: #8ff;
+      padding: 0;
+      margin: 0;
+      touch-action: none;
+    }
+    .content {
+      padding-top: 32px;
+      margin-top: 64px;
+      padding-bottom: 32px;
+    }
+    #credits .content {
+      background-color: white;
+      color: black; 
+    }
+    #credits .content img {
+      background-color: transparent;
+    }
+    .endmark {
+      background-color: transparent;
+      font-size: 48px;
+      color: navy;
+      margin-top: 50%;
+      margin-bottom: 75%;
+    }
+    .content table {
+      padding-top: 64px;
+    }
+    #heartbeat {
+      position: fixed;
+      box-sizing: border-box;
+      bottom: 0;
+      left: 0;
+      margin: 0;
+      padding: 8px;
+      background-color: black;
+      touch-action: none;
+    }
+    .animate {
+       position: fixed;
+       width: 100%;
+       left: 0;
+       bottom: 256px;
+       font-size: 32px;
+       animation: deploy 1s ease;
+       opacity: 0;
+       touch-action: none;
+    }
+    /* Thanks https://stackoverflow.com/a/6117092 */
+    * {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: -moz-none;
+      -ms-user-select: none;
+      -o-user-select: none;
+      user-select: none;
+    }
+    p {
+      -webkit-touch-callout: none;
+      -webkit-user-select: text;
+      -khtml-user-select: text;
+      -moz-user-select: text;
+      -ms-user-select: text;
+      -o-user-select: text;
+      user-select: text;
+    }
+    @keyframes deploy {
+      0% { 
+        transform: translateX(-150%) scale(-1, 1); 
+        opacity: 1;
+      }
+      100% { 
+        transform: translateX(0%) scale(-1, 1);
+        opacity: 0.75;
+      }
+    }
+    th, td {
+      padding: 1ex;
+      border-bottom: 1px solid #ddd;
+      text-align: center;
+    }
+    tr:nth-child(even) {background-color: #eee;}
+    table {
+      border: 1px solid black;
+      border-collapse: collapse;
+      width: 95%;
+      margin: 1ex;
+      background-color: white;
+    }
+    .currency {
+      text-align: right
+    }
+    .available {
+      color: green;
+      font-weight: bold;
+    }
+    .notAvailable {
+      color: red;
+      font-weight: normal;
+    }
+    /* Background image div - thanks https://stackoverflow.com/a/1208392 */
+    #background {
+      width: 100%; 
+      height: 100%; 
+      position: fixed; 
+      left: 0px; 
+      top: 64px; 
+      z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+    }
+    .stretch {
+      width:100%;
+    }
+    .api {
+      position: fixed;
+      background-color: transparent;
+      font-size: 18px;
+      bottom: 192px;
+      left: 0;
+    }
+    .api a {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <noscript>This game requires JavaScript to play</noscript>
+  <div id="background">
+    <img class="stretch" src="img/shipit-640x640-lc.jpg" alt="ShipIt Squirrel!">
+  </div>
+  <div id="splash">
+    <h1>ShipIt Clicker!</h1>
+    <form>
+      <input type="button" id="start_button" value="Start" onclick="clickStart();"><br>
+      <input type="button" id="resume_button" value="Resume Game" onclick="clickResume();"><br>
+      <input type="button" id="restart_button" value="Restart Game" onclick="clickRestart();"><br>
+      <input type="button" id="credits_button" value="Credits" onclick="clickCredits();">
+    </form>
+    <div class="content">
+      <h3 class="api"><a href="/api-explorer/">Interactive API docs</a></h3>
+    </div>
+  </div>
+  <div id="credits">
+    <h1>Credits</h1>
+    <div class="content">
+      <img class="about" src="img/Richard-Cartoon-Headshot-Jaunty-180x180.png" alt="Richard's Jaunty Headshot">
+      <p>This game is a part of Packt Publishing's <a href="https://github.com/ModusCreateOrg/docker-book/">Docker for Developers</a> book sample code, and all code and assets are <a href="https://opensource.org/licenses/MIT">MIT Licensed</a>.</p>
+      <p>I'd like to thank my children Parker, Oliver, Norah, and Declan for providing game design inspiration and critiques, and my wife Patricia for supporting this effort.</p>
+      <p>Copyright © 2020 Richard Bullington-McGuire<br>
+      Copyright © 2020 Packt Publishing</p>
+      <h3 class="endmark">❖</h3>
+    </div>
+    <form>
+      <input type="button" id="ok_button" value="OK" onclick="clickOkCredits();">
+    </form>
+  </div>
+  <div id="game">
+    <div class="content">
+      <p class="animate">🐳</p>
+    </div>
+    <form>
+      <input type="button" id="deploy_button" value="Deploy" onclick="clickDeploy();"><br>
+      <input type="button" id="store_button" value="Store" onclick="clickStore();"> <input type="button" id="quit_button" value="Quit" onclick="clickQuit();">
+    </form>
+    <h1>ShipIt!</h1>
+  </div>
+  <div id="store">
+    <h1>ShipIt Store</h1>
+    <div class="content">
+      <table>
+        <thead>
+          <tr>
+            <th class="currency">Cost</th>
+            <th>Item</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="currency">200 SQ$</td>
+            <td id="upgrade1">Script</td>
+            <td>click ships 2x</td>
+          </tr>
+          <tr>
+            <td class="currency">400 SQ$</td>
+            <td id="upgrade2">Composer</td>
+            <td>Auto ship 4x every 8 seconds</td>
+          </tr>
+          <tr>
+            <td class="currency">800 SQ$</td>
+            <td id="upgrade3">Host</td>
+            <td>click ships 8x</td>
+          </tr>
+          <tr>
+            <td class="currency">1,600 SQ$</td>
+            <td id="upgrade4">Engine</td>
+            <td>auto ship 16x every second</td>
+          </tr>
+          <tr>
+            <td class="currency">32,000 SQ$</td>
+            <td id="upgrade5">Cluster</td>
+            <td>click ships 32x</td>
+          </tr>
+          <tr>
+            <td class="currency">64,000 SQ$</td>
+            <td id="upgrade6">Orchestrator</td>
+            <td>auto ships 64x every second</td>
+          </tr>
+          <tr>
+            <td class="currency">128,000 SQ$</td>
+            <td id="upgrade7">Multi-Cloud</td>
+            <td>click ships 128x</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 class="endmark">❖</h3>
+    </div>
+    <form>
+      <input type="button" id="buy_button" value="Buy Upgrade" onclick="clickBuy();"><br>
+      <input type="button" id="continue_button" value="Continue Game" onclick="clickContinue();">
+    </form>
+  </div>
+  <div id="footer">
+    <h2 id="statusBar">SQ$: <span id="score">0</span> 📦: <span id="deploys">0</span><br>
+      
+      Per click <span id="deployMultiplier">1</span>x Score <span id="scoreMultiplier">1</span>x  Auto <span id="autoMultiplier">0</span>x/<span id="autoTick">0</span>s<br>
+    Items: <span id="upgrades">none</span><br>Next Item: <span id="nextItem"></span></h2> 
+    <h3 id="heartbeat">💔</h3>
+  </div>
+  <script>
+    // DOM selectors
+    const splash = '#splash';
+    const restartButton = '#restart_button';
+    const resumeButton = '#resume_button';
+    const continueButton = '#continue_button';
+    const startButton = '#start_button';
+    const game = '#game';
+    const statusBar = '#statusBar';
+    const credits = '#credits';
+    const store = '#store';
+    const background = '#background';
+    const animate = '.animate';
+    const spanDeploys = '#deploys';
+    const spanScore = '#score';
+    const spanUpgrades = '#upgrades';
+    const spanNextItem = '#nextItem';
+    const spanScoreMultiplier = '#scoreMultiplier';
+    const spanDeployMultiplier = '#deployMultiplier';
+    const spanAutoMultiplier = '#autoMultiplier';
+    const spanAutoTick = '#autoTick';
+
+    // Animation
+    let pod = document.querySelector(animate);
+    const HEIGHT_MARGIN = 128;
+
+    // Clicker Scoring
+    const NEVER=Number.MIN_VALUE;
+    const MULTIPLE_CEILING = 1000;
+    const SECOND = 1000;
+    const DAY = SECOND * 60 * 60 * 24;
+    const CLEANUP_TIME = SECOND * 2;
+    const MIN_CLICK_TIME = 10;
+    const HEARTBEAT_RHYTHM = 192;
+    const SCORE = 'score';
+    const DEPLOYS = 'deploys';
+    const NEXT_PURCHASE = 'nextPurchase';
+    let gameId = 'example';
+    var deploys,
+        score,
+        scoreMultiplier,
+        deployMultiplier,
+        autoMultiplier,
+        lastClick,
+        tick,
+        interval;
+
+    // Store upgrades and multipliers
+    const prices = [200, 400, 800, 1600, 32000, 64000, 128000];
+    const upgrades = ['Script', 'Composer', 'Host', 'Engine', 'Cluster', 'Orchestrator', 'Multi-Cloud'];
+    let nextPurchase = 0;
+    const deployMultipliers = [1, 2, 2, 8, 8, 32, 32, 128];
+    const autoMultipliers = [0, 0, 4, 4, 16, 16, 64];
+    const ticks = [0, 0, 8000, 8000, 1000];
+    
+    // Heartbeat
+    const hearts = ['💔','💓','💗','❤️'];
+    var heartbeatInterval;
+    let heartbeatIndex = 0;
+
+    function display(id, style) {
+      let element = document.querySelector(id);
+      if (element) {
+        element.style.display = style;
+      } else {
+        throw "Element " + id + " not found";
+      }
+    }
+
+    function hide(id) {
+      display(id, 'none');
+    }
+
+    function show(id) {
+      display(id, 'block');
+    }
+
+    function update(text, selector) {
+      let element = document.querySelector(selector);
+        if (element) {
+          element.innerHTML = text;
+        } else {
+          console.log("No " + selector + " element found!");
+        }
+    }
+
+    function clickCredits() {
+      hide(splash);
+      hide(background);
+      show(credits);
+    }
+
+    async function clickStart() {
+      hide(splash);
+      await reset();
+      show(game);
+      show(statusBar);
+    }
+
+    function clickOkCredits() {
+      hide(credits);
+      show(background);
+      show(splash);
+    }
+
+    // Thanks https://developers.google.com/web/updates/2015/03/introduction-to-fetch
+    function json(response) {
+      return response.json();
+    }
+
+    function status(response) {
+      if (response.status >= 200 && response.status < 300) {
+        return Promise.resolve(response)
+      } else {
+        return Promise.reject(new Error(response.statusText))
+      }
+    }
+
+    async function incrbyGame(key, value) {
+      return fetch(`./api/v1/games/${gameId}/${key}`, { 
+        method: 'PATCH',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ 
+          id: gameId, 
+          element: key, 
+          value: value })
+      }).then(status)
+        .then(json)
+        .then(data => data.value);
+    }
+
+    async function setGame(key, value) {
+      return fetch(`./api/v1/games/`, { 
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ 
+          id: gameId, 
+          element: key, 
+          value: value })
+      }).then(status)
+        .then(json)
+        .then(data => data.value);
+    }
+
+    async function getGame(key) {
+      return fetch(`./api/v1/games/${gameId}/${key}`)
+        .then(status)
+        .then(json)
+        .then(data => data.value);
+    }
+
+    function getScoreMultiplier(scoreMultiplier, lastClick, newClick) {
+      var newScoreMultiplier;
+      let elapsed = newClick - lastClick;
+      if (elapsed > MULTIPLE_CEILING || lastClick === NEVER) {
+        newScoreMultiplier = 1;
+      } else {
+        newScoreMultiplier = Math.round(MULTIPLE_CEILING / (elapsed + MIN_CLICK_TIME)) + 1;
+      }
+      return newScoreMultiplier;
+    }
+
+    function getDeployText(auto) {
+      var multiplier = auto ? autoMultiplier : deployMultiplier;
+      const ROW_LENGTH = 8;
+      let rows = Math.ceil(multiplier / ROW_LENGTH) ;
+      let remaining = multiplier;
+      let deployText = '';
+      while (remaining > 0) {
+        deployText += '🐳' + '📦'.repeat(remaining > ROW_LENGTH ? ROW_LENGTH : remaining) + '<br>';
+        remaining -= ROW_LENGTH;
+      }
+      return deployText;
+    }
+
+    // Thanks https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+    function getRandomInt(max) {
+      return Math.floor(Math.random() * Math.floor(max));
+    }
+
+    function animateDeploys(auto) {
+      let newPod = pod.cloneNode(true);
+      let parent = pod.parentNode;
+      newPod.innerHTML = getDeployText(auto);
+      let heightRange = document.documentElement.clientHeight - HEIGHT_MARGIN;
+      newPod.style.bottom = getRandomInt(heightRange) + "px";
+      parent.appendChild(newPod);
+      let cleanup = function() { parent.removeChild(newPod); };
+      window.setTimeout(cleanup, CLEANUP_TIME);
+    }
+
+    function lookupBounded(ind, arr) {
+      return arr[ind < 0 ? 0 : (ind < arr.length ? ind : arr.length - 1)];
+    }
+
+    function updateScores() {
+      update(scoreMultiplier, spanScoreMultiplier);
+      update(deployMultiplier, spanDeployMultiplier);
+      update(autoMultiplier, spanAutoMultiplier);
+      update(Math.round(tick / SECOND), spanAutoTick);
+      update(deploys, spanDeploys);
+      update(score, spanScore);
+      update(upgrades.slice(0, nextPurchase).join(', '), spanUpgrades);
+      let nextPurchasePrice = lookupBounded(nextPurchase, prices);
+      let nextItem = document.querySelector(spanNextItem);
+      update(lookupBounded(nextPurchase, upgrades) + " -  " + nextPurchasePrice + " SQ$", spanNextItem);
+      if (score < nextPurchasePrice) {
+        nextItem.classList.remove('available');
+        nextItem.classList.add('notAvailable');
+      } else {
+        nextItem.classList.remove('notAvailable');
+        nextItem.classList.add('available');
+      }
+    }
+
+    async function deploy(auto) {
+      let newClick = (new Date()).getTime();
+      scoreMultiplier = getScoreMultiplier(scoreMultiplier, lastClick, newClick);
+      lastClick = newClick;
+      deployMultiplier = lookupBounded(nextPurchase, deployMultipliers);
+      autoMultiplier = lookupBounded(nextPurchase, autoMultipliers);
+      const multiplier = auto ? autoMultiplier : deployMultiplier;
+      [deploys, score] = await Promise.all([
+        incrbyGame(DEPLOYS, 1),
+        incrbyGame(SCORE, scoreMultiplier * multiplier)
+      ]);
+      updateScores();
+    }
+
+    async function clickDeploy() {
+      await deploy(true);
+      animateDeploys(false);
+    }
+
+    async function autoDeploy() {
+      await deploy(true);
+      animateDeploys(true);
+    }
+
+    async function clickRestart() {
+      if (window.confirm('Are you sure you want to restart? Your score will reset!')) {
+        hide(splash);
+        await reset();
+        show(game);
+        show(statusBar);
+      }
+    }
+
+    function showSplashButtons() {
+        if (score > 0) {
+          show(resumeButton);
+          show(restartButton);
+        } else {
+          show(startButton);
+        }
+    }
+
+    async function clickQuit() {
+        hide(game);
+        hide(statusBar);
+        showSplashButtons();
+        show(splash);
+    }
+
+    function clickStore() {
+      hide(game);
+      hide(background);
+      show(store);
+    }
+
+    function refreshTimers() {
+      tick = lookupBounded(nextPurchase, ticks);
+      if (interval) {
+        window.clearInterval(interval);
+      }
+      if (tick) {
+        interval = window.setInterval(autoDeploy, tick);
+      }
+    }
+
+    async function clickBuy() {
+      let nextPrice = prices[nextPurchase];
+      if (! nextPrice) {
+        alert("You have purchased all the upgrades already!");
+      } else {
+        if (score >= nextPrice) {
+          [score, nextPurchase] = await Promise.all([
+            incrbyGame(SCORE, (nextPrice - 1) * -1),
+            incrbyGame(NEXT_PURCHASE, 1)
+          ]);
+          refreshTimers();
+          updateScores();
+        } else {
+          alert("Not enough money (SQ$) to buy next upgrade - you need " + nextPrice + "!");
+        }
+      }
+    }
+
+    function clickResume() {
+      hide(splash);
+      show(background);
+      show(statusBar);
+      show(game);
+    }
+
+    function clickContinue() {
+      hide(store);
+      show(background);
+      show(statusBar);
+      show(game);
+    }
+
+
+    function clickCredits() {
+      hide(splash);
+      show(credits);
+    }
+
+    async function reset() {
+      [score, deploys, nextPurchase] = await Promise.all([
+        setGame(SCORE, 0),
+        setGame(DEPLOYS, 0),
+        setGame(NEXT_PURCHASE, 0)
+      ]);
+      tick = 0;
+      scoreMultiplier = 1;
+      deployMultiplier = 1;
+      autoMultiplier = 0;
+      lastClick = NEVER;
+      refreshTimers();
+      updateScores();
+      return Promise.resolve(true);
+    }
+
+    async function refreshScores() {
+      let mock = false;
+      if (mock) {
+        [score, deploys, nextPurchase] = await Promise.all([
+          setGame(SCORE, 999999),
+          setGame(DEPLOYS, 1000),
+          setGame(NEXT_PURCHASE, 5)
+        ]);
+      } else {
+        try {
+          [score, deploys, nextPurchase] = await Promise.all([
+            getGame(SCORE),
+            getGame(DEPLOYS),
+            getGame(NEXT_PURCHASE)
+          ]);
+        } catch (error) {
+          console.log('ERROR retriving game info', gameId, error);
+          score = 0;
+          deploys = 0;
+          nextPurchase = 0;
+        }
+      }
+      lastClick = (new Date()).getTime() - DAY;
+      tick = lookupBounded(nextPurchase, ticks);
+      scoreMultiplier = 1;
+      deployMultiplier = lookupBounded(nextPurchase, deployMultipliers);
+      autoMultiplier = lookupBounded(nextPurchase, autoMultipliers);
+      refreshTimers();
+      updateScores();
+      return Promise.resolve(true);
+    }
+
+    function animateHeartbeat() {
+      heartbeatIndex = heartbeatIndex > 2 ? 1 : heartbeatIndex + 1;
+      update(hearts[heartbeatIndex], '#heartbeat');
+    }
+
+    async function init() {
+      try {
+        await refreshScores();
+        if (score == 0) {
+          await reset();
+        }
+        heartbeatInterval = window.setInterval(animateHeartbeat, HEARTBEAT_RHYTHM);
+        showSplashButtons();
+        show(splash);
+      } catch (error) {
+        console.log(`ERROR: ${error}`);
+      }
+      return Promise.resolve(true);
+    }
+
+
+    init();
+  </script>
+</body>
+</html>

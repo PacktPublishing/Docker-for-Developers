@@ -1,0 +1,30 @@
+---
+# docker-compose.yml
+# 
+# Docker for Developers - Chapter 5 docker-compose.yml - ShipIt Clicker
+#
+# Adapted from the barebones example in the Docker documentation
+#     https://docs.docker.com/compose/
+#
+# This is in a state that a developer might reasonably have as they
+# approach their first production deployment - this is a starting
+# point. 
+#
+# See [Chapter 6](../chapter6/) for a more robust example of
+# docker-compose.yml and related configuration files.
+# 
+# You would probably be better off basing real work on the files there.
+version: '3'
+services:
+  shipit-clicker-web:
+    build: .
+    environment:
+      REDIS_HOST: redis
+    ports:
+    - "3000:3000"
+    links:
+    - redis
+  redis:
+    image: redis
+    ports:
+    - "6379:6379"
