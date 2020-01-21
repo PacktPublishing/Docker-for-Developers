@@ -8,21 +8,28 @@
 # file that supports Redis.
 version: '3'
 services:
-  web:
+  shipit-clicker-web-v2:
     build: .
     environment:
+        - APP_ID=shipit-clicker-v2
+        - OPENAPI_SPEC=/api/v1/spec
+        - OPENAPI_ENABLE_RESPONSE_VALIDATION=false
+        - PORT=3000
+        - LOG_LEVEL=${LOG_LEVEL:-debug}
+        - REQUEST_LIMIT=100kb
         # Allow override of Redis host settings - for easier debugging
         # and to pave the way for easy connection to cloud Redis services
-        - REDIS_HOST=${REDIS_HOST:-:redis}
-        - REDIS_PORT=${REDIS_PORT:-:6379}
+        - REDIS_HOST=${REDIS_HOST:-redis}
+        - REDIS_PORT=${REDIS_PORT:-6379}
+        - SESSION_SECRET=${SESSION_SECRET:-mySecret-v2}
     ports:
-      - "3000:3000"
+      - "3006:3000"
     # Connect the web server to Redis via a private network
     networks:
-      - private-redis-shipit-clicker
+      - private-redis-shipit-clicker-v2
     links:
       - redis
-    depends-on:
+    depends_on:
       - redis
 
   redis:
@@ -34,12 +41,10 @@ services:
     volumes:
       - redis-data-shipit-clicker:/data
     networks:
-      - private-redis-shipit-clicker
-    links:
-
+      - private-redis-shipit-clicker-v2
 
 volumes:
   redis-data-shipit-clicker: {}
 
 networks:
-  private-redis-shipit-clicker:
+  private-redis-shipit-clicker-v2:
