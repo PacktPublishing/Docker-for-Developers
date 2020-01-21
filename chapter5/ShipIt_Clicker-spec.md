@@ -21,14 +21,16 @@ You have to deploy more and more containers to production, or you will disappoin
 1. You can sign into the game with GitHub to save your progress.
 1. When the ShipIt Squirrel pops up in the window, the game says "Ship it!" and you get an 8x multiple stacked on the current multiplier if you click while the ShipIt Squirrel is visible. ShipIt will have a 5% chance of appearing every 10 second
 1. Click faster and the current multiple grows from 1x to 2x to 4x to 8x to 16x to 32x. The max multiple is 2x your current single click ship rate.
-1. You can buy upgrades in the _ShipIt Store_ by pressing the Store button  once you have deployed sufficient containers to production: 
-   1. 200 SQ$: Composer: allows you to ship 2 containers (times current multiple) with every deploy click
-   1. 4000 SQ$: Host: automatically ships 4 containers (times current multiple) to production every minute
-   1. 80000 SQ$: Composer: allows you to ship 8 containers (times current multiple) with every deploy click
-   1. 160000 SQ$: Orchestrator: automatically ships 16 containers (times current multiple) to production every second
-   1. 3200000 SQ$: Composer: allows you to ship 32 containers (times current multiple) with every deploy click
-   1. 64000000 SQ$: Multi-Cloud: automatically ships 64 containers (times current multiple) to production every second
-   1. 128000000 SQ$: Composer: allows you to ship 128 containers (times current multiple) with every deploy click
+1. You can buy upgrades in the _ShipIt Store_ by pressing the Store button  once you have deployed sufficient containers to production. 
+1. The upgrade costs below are set low to facilitate testing the game, the final amounts should be set higher so that it takes longer to get them in an exponentially increasing way if you play the game longer: 
+   1. 200 SQ$: Script: allows you to ship 2 containers (times current multiple) with every deploy click
+   1. 400 SQ$: Composer: automatically ships 4 containers (times current multiple) to production every minute
+   1. 800 SQ$: Host: allows you to ship 8 containers (times current multiple) with every deploy click
+   1. 1600 SQ$: Engine: automatically ships 16 containers (times current multiple) to production every second
+   1. 32000 SQ$: Cluster: allows you to ship 32 containers (times current multiple) with every deploy click
+   1. 64000 SQ$: Orchestrator: automatically ships 64 containers (times current multiple) to production every second
+   1. 128000 SQ$: Multi-Cloud: allows you to ship 128 containers (times current multiple) with every deploy click
+
 
 ## Chapter 5 target: Prototype version of ShipIt Clicker
 

@@ -18,6 +18,8 @@ version: '3'
 services:
   shipit-clicker-web:
     build: .
+    environment:
+      REDIS_HOST: redis
     ports:
     - "3000:3000"
     links:
