@@ -44,11 +44,11 @@
       background-color: lightgrey;
     }
     #game,#store,#credits,#splash,#start_button,#restart_button,#resume_button,#restart_button,#statusBar { display: none; }
-    #deploy_button,#resume_button,#start_button,#restart_button,#buy_button,#continue_button,#credits_button,#ok_button { 
+    #deploy_button,#resume_button,#start_button,#restart_button,#buy_button,#continue_button,#credits_button,#ok_button {
       float: left;
       width: 100%;
       box-sizing: border-box;
-      font-size: 24px; 
+      font-size: 24px;
       line-height: 48px;
       margin-top: 16px;
       margin-bottom: 16px;
@@ -63,20 +63,21 @@
       position: fixed;
       bottom: 32px;
     }
-    #store_button {
-      width: 100%;
+    #store_button, #quit_button {
       position: fixed;
-      bottom: 96px;
-      left: 0px;
+      top: 64px;
+      font-size: 18px;
+      line-height: 36px;
+    }
+    #store_button {
+      left: 1em;
     }
     #quit_button {
       position: fixed;
       top: 64px;
+      right: 1em;
       font-size: 18px; 
       line-height: 36px;
-    }
-    #quit_button {
-      right: 1em;
     }
     #continue_button, #credits_button {
       width: 100%;
