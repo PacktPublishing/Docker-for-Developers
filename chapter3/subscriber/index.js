@@ -39,7 +39,7 @@ const topics = {
   },
 
   "subscriber/mongo-add": async (collection, message) => {
-    // return count of records from MongoDB
+    // add record to mongo database
     debug("--- mongodb add", message);
     const record = [{ text: message }];
     return await collection.insertMany(record);
@@ -49,17 +49,19 @@ const topics = {
     // query database for document specified in message
     // message is a JSON object
     if ((typeof message).toLowerCase() === "string") {
+      // filter records returned
       const record = { text: message };
       const records = await collection.find(record).toArray();
       return records;
     } else {
+      // return all records
       const records = await collection.find(message).toArray();
       return records;
     }
   },
 
   "subscriber/mongo-remove": async (collection, message) => {
-    // return count of records from MongoDB
+    // remove record from database
     debug("--- mongodb remove", message);
     if ((typeof message).toLowerCase() === "string") {
       const record = { text: message };
@@ -71,6 +73,13 @@ const topics = {
     }
   },
 
+  "subscriber/mongo-removeall": async (collection, message) => {
+    // remove all records from database
+    debug("--- mongodb removeall", message);
+    const result = await collection.remove({});
+    return result;
+  },
+
   "subscriber/redis-count": async (collection, message) => {
     // return count of records from redis
     debug("--- redis count '" + message + "'");
@@ -80,7 +89,7 @@ const topics = {
   },
 
   "subscriber/redis-flushall": async (collection, message) => {
-    // return count of records from redis
+    // reset database to empty
     debug("--- redis flushall '" + message + "'");
     const keys = await redis.flushall();
     debug("flushall", keys);
@@ -95,7 +104,7 @@ const topics = {
   },
 
   "subscriber/redis-list": async (collection, message) => {
-    // return count of records from redis
+    // return array of records from redis
     const keys = await redis.keys(message || "*");
     debug("--- redis list", message, keys);
     const result = {};
@@ -107,7 +116,7 @@ const topics = {
   },
 
   "subscriber/redis-del": async (collection, message) => {
-    // return count of records from redis
+    // delete a record from redis
     debug("--- redis remove", message);
     return await redis.del(message);
   },
