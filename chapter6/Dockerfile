@@ -12,4 +12,4 @@ COPY src/.babelrc /app/
 RUN npm run compile
 USER app
 EXPOSE 3000
-ENTRYPOINT npm start
+ENTRYPOINT ["npm", "start"]

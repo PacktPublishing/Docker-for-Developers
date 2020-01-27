@@ -23,7 +23,7 @@ services:
         - REDIS_PORT=${REDIS_PORT:-6379}
         - SESSION_SECRET=${SESSION_SECRET:-mySecret-v2}
     ports:
-      - "3006:3000"
+      - "${PORT:-3006}:3000"
     # Connect the web server to Redis via a private network
     networks:
       - private-redis-shipit-clicker-v2
