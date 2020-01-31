@@ -1,11 +1,4 @@
 ---
-# docker-compose.yml
-# 
-# Docker for Developers - ShipIt Clicker - Chapter 6 docker-compose.yml
-#
-# Inspired partially by samples in https://github.com/docker-library/redis/issues/111
-# Thank you @lagden for providing a nice example of a docker-compose.yml
-# file that supports Redis.
 version: '3'
 services:
   shipit-clicker-web-v2:
@@ -17,14 +10,11 @@ services:
         - PORT=3000
         - LOG_LEVEL=${LOG_LEVEL:-debug}
         - REQUEST_LIMIT=100kb
-        # Allow override of Redis host settings - for easier debugging
-        # and to pave the way for easy connection to cloud Redis services
         - REDIS_HOST=${REDIS_HOST:-redis}
         - REDIS_PORT=${REDIS_PORT:-6379}
         - SESSION_SECRET=${SESSION_SECRET:-mySecret-v2}
     ports:
-      - "3006:3000"
-    # Connect the web server to Redis via a private network
+      - "${PORT:-3006}:3000"
     networks:
       - private-redis-shipit-clicker-v2
     links:
@@ -33,11 +23,8 @@ services:
       - redis
 
   redis:
-    # Start Redis with the command line parameters for persistence
     command: ["redis-server", "--appendonly", "yes"]
-    # Use Redis built on on Alpine Linux - it is smaller
     image: redis:5-alpine3.10
-    # Ensure Redis uses a persistent data volume
     volumes:
       - redis-data-shipit-clicker:/data
     networks:
