@@ -3,7 +3,7 @@
 // publisher/index.js
 //
 
-process.env.DEBUG = "publisher";
+process.env.DEBUG = "publisher,mqtt-traffic";
 
 const debug = require("debug")("publisher"),
   debugm = require("debug")("mqtt-traffic"),
@@ -15,11 +15,13 @@ const debug = require("debug")("publisher"),
 client.on("connect", () => {
   debug("connected to ", host, "port", port);
   debug("\n\nsend MQTT messages with topic publisher and any message you like");
+
   client.subscribe(["publisher", "publisher/#"], err => {
     if (err) {
       debug("err!", err);
     }
   });
+
   client.on("message", async (topic, message) => {
     message = message.toString();
     debugm("<<< MESSAGE topic", topic, "message", message);
@@ -32,14 +34,9 @@ client.on("connect", () => {
     const new_topic = `subscriber/${parts[0]}`;
     debugm(" >>> topic", new_topic, "message", parts[1]);
     const t = parts.shift();
-    await client.publish(
-      `subscriber/${t}`,
-      JSON.stringify(parts.join(" ")),
-      {
-        qos: 0,
-        retain: false
-      }
-    );
+    await client.publish(`subscriber/${t}`, JSON.stringify(parts.join(" ")), {
+      qos: 0,
+      retain: false
+    });
   });
 });
-
