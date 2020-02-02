@@ -21,7 +21,7 @@ services:
     environment:
       REDIS_HOST: redis
     ports:
-    - "3000:3000"
+    - "3005:3000"
     links:
     - redis
   redis:
