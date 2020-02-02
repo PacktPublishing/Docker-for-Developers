@@ -24,4 +24,6 @@ Please purchase the book and follow the exercises in each chapter to follow alon
 
 # Licensing
 
+Copyright (c) 2020 Packt
+
 This project is [MIT licensed](./LICENSE).
