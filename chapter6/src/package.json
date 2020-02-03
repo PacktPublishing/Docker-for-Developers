@@ -1,6 +1,6 @@
 {
   "name": "shipit-clicker",
-  "version": "1.0.0",
+  "version": "1.0.6",
   "description": "ShipIt Clicker",
   "main": "index.js",
   "scripts": {
@@ -45,5 +45,5 @@
     "supertest": "^4.0.2",
     "zepto": "^1.2.0"
   },
-  "author": "Carmine DiMascio <cdimascio@gmail.com> (https://github.com/cdimascio)"
+  "author": "Richard Bullington-McGuire <richard.bullington.mcguire@gmail.com> (https://github.com/obscurerichard)"
 }
