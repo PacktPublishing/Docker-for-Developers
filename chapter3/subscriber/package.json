@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Example subscriber microservice",
   "main": "index.js",
-  "repository": "https://github.com/ModusCrateOrg/docker-book/subscriber/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PacktPublishing/Docker-for-Developers/"
+  },
   "author": "Michael Schwartz",
   "license": "MIT",
   "private": false,
