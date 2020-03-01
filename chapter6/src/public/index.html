@@ -55,14 +55,18 @@
       touch-action: none;
       left: 0;
     }
-    #game {
-        height: 90vh;
+    #stage{
+        height: 100vh;
+    }
+    #deploy_button {
+      position: fixed;
+      bottom: 160px;
     }
     #restart_button {
       position: fixed;
       bottom: 96px;
     }
-    #deploy_button,#start_button,#resume_button,#buy_button,#ok_button {
+    #start_button,#resume_button,#buy_button,#ok_button {
       position: fixed;
       bottom: 32px;
     }
@@ -92,7 +96,7 @@
       font-size: 24px;
       width: 100%;
       position: fixed;
-      bottom: 96px;
+      bottom: 32px;
       background-color: #8ff;
       padding: 0;
       margin: 0;
@@ -248,9 +252,9 @@
       <input type="button" id="ok_button" value="OK" onclick="clickOkCredits();">
     </form>
   </div>
-  <div id="game" onclick="clickDeploy();">
+  <div id="game">
     <h1>ShipIt!</h1>
-    <div class="content">
+    <div id="stage" class="content" onclick="clickDeploy();">
       <p class="animate">🐳</p>
     </div>
     <form>
@@ -259,9 +263,9 @@
       <input type="button" id="quit_button" value="Quit" onclick="clickQuit();">
     </form>
   </div>
-  <div id="store" onclick="clickBuy();">
+  <div id="store">
     <h1>ShipIt Store</h1>
-    <div class="content">
+    <div class="content" onclick="clickBuy();">
       <table>
         <thead>
           <tr>
