@@ -1,8 +1,8 @@
 # Node modules
-node_modules
+node_modules/
 
 # .env files
-.env.*
+.env*
 
 # Log files
 *.log
@@ -25,3 +25,5 @@ node_modules
 # yarn.lock
 
 ## Project-specific files
+# Build files
+dist/
