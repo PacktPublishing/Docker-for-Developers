@@ -1,6 +1,6 @@
 # Chapter 5 - Alternatives for running Docker in production
 
-This is part of the [Docker for Developers](https://github.com/ModusCreateOrg/docker-book) project.
+This is part of the [Docker for Developers](https://github.com/Packt-Publishing/Docker-for-Developers) project.
 
 This chapter introduces an application called _ShipIt Clicker_, which is an [incremental game](https://en.wikipedia.org/wiki/Incremental_game) where the [ShipIt Squirrel](https://www.quora.com/On-GitHub-what-is-the-significance-of-the-Ship-It-squirrel) encourages you to deploy Docker containers to production at an ever higher rate. See the [_ShipIt Clicker_ Specification Document](ShipIt_Clicker-spec.md) for more details about the design of the game.
 
