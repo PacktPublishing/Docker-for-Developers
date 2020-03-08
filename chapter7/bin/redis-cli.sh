@@ -1,3 +1,2 @@
-#!/usr/bin/env bash
-set -euo pipefail
-docker exec -it chapter6_redis_1 redis-cli
+#!/usr/bin/env sh
+exec docker run -it --rm redis:5-alpine3.10 redis-cli $*
