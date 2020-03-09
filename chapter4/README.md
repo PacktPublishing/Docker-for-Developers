@@ -1,2 +1,1 @@
-# Chapter 4 - Composing systems using containers
-
+# Chapter 3 - Building and pushing docker images to the dockerhub site
