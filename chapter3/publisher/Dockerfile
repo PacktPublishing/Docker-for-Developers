@@ -4,7 +4,6 @@ FROM node:12
 # set timezone so files' timestamps are correct
 ENV TZ=America/Los_Angeles
 
-# install apache and php 7.3
 # we include procps and telnet so you can use these with shell.sh prompt
 RUN apt-get update -qq >/dev/null && apt-get install -y -qq curl procps telnet >/dev/null
 
