@@ -12,16 +12,17 @@ const debug = require("debug")("subscriber"),
   mongo = new MongoClient(mongoUrl),
   MQTT = require("mqtt"),
   mqttHost = `mqtt://${process.env.HOSTIP}`,
-  mqttPort = 1883;
+  mqttPort = 1883,
+  redisHost = `redis://${process.env.HOSTIP}`;
 
 var Redis = require("async-redis"),
-  redis = Redis.createClient();
+  redis = Redis.createClient(redisHost);
 
 // if you'd like to select database 3, instead of 0 (default), call
 // client.select(3, function() { /* ... */ });
 
 redis.on("error", function(err) {
-  debug("Error " + err);
+  debug("REDIS Error " + err);
 });
 
 const topics = {

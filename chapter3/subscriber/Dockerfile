@@ -1,5 +1,5 @@
-# we will inherit from the NodeJS v12 image on DockerHub
-FROM node:12
+# we will inherit from the NodeJS v13 image on DockerHub
+FROM node:13
 
 # set timezone so files' timestamps are correct
 ENV TZ=America/Los_Angeles
