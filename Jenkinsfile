@@ -7,8 +7,8 @@ pipeline {
                 checkout scm
                 script {
                     def dockerfile = 'chapter7/Dockerfile'
-                    docker.withRegistry('https://hub.docker.com',
-                                        'shipit.dockerhub.id') {
+                    def registry = 'https://registry-1.docker.io/'
+                    docker.withRegistry(registry', 'shipit.dockerhub.id') {
                         def image = docker.build(
                             "shipitclicker:${env.BUILD_ID}",
                             "-f ${dockerfile} ./chapter7")
