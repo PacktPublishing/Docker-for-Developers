@@ -8,9 +8,11 @@ pipeline {
                 script {
                     def dockerfile = 'chapter7/Dockerfile'
                     def registry = 'https://registry-1.docker.io/'
+                    def organization = 'dockerfordevelopers/'
+                    def appName = 'shipitclicker'
                     docker.withRegistry(registry, 'shipit.dockerhub.id') {
                         def image = docker.build(
-                            "shipitclicker:${env.BUILD_ID}",
+                            "${organization}${appName}:${env.BUILD_ID}'
                             "-f ${dockerfile} --network host ./chapter7")
                         image.push()
                     }
