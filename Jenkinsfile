@@ -8,7 +8,7 @@ pipeline {
                 script {
                     def dockerfile = 'chapter7/Dockerfile'
                     def registry = 'https://registry-1.docker.io/'
-                    docker.withRegistry(registry', 'shipit.dockerhub.id') {
+                    docker.withRegistry(registry, 'shipit.dockerhub.id') {
                         def image = docker.build(
                             "shipitclicker:${env.BUILD_ID}",
                             "-f ${dockerfile} ./chapter7")
