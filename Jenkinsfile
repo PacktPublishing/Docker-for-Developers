@@ -12,7 +12,7 @@ pipeline {
                     def appName = 'shipitclicker'
                     docker.withRegistry(registry, 'shipit.dockerhub.id') {
                         def image = docker.build(
-                            "${organization}${appName}:${env.BUILD_ID}'
+                            "${organization}${appName}:${env.BUILD_ID}",
                             "-f ${dockerfile} --network host ./chapter7")
                         image.push()
                     }
