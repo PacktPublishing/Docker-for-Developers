@@ -1,10 +1,27 @@
+#!/usr/bin/env groovy
 pipeline {
-    agent { docker { image 'alpine:20191114' } }
     stages {
         stage('build') {
-            steps {
-                sh 'echo "Hello, World (Docker for Developers Chapter 7)"'
+            checkout scm
+            script {
+                def dockerfile = 'chapter7/Dockerfile'
+                docker.withRegistry('https://hub.docker.com',
+                                    'shipit.dockerhub.id') {
+                    def image = docker.build(
+                        "shipitclicker:${env.BUILD_ID}",
+                        "-f ${dockerfile} ./chapter7")
+                    image.push()
+                }
             }
+        }
+        stage('deploy') {
+            withCredentials([sshUserPrivateKey(
+                credentialsId: 'jenkins.shipit',
+                keyFileVariable: 'keyfile')]) {
+                    sh 'keyfile=${keyfile} ./chapter7/bin/ssh-dep.sh'
+                }
+
+
         }
     }
 }
