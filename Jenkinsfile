@@ -6,7 +6,7 @@ def appName = 'shipitclicker'
 pipeline {
   agent any
   environment {
-    image = "${env.organization}${env.appName}:${env.BUILD_ID}",
+    image = "${env.organization}${env.appName}:${env.BUILD_ID}"
   }
   stages {
     stage('build') {
