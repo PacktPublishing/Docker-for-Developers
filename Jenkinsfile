@@ -2,7 +2,7 @@
 def appName = 'shipitclicker'
 def dockerfile = 'chapter7/Dockerfile'
 def registry = 'https://registry-1.docker.io/'
-def getImageName() {
+def getImageName(appName) {
   withCredentials([[$class: 'UsernamePasswordMultiBinding',
     credentialsId: 'shipit.dockerhub.id',
     usernameVariable: 'dh_user']]) {
@@ -12,7 +12,7 @@ def getImageName() {
 pipeline {
   agent any
   environment {
-      imageName = getImageName()
+      imageName = getImageName(appName)
   }
   stages {
     stage('build') {
