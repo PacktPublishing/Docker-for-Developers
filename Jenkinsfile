@@ -5,15 +5,13 @@ def registry = 'https://registry-1.docker.io/'
 def getImageName(appName) {
   withCredentials([[$class: 'UsernamePasswordMultiBinding',
     credentialsId: 'shipit.dockerhub.id',
-    usernameVariable: 'dh_user']]) {
-      "${env.dh_user}/${appName}:${env.BUILD_ID}"
+    usernameVariable: 'dh_user',
+    passwordVariable: 'dh_password']]) {
+      "${dh_user}/${appName}:${env.BUILD_ID}"
   }
 }
 pipeline {
   agent any
-  environment {
-      imageName = getImageName(appName)
-  }
   stages {
     stage('build') {
       steps {
@@ -21,7 +19,7 @@ pipeline {
         script {
           docker.withRegistry(registry, 'shipit.dockerhub.id') {
             def image = docker.build(
-              env.imageName,
+              getImageName(appName),
               "-f ${dockerfile} --network host ./chapter7"
             )
             image.push()
@@ -36,7 +34,7 @@ pipeline {
           keyFileVariable: 'keyfile')]) {
             sh """
                set -a
-               image=${env.imageName}
+               image=${getImageName(appName)}
                keyfile=${keyfile}
                ./chapter7/bin/ssh-dep.sh
                """
