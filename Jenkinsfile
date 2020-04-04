@@ -2,11 +2,11 @@
 def appName = 'shipitclicker'
 def dockerfile = 'chapter7/Dockerfile'
 def registry = 'https://registry-1.docker.io/'
-def getImageName() = {
+def getImageName() {
   withCredentials([[$class: 'UsernamePasswordMultiBinding',
     credentialsId: 'shipit.dockerhub.id',
     usernameVariable: 'dh_user']) {
-      return = "${env.dh_user}/${appName}:${env.BUILD_ID}"
+      "${env.dh_user}/${appName}:${env.BUILD_ID}"
   }
 }
 pipeline {
