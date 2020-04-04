@@ -1,9 +1,7 @@
 #!/usr/bin/env groovy
+def appName = 'shipitclicker'
 def dockerfile = 'chapter7/Dockerfile'
 def registry = 'https://registry-1.docker.io/'
-withCredentials(
-def organization = 'dockerfordevelopers/'
-def appName = 'shipitclicker'
 def getImageName() = {
   withCredentials([[$class: 'UsernamePasswordMultiBinding',
     credentialsId: 'shipit.dockerhub.id',
@@ -22,7 +20,6 @@ pipeline {
         checkout scm
         script {
           docker.withRegistry(registry, 'shipit.dockerhub.id') {
-            imageName = "${env.dh_user}${appName}:${env.BUILD_ID}"
             def image = docker.build(
               env.imageName,
               "-f ${dockerfile} --network host ./chapter7"
