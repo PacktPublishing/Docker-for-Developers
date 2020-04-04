@@ -15,8 +15,8 @@ pipeline {
         script {
           docker.withRegistry(registry, 'shipit.dockerhub.id') {
             def image = docker.build(
-              "${env.organization}${env.appName}:${env.BUILD_ID}",
-              "-f ${env.dockerfile} --network host ./chapter7")
+              env.image,
+              "-f ${dockerfile} --network host ./chapter7")
             image.push()
           }
         }
