@@ -5,7 +5,7 @@ def registry = 'https://registry-1.docker.io/'
 def getImageName() {
   withCredentials([[$class: 'UsernamePasswordMultiBinding',
     credentialsId: 'shipit.dockerhub.id',
-    usernameVariable: 'dh_user']) {
+    usernameVariable: 'dh_user']]) {
       "${env.dh_user}/${appName}:${env.BUILD_ID}"
   }
 }
