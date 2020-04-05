@@ -31,10 +31,15 @@ pipeline {
       }
     }
     stage('deploy') {
+      when {
+        anyOf {
+          branch 'master'
+          branch 'staging'
+        }
+      }
       steps {
         echo "BRANCH_NAME is ${env.BRANCH_NAME}"
         echo "Deploying to ${getTarget()}"
-
         withCredentials([sshUserPrivateKey(
           credentialsId: 'jenkins.shipit',
           keyFileVariable: 'keyfile')]) {
