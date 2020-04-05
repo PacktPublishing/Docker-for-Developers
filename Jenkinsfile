@@ -10,6 +10,9 @@ def getImageName(appName) {
       "${dh_user}/${appName}:${env.BUILD_ID}"
   }
 }
+def getTarget() {
+  env.BRANCH_NAME == 'staging' ? 'staging' : 'prod'
+}
 pipeline {
   agent any
   stages {
@@ -29,11 +32,15 @@ pipeline {
     }
     stage('deploy') {
       steps {
+        echo "BRANCH_NAME is ${env.BRANCH_NAME}"
+        echo "Deploying to ${getTarget()}"
+
         withCredentials([sshUserPrivateKey(
           credentialsId: 'jenkins.shipit',
           keyFileVariable: 'keyfile')]) {
             sh """
                set -a
+               target=${getTarget()}
                image=${getImageName(appName)}
                keyfile=${keyfile}
                ./chapter7/bin/ssh-dep.sh
