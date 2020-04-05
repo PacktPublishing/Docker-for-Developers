@@ -1,0 +1,232 @@
+Push event to branch chapter7-sketch
+Connecting to https://api.github.com using obscurerichard/******
+Obtained Jenkinsfile from cc77bd4e148dbdc21f755ad52f9ec7cf75e4707e
+Running in Durability level: MAX_SURVIVABILITY
+[Pipeline] Start of Pipeline
+[Pipeline] node
+Running on Jenkins in /var/lib/jenkins/workspace/r-for-Developers_chapter7-sketch
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (Declarative: Checkout SCM)
+[Pipeline] checkout
+using credential obscurerichard-token
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/PacktPublishing/Docker-for-Developers.git # timeout=10
+Fetching without tags
+Fetching upstream changes from https://github.com/PacktPublishing/Docker-for-Developers.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --no-tags --progress https://github.com/PacktPublishing/Docker-for-Developers.git +refs/heads/chapter7-sketch:refs/remotes/origin/chapter7-sketch # timeout=10
+Checking out Revision cc77bd4e148dbdc21f755ad52f9ec7cf75e4707e (chapter7-sketch)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f cc77bd4e148dbdc21f755ad52f9ec7cf75e4707e # timeout=10
+Commit message: "Tweak variable declarations"
+ > git rev-list --no-walk e334d630a4f6b02aaaab0df26796c87453ba56ac # timeout=10
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] withEnv
+[Pipeline] {
+[Pipeline] withEnv
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (build)
+[Pipeline] checkout
+using credential obscurerichard-token
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/PacktPublishing/Docker-for-Developers.git # timeout=10
+Fetching without tags
+Fetching upstream changes from https://github.com/PacktPublishing/Docker-for-Developers.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --no-tags --progress https://github.com/PacktPublishing/Docker-for-Developers.git +refs/heads/chapter7-sketch:refs/remotes/origin/chapter7-sketch # timeout=10
+Checking out Revision cc77bd4e148dbdc21f755ad52f9ec7cf75e4707e (chapter7-sketch)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f cc77bd4e148dbdc21f755ad52f9ec7cf75e4707e # timeout=10
+Commit message: "Tweak variable declarations"
+[Pipeline] script
+[Pipeline] {
+[Pipeline] withEnv
+[Pipeline] {
+[Pipeline] withDockerRegistry
+$ docker login -u obscurerichard -p ******** https://registry-1.docker.io/
+WARNING! Using --password via the CLI is insecure. Use --password-stdin.
+WARNING! Your password will be stored unencrypted in /var/lib/jenkins/workspace/r-for-Developers_chapter7-sketch@tmp/1333c8f7-209a-4947-ad0b-2db5a891b4d3/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+[Pipeline] {
+[Pipeline] isUnix
+[Pipeline] sh
++ docker build -t dockerfordevelopers/shipitclicker:18 -f chapter7/Dockerfile --network host ./chapter7
+Sending build context to Docker daemon   10.5MB
+Step 1/14 : FROM alpine:20191114
+ ---> 60d63d8e1431
+Step 2/14 : RUN apk update &&     apk add nodejs nodejs-npm
+ ---> Using cache
+ ---> 856c681427b4
+Step 3/14 : RUN addgroup -S app && adduser -S -G app app
+ ---> Using cache
+ ---> 6e205ebc7c04
+Step 4/14 : RUN mkdir -p /app/public /app/server
+ ---> Using cache
+ ---> 0a219c16564d
+Step 5/14 : ADD src/package.json* /app/
+ ---> Using cache
+ ---> 4ae1e45b9168
+Step 6/14 : WORKDIR /app
+ ---> Using cache
+ ---> 3c1d910971ef
+Step 7/14 : RUN npm -s install
+ ---> Using cache
+ ---> 82b92c653e8a
+Step 8/14 : COPY src/public/ /app/public/
+ ---> Using cache
+ ---> be5c52aa707c
+Step 9/14 : COPY src/server/ /app/server/
+ ---> Using cache
+ ---> c1a6f7228da6
+Step 10/14 : COPY src/.babelrc /app/
+ ---> Using cache
+ ---> 491496016f6f
+Step 11/14 : RUN npm run compile
+ ---> Using cache
+ ---> e7ac407fe166
+Step 12/14 : USER app
+ ---> Using cache
+ ---> 399def4e8516
+Step 13/14 : EXPOSE 3000
+ ---> Using cache
+ ---> d75ea8f484f0
+Step 14/14 : ENTRYPOINT ["npm", "start"]
+ ---> Using cache
+ ---> b5074139ec44
+Successfully built b5074139ec44
+Successfully tagged dockerfordevelopers/shipitclicker:18
+[Pipeline] isUnix
+[Pipeline] sh
++ docker tag dockerfordevelopers/shipitclicker:18 registry-1.docker.io/dockerfordevelopers/shipitclicker:18
+[Pipeline] isUnix
+[Pipeline] sh
++ docker push registry-1.docker.io/dockerfordevelopers/shipitclicker:18
+The push refers to repository [registry-1.docker.io/dockerfordevelopers/shipitclicker]
+37625b2df107: Preparing
+a6c5114769d7: Preparing
+ca4e3bd11457: Preparing
+ccb9fe8eeccc: Preparing
+5b2efc5a6399: Preparing
+88d31595495b: Preparing
+6566883f560d: Preparing
+6e0be8354d99: Preparing
+cd1e536ca3ae: Preparing
+da64c1c32e07: Preparing
+88d31595495b: Waiting
+6566883f560d: Waiting
+6e0be8354d99: Waiting
+cd1e536ca3ae: Waiting
+da64c1c32e07: Waiting
+37625b2df107: Layer already exists
+a6c5114769d7: Layer already exists
+ccb9fe8eeccc: Layer already exists
+ca4e3bd11457: Layer already exists
+5b2efc5a6399: Layer already exists
+88d31595495b: Layer already exists
+6e0be8354d99: Layer already exists
+cd1e536ca3ae: Layer already exists
+da64c1c32e07: Layer already exists
+6566883f560d: Layer already exists
+18: digest: sha256:ac147b0df5f073eaa698bb5cc5ead2ae9b8b79791feeca011b9854bca7311bf7 size: 2409
+[Pipeline] }
+[Pipeline] // withDockerRegistry
+[Pipeline] }
+[Pipeline] // withEnv
+[Pipeline] }
+[Pipeline] // script
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (deploy)
+[Pipeline] withCredentials
+Masking supported pattern matches of $keyfile
+[Pipeline] {
+[Pipeline] sh
++ keyfile=****
++ ./chapter7/bin/ssh-dep.sh
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+From https://github.com/PacktPublishing/Docker-for-Developers
+   44431ea..cc77bd4  chapter7-sketch -> origin/chapter7-sketch
+Updating 44431ea..cc77bd4
+Fast-forward
+ Jenkinsfile             | 57 ++++++++++++++++++++++++++-----------------------
+ chapter7/bin/ssh-dep.sh |  7 ++++--
+ 2 files changed, 35 insertions(+), 29 deletions(-)
+18: Pulling from dockerfordevelopers/shipitclicker
+8c15e203d0eb: Already exists
+e377eb04dff9: Pulling fs layer
+f62f9ef45406: Pulling fs layer
+ba02e6c7e767: Pulling fs layer
+b568066c9c09: Pulling fs layer
+635625b47a6c: Pulling fs layer
+db25fe537e0b: Pulling fs layer
+8432df3b92d7: Pulling fs layer
+41d7bf7e17f2: Pulling fs layer
+01c270b1a240: Pulling fs layer
+b568066c9c09: Waiting
+635625b47a6c: Waiting
+db25fe537e0b: Waiting
+8432df3b92d7: Waiting
+41d7bf7e17f2: Waiting
+01c270b1a240: Waiting
+ba02e6c7e767: Verifying Checksum
+ba02e6c7e767: Download complete
+f62f9ef45406: Verifying Checksum
+f62f9ef45406: Download complete
+b568066c9c09: Verifying Checksum
+b568066c9c09: Download complete
+db25fe537e0b: Verifying Checksum
+db25fe537e0b: Download complete
+8432df3b92d7: Verifying Checksum
+8432df3b92d7: Download complete
+e377eb04dff9: Verifying Checksum
+e377eb04dff9: Download complete
+01c270b1a240: Verifying Checksum
+01c270b1a240: Download complete
+41d7bf7e17f2: Verifying Checksum
+41d7bf7e17f2: Download complete
+635625b47a6c: Verifying Checksum
+635625b47a6c: Download complete
+e377eb04dff9: Pull complete
+f62f9ef45406: Pull complete
+ba02e6c7e767: Pull complete
+b568066c9c09: Pull complete
+635625b47a6c: Pull complete
+db25fe537e0b: Pull complete
+8432df3b92d7: Pull complete
+41d7bf7e17f2: Pull complete
+01c270b1a240: Pull complete
+Digest: sha256:ac147b0df5f073eaa698bb5cc5ead2ae9b8b79791feeca011b9854bca7311bf7
+Status: Downloaded newer image for dockerfordevelopers/shipitclicker:18
+docker.io/dockerfordevelopers/shipitclicker:18
+Creating chapter7_redis_1 ... 
+[1A[2KCreating chapter7_redis_1 ... [32mdone[0m[1BCreating chapter7_shipit-clicker-web-v3_1 ... 
+[1A[2KCreating chapter7_shipit-clicker-web-v3_1 ... [32mdone[0m[1B              Name                            Command               State          Ports        
+------------------------------------------------------------------------------------------------
+chapter7_redis_1                   docker-entrypoint.sh redis ...   Up      6379/tcp            
+chapter7_shipit-clicker-web-v3_1   npm start                        Up      0.0.0.0:80->3000/tcp
+[Pipeline] }
+[Pipeline] // withCredentials
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] }
+[Pipeline] // withEnv
+[Pipeline] }
+[Pipeline] // withEnv
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+
+GitHub has been notified of this commit’s build result
+
+Finished: SUCCESS
