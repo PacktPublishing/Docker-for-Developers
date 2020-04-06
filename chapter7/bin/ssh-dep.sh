@@ -15,7 +15,8 @@ ssh -i "$keyfile" -o StrictHostKeyChecking=no "$targetEnv" <<EOF
 set -euo pipefail
 cd Docker-for-Developers/chapter7
 git fetch
-git checkout origin/"$GIT_BRANCH"
+git reset --hard HEAD
+git checkout -f origin/"$GIT_BRANCH"
 docker pull "$image"
 set -a
 VIRTUAL_HOST="$targetHost"
