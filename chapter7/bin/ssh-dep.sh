@@ -6,10 +6,8 @@ staging="${shipit_staging_user}@${shipit_staging_host}"
 image=${image:-dockerfordevelopers/shipitclicker:latest}
 if [[ "$target" = "staging" ]]; then
     targetEnv="$staging"
-    targetHost="$shipit_staging_host"
 else
     targetEnv="$prod"
-    targetHost="$shipit_prod_host"
 fi
 ssh -i "$keyfile" -o StrictHostKeyChecking=no "$targetEnv" <<EOF
 set -euo pipefail
@@ -19,7 +17,6 @@ git reset --hard HEAD
 git checkout -f origin/"$GIT_BRANCH"
 docker pull "$image"
 set -a
-VIRTUAL_HOST="$targetHost"
 DOCKER_IMAGE="$image"
 PORT="$port"
 bin/restart.sh
