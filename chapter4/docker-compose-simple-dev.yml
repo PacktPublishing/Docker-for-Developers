@@ -1,0 +1,11 @@
+version: '3'
+services:
+
+  publisher:
+    volumes:
+      - ./publisher:/home/app
+
+  subscriber:
+    volumes:
+      - ./subscriber:/home/app
+

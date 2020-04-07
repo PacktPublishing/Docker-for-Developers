@@ -24,11 +24,19 @@ docker pull $SERVICE
 
 # Now we run it!
 
+#docker run \
+#  --name $SERVICE \
+#  -d \
+#  --restart always \
+#  -e TITLE=$SERVICE \
+#  -p 6379:6379 \
+#  $SERVICE
+
 docker run \
   --name $SERVICE \
   -d \
   --restart always \
   -e TITLE=$SERVICE \
-  -p 6379:6379 \
+  --network chapter4 \
   $SERVICE
 

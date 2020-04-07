@@ -1,22 +1,16 @@
-# we will inherit from the NodeJS v12 image on DockerHub
-FROM node:12
+# we will inherit from the NodeJS v12 alpine OS image on DockerHub
 
-# set timezone so files' timestamps are correct
+FROM node:12-alpine
 ENV TZ=America/Los_Angeles
-
-# we include procps and telnet so you can use these with shell.sh prompt
-RUN apt-get update -qq >/dev/null && apt-get install -y -qq curl procps telnet >/dev/null
-
-# add a user - this user will own the files in /home/app
-RUN useradd --user-group --create-home --shell /bin/false app
-
-# set up and copy files to /home/app
-ENV HOME=/usr/app
 WORKDIR /home/app
+# add a user - this user will own the files in /home/app
+RUN adduser -S app
+ENV HOME=/home/app
+
+VOLUME ["/home/app/node_modules"]
+# this will install/update the node_modules in our volume
+RUN yarn install --frozen-lockfile --production && npm prune --production
 COPY . /home/app
 
-# install our NodeJS packages (from package.json)
-RUN yarn install
-
-# we run a script to stat the server; the array syntax makes it so ^C will work as we want
+# we run a script to start the server; the array syntax makes it so ^C will work as we want
 CMD  ["yarn", "start"]

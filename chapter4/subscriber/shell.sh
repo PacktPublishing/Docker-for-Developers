@@ -9,4 +9,4 @@
 #docker stop subscriber
 
 # fire up the container with shell (/bin/bash)
-docker run -it --rm --name subscriber dockerfordevelopers/subscriber /bin/bash
+docker run -it --rm --name subscriber dockerfordevelopers/subscriber /bin/bash || docker container exec -it subscriber /bin/bash

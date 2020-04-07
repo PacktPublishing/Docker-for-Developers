@@ -1,0 +1,35 @@
+version: '3'
+services:
+
+  redis:
+    networks:
+      - chapter4
+
+  mongodb:
+    networks:
+      - chapter4
+
+  mosca:
+    networks:
+      - chapter4
+
+  publisher:
+    ports:
+      - 3000:3000
+    volumes:
+      - node_modules_publisher:/home/app/node_modules
+    networks:
+      - chapter4
+
+  subscriber:
+    volumes:
+      - node_modules_subscriber:/home/app/node_modules
+    networks:
+      - chapter4
+
+networks:
+  chapter4:
+
+volumes:
+  node_modules_publisher:
+  node_modules_subscriber:

@@ -9,9 +9,12 @@
   "private": false,
   "dependencies": {
     "debug": "^4.1.1",
-    "mqtt": "^3.0.0"
+    "express": "^4.17.1",
+    "mqtt": "^3.0.0",
+    "nodemon": "^2.0.2",
+    "wait-on": "^4.0.1"
   },
   "scripts": {
-    "start": "node ./index.js"
+    "start": "HOSTIP=127.0.0.1 ./node_modules/.bin/nodemon ./index.js"
   }
 }

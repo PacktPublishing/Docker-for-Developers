@@ -1,0 +1,32 @@
+# Simple docker complse override configuration file for chapter4/ application
+
+version: '3'
+services:
+
+  redis:
+    ports:
+      - 6379:6379
+
+  mongodb:
+    ports:
+      - 27017:27017
+
+  mosca:
+    ports:
+      - 1883:1883
+      - 80:80
+
+  publisher:
+    environment:
+    - MQTT_HOST=${HOSTIP}
+    - REDIS_HOST=${HOSTIP}
+    - MONGO_HOST=${HOSTIP}
+    ports:
+      - 3000:3000
+
+  subscriber:
+    environment:
+    - MQTT_HOST=${HOSTIP}
+    - REDIS_HOST=${HOSTIP}
+    - MONGO_HOST=${HOSTIP}
+
