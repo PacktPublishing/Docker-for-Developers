@@ -106,6 +106,9 @@ paths:
           content: {}
 components:
   schemas:
+    Error:
+      type: object
+      additionalProperties: true
     Game:
       type: object
       properties:
