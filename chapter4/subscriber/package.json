@@ -1,0 +1,21 @@
+{
+  "name": "subscriber",
+  "version": "1.0.0",
+  "description": "Example subscriber microservice",
+  "main": "index.js",
+  "repository": "https://github.com/ModusCrateOrg/docker-book/subscriber/",
+  "author": "Michael Schwartz",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "async-redis": "^1.1.7",
+    "debug": "^4.1.1",
+    "mongodb": "^3.4.0",
+    "mqtt": "^3.0.0",
+    "nodemon": "^2.0.2",
+    "wait-on": "^4.0.1"
+  },
+  "scripts": {
+    "start": "./node_modules/.bin/nodemon ./index.js"
+  }
+}

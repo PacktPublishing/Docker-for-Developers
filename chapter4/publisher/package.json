@@ -1,0 +1,20 @@
+{
+  "name": "publisher",
+  "version": "1.0.0",
+  "description": "Example publisher microservice",
+  "main": "index.js",
+  "repository": "https://github.com/ModusCrateOrg/docker-book/publisher/",
+  "author": "Michael Schwartz",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "mqtt": "^3.0.0",
+    "nodemon": "^2.0.2",
+    "wait-on": "^4.0.1"
+  },
+  "scripts": {
+    "start": "HOSTIP=127.0.0.1 ./node_modules/.bin/nodemon ./index.js"
+  }
+}
