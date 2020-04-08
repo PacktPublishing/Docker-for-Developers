@@ -2,11 +2,11 @@ openapi: 3.0.1
 info:
   title: shipit-clicker
   description: ShipIt Clicker
-  version: 1.0.0
+  version: 2.0.0
 servers:
-  - url: /api/v1
+  - url: /api/v2
 tags:
-  - name: shipit-clicker
+  - name: Game
     description: Shipit Clicker game API
   - name: Specification
     description: The swagger API specification
@@ -15,14 +15,14 @@ paths:
     post:
       tags:
         - Game
-      description: Create or update a new game item
+      description: Create new game
       requestBody:
-        description: The game item to create or update
+        description: Empty object request body
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/GameBody'
-        required: true
+              $ref: '#/components/schemas/Empty'
+        required: false
       responses:
         201:
           description: Return the newly created game item with the specified id
@@ -61,13 +61,37 @@ paths:
               schema:
                 $ref: '#/components/schemas/Game'
         4XX:
-          description: Example not found
+          description: Game not found
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/Error'
         5XX:
           description: Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    put:
+      tags:
+        - Game
+      description: Create or update a new game item
+      requestBody:
+        description: The game item to create or update
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/GameItem'
+        required: true
+      responses:
+        201:
+          description: Return the newly created game item with the specified id
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GameItem'
+        5XX:
+          description: Server error
           content:
             application/json:
               schema:
@@ -81,7 +105,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/GameBody'
+              $ref: '#/components/schemas/GameItem'
         required: true
       responses:
         200:
@@ -89,7 +113,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Game'
+                $ref: '#/components/schemas/GameItem'
         5XX:
           description: Server error
           content:
@@ -109,21 +133,18 @@ components:
     Error:
       type: object
       additionalProperties: true
+    Empty:
+      type: object
+      additionalProperties: false
     Game:
       type: object
       properties:
         id:
           type: string
           example: sample-game
-        element:
-          type: string
-          example: score
-        value:
-          type: integer
-          example: 3
 
-    GameBody:
-      title: Game Body
+    GameItem:
+      title: Game Item
       required:
         - id
         - element
