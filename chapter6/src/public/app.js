@@ -33,7 +33,7 @@ const HEARTBEAT_RHYTHM = 192;
 const SCORE = 'score';
 const DEPLOYS = 'deploys';
 const NEXT_PURCHASE = 'nextPurchase';
-let gameId = 'example';
+let currentGame = null;
 var deploys,
   score,
   scoreMultiplier,
@@ -102,14 +102,26 @@ function status(response) {
   }
 }
 
+async function createGame() {
+  return fetch(`./api/v2/games/`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({}),
+  })
+    .then(status)
+    .then(json);
+}
+
 async function incrbyGame(key, value) {
-  return fetch(`./api/v2/games/${gameId}/${key}`, {
+  return fetch(`./api/v2/games/${currentGame.id}/${key}`, {
     method: 'PATCH',
     headers: {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      id: gameId,
+      id: currentGame.id,
       element: key,
       value: value,
     }),
@@ -120,13 +132,13 @@ async function incrbyGame(key, value) {
 }
 
 async function setGameItem(key, value) {
-  return fetch(`./api/v2/games/${key}/${value}`, {
+  return fetch(`./api/v2/games/${currentGame.id}/${key}`, {
     method: 'PUT',
     headers: {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      id: gameId,
+      id: currentGame.id,
       element: key,
       value: value,
     }),
@@ -137,7 +149,7 @@ async function setGameItem(key, value) {
 }
 
 async function getGameItem(key) {
-  return fetch(`./api/v2/games/${gameId}/${key}`)
+  return fetch(`./api/v2/games/${currentGame.id}/${key}`)
     .then(status)
     .then(json)
     .then(data => data.value);
@@ -269,6 +281,19 @@ async function reset() {
   return Promise.resolve(true);
 }
 
+async function refreshGame() {
+  // Check if it is in local storage
+  const storedGame = localStorage.getItem('game');
+  let result;
+  if (storedGame) {
+    result = JSON.parse(storedGame);
+  } else {
+    result = await createGame();
+    localStorage.setItem('game', JSON.stringify(result));
+  }
+  return Promise.resolve(result);
+}
+
 async function refreshScores() {
   let mock = false;
   if (mock) {
@@ -285,7 +310,7 @@ async function refreshScores() {
         getGameItem(NEXT_PURCHASE),
       ]);
     } catch (error) {
-      console.log('ERROR retriving game info', gameId, error);
+      console.log('ERROR retriving game info', currentGame.id, error);
       score = 0;
       deploys = 0;
       nextPurchase = 0;
@@ -334,6 +359,8 @@ this.clickRestart = async () => {
   if (
     window.confirm('Are you sure you want to restart? Your score will reset!')
   ) {
+    currentGame = await createGame();
+    localStorage.setItem('game', JSON.stringify(currentGame));
     hide(splash);
     await reset();
     show(game);
@@ -360,6 +387,7 @@ this.clickBuy = async () => {
     alert('You have purchased all the upgrades already!');
   } else {
     if (score >= nextPrice) {
+      // eslint-disable-next-line require-atomic-updates
       [score, nextPurchase] = await Promise.all([
         incrbyGame(SCORE, (nextPrice - 1) * -1),
         incrbyGame(NEXT_PURCHASE, 1),
@@ -392,6 +420,7 @@ this.clickContinue = () => {
 
 const init = async () => {
   try {
+    currentGame = await refreshGame();
     await refreshScores();
     if (score == 0) {
       await reset();
