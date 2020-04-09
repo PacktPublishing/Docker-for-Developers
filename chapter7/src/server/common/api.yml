@@ -2,122 +2,66 @@ openapi: 3.0.1
 info:
   title: shipit-clicker
   description: ShipIt Clicker
-  version: 1.0.0
+  version: 2.0.0
 servers:
-  - url: /api/v1
+  - url: /api/v2
 tags:
-  - name: Examples
-    description: Simple example endpoints
+  - name: Game
+    description: Shipit Clicker game API
   - name: Specification
     description: The swagger API specification
 paths:
-  /examples:
-    get:
-      tags:
-        - Examples
-      description: Fetch all examples
-      responses:
-        200:
-          description: Return the example with the specified id
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/Example'
-        4XX:
-          description: Example not found
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
-        5XX:
-          description: Example not found
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
-    post:
-      tags:
-        - Examples
-      description: Create a new example
-      requestBody:
-        description: an example
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/ExampleBody'
-        required: true
-      responses:
-        201:
-          description: Return the example with the specified id
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Example'
-        4XX:
-          description: Example not found
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
-        5XX:
-          description: Example not found
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
-  /examples/{id}:
-    get:
-      tags:
-        - Examples
-      parameters:
-        - name: id
-          in: path
-          description: The id of the example to retrieve
-          required: true
-          schema:
-            type: integer
-      responses:
-        200:
-          description: Return the example with the specified id
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Example'
-        4XX:
-          description: Example not found
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
-        5XX:
-          description: Example not found
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
   /games/:
     post:
       tags:
         - Game
-      description: Create or update a new game item
+      description: Create new game
       requestBody:
-        description: The game item to create or update
+        description: Empty object request body
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/GameBody'
-        required: true
+              $ref: '#/components/schemas/Empty'
+        required: false
       responses:
         201:
-          description: Return the newly created game item with the specified id
+          description: Return the newly created game start timestamp with the specified id
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/Game'
         5XX:
           description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+  /games/{id}:
+    get:
+      tags:
+        - Game
+      parameters:
+        - name: id
+          in: path
+          description: The id of the game to retrieve
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: Return the game containing the game start timestamp with the specified id
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Game'
+        4XX:
+          description: Game not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        5XX:
+          description: Server Error
           content:
             application/json:
               schema:
@@ -147,13 +91,37 @@ paths:
               schema:
                 $ref: '#/components/schemas/Game'
         4XX:
-          description: Example not found
+          description: Game not found
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/Error'
         5XX:
           description: Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    put:
+      tags:
+        - Game
+      description: Create or update a new game item
+      requestBody:
+        description: The game item to create or update
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/GameItem'
+        required: true
+      responses:
+        201:
+          description: Return the newly created game item with the specified id
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GameItem'
+        5XX:
+          description: Server error
           content:
             application/json:
               schema:
@@ -167,7 +135,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/GameBody'
+              $ref: '#/components/schemas/GameItem'
         required: true
       responses:
         200:
@@ -175,7 +143,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Game'
+                $ref: '#/components/schemas/GameItem'
         5XX:
           description: Server error
           content:
@@ -192,21 +160,23 @@ paths:
           content: {}
 components:
   schemas:
+    Error:
+      type: object
+      additionalProperties: true
+    Empty:
+      type: object
+      additionalProperties: false
     Game:
       type: object
       properties:
         id:
           type: string
           example: sample-game
-        element:
-          type: string
-          example: score
-        value:
+        started_on:
           type: integer
-          example: 3
-
-    GameBody:
-      title: Game Body
+          example: 1586458255
+    GameItem:
+      title: Game Item
       required:
         - id
         - element
@@ -222,26 +192,3 @@ components:
         value:
           type: integer
           example: 3
-
-    Example:
-      type: object
-      properties:
-        id:
-          type: integer
-          example: 3
-        name:
-          type: string
-          example: example 3
-    Error:
-      type: object
-      additionalProperties: true
-
-    ExampleBody:
-      title: example
-      required:
-        - name
-      type: object
-      properties:
-        name:
-          type: string
-          example: no_stress

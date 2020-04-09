@@ -2,6 +2,12 @@
   "name": "shipit-clicker",
   "version": "1.0.7",
   "description": "ShipIt Clicker",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PacktPublishing/Docker-for-Developers/"
+  },
+  "author": "Richard Bullington-McGuire <richard@moduscreate.com> (https://github.com/obscurerichard)",
   "main": "index.js",
   "scripts": {
     "start": "node dist/index.js",
@@ -10,8 +16,8 @@
     "dev:debug": "nodemon server --exec babel-node --config .nodemonrc.json --inspect | pino-pretty",
     "test": "mocha --require @babel/register --exit",
     "test:debug": "mocha --require @babel/register --inspect-brk --exit",
-    "lint": "eslint -c .eslintrc.json {server,test}/**",
-    "lint:fix": "eslint --fix -c .eslintrc.json {server,test}/**"
+    "lint": "eslint -c .eslintrc.json {server,test}/** public/*.js",
+    "lint:fix": "eslint --fix -c .eslintrc.json {server,test}/** public/*.js"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -20,6 +26,7 @@
     "esm": "^3.2.25",
     "express": "^4.17.1",
     "express-openapi-validator": "^3.0.2",
+    "nanoid": "^3.0.2",
     "pino": "^5.13.6",
     "redis": "^2.8.0"
   },
@@ -44,6 +51,5 @@
     "prettier": "^1.19.1",
     "supertest": "^4.0.2",
     "zepto": "^1.2.0"
-  },
-  "author": "Richard Bullington-McGuire <richard.bullington.mcguire@gmail.com> (https://github.com/obscurerichard)"
+  }
 }
