@@ -1,0 +1,213 @@
+body { margin: 0 }
+h1, h2, h3, noscript, .about {
+  background-color: white;
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+.about {
+  width: 50%;
+  margin: 8px;
+}
+body {
+  font-family:  Sans-Serif;
+  font-size: 16px;
+}
+h1, noscript { font-size: 24px }
+h3 { font-size: 12px }
+h1, h2 { font-weight: bold }
+h1 { 
+  position: fixed; 
+  top: 0;
+  left: 0;
+  margin-top: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: black;
+  color: white;
+}
+#background {
+  position: fixed;
+  top: 32px;
+  left: 0;
+  width: 100%;
+  height: 32em;
+  background-color: lightgrey;
+}
+#game,#store,#credits,#splash,#start_button,#restart_button,#resume_button,#restart_button,#statusBar { display: none; }
+#deploy_button,#resume_button,#start_button,#restart_button,#buy_button,#continue_button,#credits_button,#ok_button {
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 24px;
+  line-height: 48px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  touch-action: none;
+  left: 0;
+}
+#stage{
+    height: 100vh;
+}
+#deploy_button {
+  position: fixed;
+  bottom: 160px;
+}
+#restart_button {
+  position: fixed;
+  bottom: 96px;
+}
+#start_button,#resume_button,#buy_button,#ok_button {
+  position: fixed;
+  bottom: 32px;
+}
+#store_button, #quit_button {
+  position: fixed;
+  top: 64px;
+  font-size: 18px;
+  line-height: 36px;
+}
+#store_button {
+  left: 1em;
+}
+#quit_button {
+  position: fixed;
+  top: 64px;
+  right: 1em;
+  font-size: 18px; 
+  line-height: 36px;
+}
+#continue_button, #credits_button {
+  width: 100%;
+  position: fixed;
+  top: 32px;
+  left: 0;
+}
+#statusBar {
+  font-size: 24px;
+  width: 100%;
+  position: fixed;
+  bottom: 32px;
+  background-color: #8ff;
+  padding: 0;
+  margin: 0;
+  touch-action: none;
+}
+.content {
+  padding-top: 32px;
+  margin-top: 64px;
+  padding-bottom: 32px;
+}
+#credits .content {
+  background-color: white;
+  color: black; 
+}
+#credits .content img {
+  background-color: transparent;
+}
+.endmark {
+  background-color: transparent;
+  font-size: 48px;
+  color: navy;
+  margin-top: 50%;
+  margin-bottom: 75%;
+}
+.content table {
+  padding-top: 64px;
+}
+#heartbeat {
+  position: fixed;
+  box-sizing: border-box;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 8px;
+  background-color: black;
+  touch-action: none;
+}
+.animate {
+   position: fixed;
+   width: 100%;
+   left: 0;
+   bottom: 256px;
+   font-size: 32px;
+   animation: deploy 1s ease;
+   opacity: 0;
+   touch-action: none;
+}
+/* Thanks https://stackoverflow.com/a/6117092 */
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+p {
+  -webkit-touch-callout: none;
+  -webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  -o-user-select: text;
+  user-select: text;
+}
+@keyframes deploy {
+  0% { 
+    transform: translateX(-150%) scale(-1, 1); 
+    opacity: 1;
+  }
+  100% { 
+    transform: translateX(0%) scale(-1, 1);
+    opacity: 0.75;
+  }
+}
+th, td {
+  padding: 1ex;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+tr:nth-child(even) {background-color: #eee;}
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 95%;
+  margin: 1ex;
+  background-color: white;
+}
+.currency {
+  text-align: right
+}
+.available {
+  color: green;
+  font-weight: bold;
+}
+.notAvailable {
+  color: red;
+  font-weight: normal;
+}
+/* Background image div - thanks https://stackoverflow.com/a/1208392 */
+#background {
+  width: 100%; 
+  height: 100%; 
+  position: fixed; 
+  left: 0px; 
+  top: 64px; 
+  z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+}
+.stretch {
+  width:100%;
+}
+.api {
+  position: fixed;
+  background-color: transparent;
+  font-size: 18px;
+  bottom: 192px;
+  left: 0;
+}
+.api a {
+  background-color: yellow;
+}

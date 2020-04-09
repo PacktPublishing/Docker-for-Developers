@@ -3,6 +3,8 @@ import controller from './controller';
 
 export default express
   .Router()
-  .post('/', controller.set)
-  .get('/:id/:element', controller.get)
-  .patch('/:id/:element', controller.incrby);
+  .get('/:id', controller.getGame)
+  .post('/', controller.createGame)
+  .get('/:id/:element', controller.getGameItem)
+  .put('/:id/:element', controller.setGameItem)
+  .patch('/:id/:element', controller.incrementGameItem);
