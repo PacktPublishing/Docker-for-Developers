@@ -37,7 +37,7 @@ export class Controller {
   async getGameItem(req, res) {
     try {
       const key = `${req.params.id}/${req.params.element}`;
-      var redis = await RedisService.get(id).then(RedisService.get(key));
+      var redis = await RedisService.get(key);
       l.debug({ msg: 'Redis GET complete', key: key, value: redis });
       return res.json({
         id: req.params.id,
