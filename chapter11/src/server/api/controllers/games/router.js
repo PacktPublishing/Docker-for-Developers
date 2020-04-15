@@ -7,4 +7,5 @@ export default express
   .post('/', controller.createGame)
   .get('/:id/:element', controller.getGameItem)
   .put('/:id/:element', controller.setGameItem)
-  .patch('/:id/:element', controller.incrementGameItem);
+  .patch('/:id/:element', controller.incrementGameItem)
+  .get('/spin', controller.getSpin);

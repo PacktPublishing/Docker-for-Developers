@@ -1,8 +1,23 @@
 import RedisService from '../../services/redis.service';
 import l from '../../../common/logger';
 import { nanoid } from 'nanoid';
+import spin from '../../common/spin';
 
 export class Controller {
+  async getSpin(req, res) {
+    const started_on = new Date().getTime();
+    try {
+      const spin_status = spin();
+      return res.json({
+        spin: spin_status,
+        started_on: started_on,
+      });
+    } catch (err) {
+      l.warn({ msg: 'Spin GET errored', key: req.params.id, error: err });
+      return res.status(404);
+    }
+  }
+
   async getGame(req, res) {
     const id = `${req.params.id}`;
     try {
