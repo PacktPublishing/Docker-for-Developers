@@ -1,13 +1,17 @@
 // This module spins the CPU
 
-const random = require("random");
+//import l from './logger';
+
+const random = require('random'),
+  ALPHA = 2,
+  pareto = random.pareto(ALPHA);
 
 // See:
-// https://github.com/ModusCreateOrg/constellation/blob/master/applications/spin/src/spin.py
+// https://github.com/ ModusCreateOrg/constellation/blob/master/applications/spin/src/spin.py
 
 // module local variables
 let invocations = 0,
-  last_time = Date.now() - 10;
+  last_time = Date.now() / 1000 - 10;
 
 /**
  * Note we are not async, we want to burn CPU.
@@ -20,21 +24,26 @@ let invocations = 0,
  * The idea is you can call this and then call your regular route handler to return a value,
  * adding a delay to simulate busy server.  Or you can call this and then return a 200 message.
  */
-export const spin = (delay = 0.5, max_duration = 10.0, simulate_congestion = true) => {
+export default (
+  delay = 0.5,
+  max_duration = 10.0,
+  simulate_congestion = true
+) => {
   invocations++;
   // TODO: mschwartz says JavaScript math can be hanky on the edges, using values like this
-  let upper_max = 100000000000000000000000000000000;
+  const upper_max = 100000000000000000000000000000000;
 
   // Use a pareto distribution to give additional
   // variation to the delay
   // See https://en.wikipedia.org/wiki/Pareto_distribution
-  const alpha = 2;
-  const pareto_factor = random.paretovariate(alpha);
-  const start_time = Date.now();
+  const pareto_factor = pareto();
+  const start_time = Date.now() / 1000;
 
   let current_time = start_time;
-  const scratch = 42 + int(current_time);
-  lst congestion_slowdown = 0.0;
+  let scratch = 42 + parseInt(current_time, 10);
+  let congestion_slowdown = 0.0;
+
+  var interval;
 
   if (simulate_congestion) {
     congestion_slowdown = (delay * 2) / (current_time - last_time);
@@ -44,23 +53,17 @@ export const spin = (delay = 0.5, max_duration = 10.0, simulate_congestion = tru
   const time_limit = start_time + max_duration;
   let calcs = 0;
   while (current_time < end_time) {
-    calcs += 1;
-    const scratch = (scratch * scratch) % upper_max;
-    current_time = time.time();
+    calcs++;
+    scratch = (scratch * scratch) % upper_max;
+    current_time = Date.now()/ 1000;
     interval = current_time - start_time;
     if (current_time > time_limit) {
-      throw new Error(`Allowed transaction time exceeded ${interval} ms elapsd`);
-      //          raise HTTPError(
-      //              500,
-      //              "Allowed transaction time exceeded ({} ms elapsed)".format(interval),
-      //          );
+      throw new Error(
+        `Allowed transaction time exceeded ${interval} ms elapsd`
+      );
     }
   }
   last_time = current_time;
-  rate = calcs / interval;
-  return `node ${spin.node} pid ${child_pid} spun ${calcs} times over ${interval}s (rate ${rate} invoked ${invocations} times. Congestion slowdown ${congestion_slowdown})`; //
-  //  response.set_header("Content-Type", "text/plain");
-  //  return "node {0} pid {1} spun {2} times over {3}s (rate {4} invoked {5} times. Congestion slowdown {6}s)\n".format(
-  //      spin.node, child_pid, calcs, interval, rate, spin.invocations, congestion_slowdown
-  //  );
+  let rate = calcs / interval;
+  return `spin: spun ${calcs} times over ${interval}s (rate ${rate} invoked ${invocations} times. Congestion slowdown ${congestion_slowdown})`; //
 };
