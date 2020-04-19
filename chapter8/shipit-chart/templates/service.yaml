@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "shipit-workflow.fullname" . }}
+  name: {{ include "shipitclicker.fullname" . }}
   labels:
-    {{- include "shipit-workflow.labels" . | nindent 4 }}
+    {{- include "shipitclicker.labels" . | nindent 4 }}
 spec:
   type: {{ .Values.service.type }}
   ports:
@@ -12,4 +12,4 @@ spec:
       protocol: TCP
       name: http
   selector:
-    {{- include "shipit-workflow.selectorLabels" . | nindent 4 }}
+    {{- include "shipitclicker.selectorLabels" . | nindent 4 }}
