@@ -5,7 +5,8 @@
 replicaCount: 1
 
 image:
-  repository: dockerfordevelopers/shipitclicker
+  repository: obscurerichard/shipitclicker
+  tag: chapter8
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
@@ -35,6 +36,7 @@ securityContext: {}
 service:
   type: ClusterIP
   port: 80
+  targetPort: 3000
 
 ingress:
   enabled: false
