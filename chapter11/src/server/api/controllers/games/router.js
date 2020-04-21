@@ -3,8 +3,10 @@ import controller from './controller';
 
 export default express
   .Router()
+  .get('/spinner', controller.getSpin)
   .get('/:id', controller.getGame)
   .post('/', controller.createGame)
   .get('/:id/:element', controller.getGameItem)
   .put('/:id/:element', controller.setGameItem)
   .patch('/:id/:element', controller.incrementGameItem);
+
