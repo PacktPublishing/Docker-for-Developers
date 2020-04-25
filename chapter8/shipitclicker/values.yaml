@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: obscurerichard/shipitclicker
+  repository: dockerfordevelopers/shipitclicker
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
