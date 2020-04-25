@@ -103,12 +103,12 @@ spec:
               protocol: TCP
           livenessProbe:
             tcpSocket:
-              port: 6379
+              port: redis
             initialDelaySeconds: 3
             periodSeconds: 10
           readinessProbe:
             tcpSocket:
-              port: 6379
+              port: redis
             initialDelaySeconds: 3
             periodSeconds: 10
       {{- with .Values.nodeSelector }}
