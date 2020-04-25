@@ -43,7 +43,7 @@ ingress:
     kubernetes.io/ingress.class: nginx
     kubernetes.io/tls-acme: "true"
   hosts:
-    - host: kubernetes.docker.internal
+    - host: localhost
       paths: ['/']
   tls: []
   #  - secretName: chart-example-tls
