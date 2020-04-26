@@ -11,4 +11,3 @@ data:
   REQUEST_LIMIT: "100kb"
   REDIS_HOST: "localhost"
   REDIS_PORT: "6379"
-  SESSION_SECRET: "mySecret-v4"

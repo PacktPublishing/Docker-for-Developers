@@ -75,8 +75,8 @@ spec:
                   key: REDIS_PORT
             - name: SESSION_SECRET
               valueFrom:
-                configMapKeyRef:
-                  name: {{ .Release.Name }}-configmap
+                secretKeyRef:
+                  name: {{ .Release.Name }}-secrets
                   key: SESSION_SECRET
           ports:
             - name: http
