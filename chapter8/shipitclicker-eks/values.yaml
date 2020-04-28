@@ -41,7 +41,7 @@ ingress:
   enabled: true
   annotations:
     kubernetes.io/ingress.class: alb
-    kubernetes.io/tls-acme: "true"
+    alb.ingress.kubernetes.io/scheme: internet-facing
   hosts:
     - host: "*"
       paths: ['/']
