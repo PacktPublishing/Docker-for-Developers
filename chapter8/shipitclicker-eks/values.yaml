@@ -45,7 +45,7 @@ ingress:
     alb.ingress.kubernetes.io/target-type: ip
   hosts:
   #  - host: "*"
-    - paths: ['/']
+    - paths: ['/*']
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:
