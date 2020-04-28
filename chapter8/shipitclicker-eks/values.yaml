@@ -43,8 +43,8 @@ ingress:
     kubernetes.io/ingress.class: alb
     alb.ingress.kubernetes.io/scheme: internet-facing
   hosts:
-    - host: "*"
-      paths: ['/']
+  #  - host: "*"
+    - paths: ['/']
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:
