@@ -8,7 +8,7 @@ docker run \
   -eHOSTIP=$HOSTIP \
   -i loadimpact/k6 \
   run \
-  --vus 100 \
+  --vus 10 \
   --duration 10s \
   - <k6/test.js
 
