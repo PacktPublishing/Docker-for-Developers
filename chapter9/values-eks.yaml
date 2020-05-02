@@ -1,0 +1,18 @@
+ingress:
+  enabled: true
+  annotations:
+    kubernetes.io/ingress.class: alb
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/target-type: ip
+  hosts:
+    - paths: ['/*']
+  tls: []
+
+resources:
+   limits:
+     cpu: 500m
+     memory: 512Mi
+   requests:
+     cpu: 500m
+     memory: 512Mi
+

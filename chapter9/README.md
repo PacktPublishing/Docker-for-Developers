@@ -1,1 +1,1 @@
-# Chapter 9 - Spinnaker: Cloud Native Continuous Deployment:
+# Chapter 9 - Spinnaker: Cloud Native Continuous Deployment
