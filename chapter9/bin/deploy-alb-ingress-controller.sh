@@ -4,6 +4,7 @@ echo " adapted from https://docs.aws.amazon.com/eks/latest/userguide/alb-ingress
 
 CLUSTER=${1:?You must specify the name of the EKS cluster.}
 REGION=${2:-us-east-2}
+VERSION=${3:-v1.1.4}
 
 AWS_ACCOUNT_ID=$(aws sts get-caller-identity --query 'Account' --output text)
 IAM_ROLE_NAME="eks-alb-ingress-controller"
@@ -14,11 +15,16 @@ eksctl utils associate-iam-oidc-provider \
     --region "$REGION" \
     --cluster "$CLUSTER" \
     --approve
-aws iam create-policy \
+IAM_POLICY_ARN=$(aws iam create-policy \
     --region "$REGION" \
     --policy-name "$IAM_POLICY_NAME" \
-    --policy-document https://raw.githubusercontent.com/kubernetes-sigs/aws-alb-ingress-controller/v1.1.4/docs/examples/iam-policy.json
-kubectl apply -f https://raw.githubusercontent.com/kubernetes-sigs/aws-alb-ingress-controller/v1.1.4/docs/examples/rbac-role.yaml
+    --policy-document https://raw.githubusercontent.com/kubernetes-sigs/aws-alb-ingress-controller/$VERSION/docs/examples/iam-policy.json \
+    --query 'Policy.Arn' \
+    --output text)
+aws iam attach-role-policy \
+    --role-name "$IAM_ROLE_NAME" \
+    --policy-arn="$IAM_POLICY_ARN"
+kubectl apply -f "https://raw.githubusercontent.com/kubernetes-sigs/aws-alb-ingress-controller/$VERSION/docs/examples/rbac-role.yaml"
 OIDC_PROVIDER=$(aws eks describe-cluster \
     --region "$REGION" \
     --name "$CLUSTER" \
@@ -49,12 +55,12 @@ aws iam create-role \
     --role-name "$IAM_ROLE_NAME" \
     --assume-role-policy-document "file://$TMPFILE" \
     --description "EKS ALB Ingress controller"
+kubectl apply -f "https://raw.githubusercontent.com/kubernetes-sigs/aws-alb-ingress-controller/$VERSION/docs/examples/alb-ingress-controller.yaml"
 kubectl annotate serviceaccount \
     --overwrite \
     -n kube-system \
     alb-ingress-controller \
     "eks.amazonaws.com/role-arn=arn:aws:iam::$AWS_ACCOUNT_ID:role/$IAM_ROLE_NAME"
-kubectl apply -f https://raw.githubusercontent.com/kubernetes-sigs/aws-alb-ingress-controller/v1.1.4/docs/examples/alb-ingress-controller.yaml
 cat <<EOF
 The AWS documentation on setting up an ALB Ingress controller states:
 
