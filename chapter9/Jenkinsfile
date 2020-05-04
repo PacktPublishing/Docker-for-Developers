@@ -41,6 +41,10 @@ pipeline {
           branch 'staging'
         }
       }
+      environment {
+          target = getTarget(),
+          image = getImageName(appName, shortCommit)
+      }
       steps {
         echo "BRANCH_NAME is ${env.BRANCH_NAME}"
         echo "Deploying to ${getTarget()}"
@@ -48,7 +52,7 @@ pipeline {
           credentialsId: 'github',
           usernameVariable: 'githubUsername',
           passwordVariable: 'githubToken']]) {
-            sh "echo Target: ${getTarget()} Image: ${getImageName(appName, shortCommit)} GitHub User: ${githubUsername}"
+            sh 'echo Target: $target Image: $image GitHub User: $githubUsername'
           }
       }
     }
