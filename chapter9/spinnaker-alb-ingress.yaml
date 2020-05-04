@@ -25,8 +25,8 @@ spec:
               servicePort: use-annotation
           - path: /*
             backend:
-              serviceName: spin-deck
-              servicePort: 9000
+              serviceName: spin-gate
+              servicePort: 8084
 ---
 apiVersion: extensions/v1beta1
 kind: Ingress
