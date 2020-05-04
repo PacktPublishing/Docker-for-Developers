@@ -42,7 +42,7 @@ pipeline {
         }
       }
       environment {
-          target = getTarget(),
+          target = getTarget()
           image = getImageName(appName, shortCommit)
       }
       steps {
