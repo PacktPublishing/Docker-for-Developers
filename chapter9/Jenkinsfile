@@ -1,0 +1,60 @@
+#!/usr/bin/env groovy
+def appName = 'shipitclicker'
+def dockerfile = 'chapter7/Dockerfile'
+def registry = 'https://registry-1.docker.io/'
+def getImageName(appName, commitHash) {
+  withCredentials([[$class: 'UsernamePasswordMultiBinding',
+    credentialsId: 'shipit.dockerhub.id',
+    usernameVariable: 'dh_user',
+    passwordVariable: 'dh_password']]) {
+      "${dh_user}/${appName}:0.5.${env.BUILD_ID}-${commitHash}"
+  }
+}
+def getTarget() {
+  env.BRANCH_NAME == 'staging' ? 'staging' : 'prod'
+}
+def shortCommit
+pipeline {
+  agent any
+  stages {
+    stage('build') {
+      steps {
+        checkout scm
+        script {
+          shortCommit = sh(
+            returnStdout: true, 
+            script: "git log -n 1 --pretty=format:'%h'").trim()
+          docker.withRegistry(registry, 'shipit.dockerhub.id') {
+            def image = docker.build(
+              getImageName(appName, shortCommit),
+              "-f ${dockerfile} --network host ./chapter9"
+            )
+            image.push()
+            }
+          }
+      }
+    }
+    stage('deploy') {
+      when {
+        anyOf {
+          branch 'master'
+          branch 'staging'
+        }
+      }
+      steps {
+        echo "BRANCH_NAME is ${env.BRANCH_NAME}"
+        echo "Deploying to ${getTarget()}"
+        withCredentials([usernamePassword(
+          credentialsId: 'github-admin-repo_hook-write-token',
+          keyFileVariable: 'keyfile')]) {
+            sh """
+               set -a
+               target=${getTarget()}
+               image=${getImageName(appName, shortCommit)}
+               echo "target $target image $image"
+               """
+          }
+      }
+    }
+  }
+}
