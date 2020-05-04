@@ -44,9 +44,10 @@ pipeline {
       steps {
         echo "BRANCH_NAME is ${env.BRANCH_NAME}"
         echo "Deploying to ${getTarget()}"
-        withCredentials([usernamePassword(
-          credentialsId: 'github-admin-repo_hook-write-token',
-          keyFileVariable: 'keyfile')]) {
+        withCredentials([[$class: 'UsernamePasswordMultiBinding',
+          credentialsId: 'github',
+          usernameVariable: 'githubUsername',
+          passwordVariable: 'githubToken']]) {
             sh """
                set -a
                target=${getTarget()}
