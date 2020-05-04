@@ -48,12 +48,7 @@ pipeline {
           credentialsId: 'github',
           usernameVariable: 'githubUsername',
           passwordVariable: 'githubToken']]) {
-            sh """
-               set -a
-               target=${getTarget()}
-               image=${getImageName(appName, shortCommit)}
-               echo "target $target image $image"
-               """
+            sh 'echo "Target: ${getTarget()} Image: ${getImageName(appName, shortCommit)} GitHub User: ${githubUsername}'
           }
       }
     }
