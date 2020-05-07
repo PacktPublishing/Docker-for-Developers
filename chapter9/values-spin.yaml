@@ -1,5 +1,5 @@
 image:
-  repository: obscurerichard/shipitclicker
+  repository: obscurerichard/shipitclicker:0.5.0
 
 ingress:
   enabled: true
