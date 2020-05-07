@@ -11,7 +11,7 @@ def getImageName(appName, appVersion, commitHash) {
     credentialsId: 'shipit.dockerhub.id',
     usernameVariable: 'dh_user',
     passwordVariable: 'dh_password']]) {
-      "${dh_user}/${appName}:${getSemVer(commitHash)}"
+      "${dh_user}/${appName}:${getSemVer(appVersion, commitHash)}"
   }
 }
 def getTarget() {
