@@ -6,18 +6,18 @@ def appVersion = '0.5.0'
 def getSemVer(appVersion, commitHash) {
       "${appVersion}+${env.BUILD_ID}.${commitHash}"
 }
-def getImageName(appName, appVersion, commitHash) {
+def getImageName(appName, semVer) {
   withCredentials([[$class: 'UsernamePasswordMultiBinding',
     credentialsId: 'shipit.dockerhub.id',
     usernameVariable: 'dh_user',
     passwordVariable: 'dh_password']]) {
-      "${dh_user}/${appName}:${getSemVer(appVersion, commitHash)}"
+      "${dh_user}/${appName}:${semVer}"
   }
 }
 def getTarget() {
   env.BRANCH_NAME == 'staging' ? 'staging' : 'prod'
 }
-def shortCommit
+def semVer
 pipeline {
   agent any
   stages {
@@ -28,36 +28,34 @@ pipeline {
           shortCommit = sh(
             returnStdout: true, 
             script: "git log -n 1 --pretty=format:'%h'").trim()
+          semVer = getSemVer(appVersion, shortCommit)
+          def imageName
           docker.withRegistry(registry, 'shipit.dockerhub.id') {
+            imageName = getImageName(appName, semVer),
             def image = docker.build(
-              getImageName(appName, appVersion, shortCommit),
+              imageName,
               "-f ${dockerfile} --network host ./chapter9"
             )
             image.push()
-            }
+          }
+          writeFile "build.properties", text: """
+semVer=${semVer}
+imageName=${imageName}
+"""
           }
       }
     }
-    stage('deploy') {
-      when {
-        anyOf {
-          branch 'master'
-          branch 'staging'
-        }
-      }
-      environment {
-          target = getTarget()
-          image = getImageName(appName, appVersion, shortCommit)
-      }
+    stage('archive') {
       steps {
-        echo "BRANCH_NAME is ${env.BRANCH_NAME}"
-        echo "Deploying to ${getTarget()}"
+        sh "tar cvfz helm.tar.gz shipitclicker"
         withCredentials([[$class: 'UsernamePasswordMultiBinding',
           credentialsId: 'github',
           usernameVariable: 'githubUsername',
           passwordVariable: 'githubToken']]) {
-            sh 'echo Target: $target Image: $image GitHub User: $githubUsername'
+            # TODO: archive Helm chart artifacts to:
+            # GitHub Artifacts or S3 or elsewhere
           }
+        archiveArtifacts("build.properties,helm.tar.gz")
       }
     }
   }
