@@ -1,3 +1,6 @@
+image:
+  repository: obscurerichard/shipitclicker
+
 ingress:
   enabled: true
   annotations:
