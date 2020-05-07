@@ -27,6 +27,7 @@ pipeline {
       steps {
         checkout scm
         script {
+          // Credit to https://github.com/jenkinsci/pipeline-examples/blob/master/pipeline-examples/gitcommit/gitcommit.groovy
           shortCommit = sh(
             returnStdout: true, 
             script: "git log -n 1 --pretty=format:'%h'").trim()
