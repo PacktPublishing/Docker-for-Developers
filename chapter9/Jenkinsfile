@@ -7,7 +7,7 @@ def getImageName(appName, commitHash) {
     credentialsId: 'shipit.dockerhub.id',
     usernameVariable: 'dh_user',
     passwordVariable: 'dh_password']]) {
-      "${dh_user}/${appName}:0.5.${env.BUILD_ID}-${commitHash}"
+      "${dh_user}/${appName}:0.5.0+${env.BUILD_ID}.${commitHash}"
   }
 }
 def getTarget() {
