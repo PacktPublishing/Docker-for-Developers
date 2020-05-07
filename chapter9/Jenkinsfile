@@ -4,7 +4,7 @@ def dockerfile = 'chapter7/Dockerfile'
 def registry = 'https://registry-1.docker.io/'
 def appVersion = '0.5.0'
 def getSemVer(appVersion, commitHash) {
-      "${appVersion}+${env.BUILD_ID}.${commitHash}"
+      "${appVersion}-${env.BUILD_ID}.${commitHash}"
 }
 def getImageName(appName, semVer) {
   withCredentials([[$class: 'UsernamePasswordMultiBinding',
