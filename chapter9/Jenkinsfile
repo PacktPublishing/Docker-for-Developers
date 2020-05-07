@@ -52,8 +52,10 @@ imageName=${imageName}
           credentialsId: 'github',
           usernameVariable: 'githubUsername',
           passwordVariable: 'githubToken']]) {
-            # TODO: archive Helm chart artifacts to:
-            # GitHub Artifacts or S3 or elsewhere
+            // TODO: archive Helm chart artifacts to:
+            // GitHub Artifacts or 
+            // S3 or 
+            // elsewhere that Spinnaker can read
           }
         archiveArtifacts("build.properties,helm.tar.gz")
       }
