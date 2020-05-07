@@ -3,10 +3,10 @@ def appName = 'shipitclicker'
 def dockerfile = 'chapter7/Dockerfile'
 def registry = 'https://registry-1.docker.io/'
 def appVersion = '0.5.0'
-def getSemVer(commitHash) {
+def getSemVer(appVersion, commitHash) {
       "${appVersion}+${env.BUILD_ID}.${commitHash}"
 }
-def getImageName(appName, commitHash) {
+def getImageName(appName, appVersion, commitHash) {
   withCredentials([[$class: 'UsernamePasswordMultiBinding',
     credentialsId: 'shipit.dockerhub.id',
     usernameVariable: 'dh_user',
@@ -30,7 +30,7 @@ pipeline {
             script: "git log -n 1 --pretty=format:'%h'").trim()
           docker.withRegistry(registry, 'shipit.dockerhub.id') {
             def image = docker.build(
-              getImageName(appName, shortCommit),
+              getImageName(appName, appVersion, shortCommit),
               "-f ${dockerfile} --network host ./chapter9"
             )
             image.push()
@@ -47,7 +47,7 @@ pipeline {
       }
       environment {
           target = getTarget()
-          image = getImageName(appName, shortCommit)
+          image = getImageName(appName, appVersion, shortCommit)
       }
       steps {
         echo "BRANCH_NAME is ${env.BRANCH_NAME}"
