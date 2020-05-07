@@ -11,6 +11,7 @@ node_modules/
 .DS_Store
 
 # Editor directories and files
+*~
 .idea
 .vscode
 *.suo
@@ -18,6 +19,7 @@ node_modules/
 *.njsproj
 *.sln
 *.sw*
+*.tmp
 
 # Use either yarn.lock or package-lock.json
 # Uncomment one of them to mainain a single lockfile
