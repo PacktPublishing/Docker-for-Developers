@@ -31,7 +31,7 @@ pipeline {
           semVer = getSemVer(appVersion, shortCommit)
           def imageName
           docker.withRegistry(registry, 'shipit.dockerhub.id') {
-            imageName = getImageName(appName, semVer),
+            imageName = getImageName(appName, semVer)
             def image = docker.build(
               imageName,
               "-f ${dockerfile} --network host ./chapter9"
