@@ -3,6 +3,8 @@ def appName = 'shipitclicker'
 def dockerfile = 'chapter7/Dockerfile'
 def registry = 'https://registry-1.docker.io/'
 def appVersion = '0.5.0'
+def propFileName = "build.properties"
+def helmArchive = "helm.tar.gz"
 def getSemVer(appVersion, commitHash) {
       "${appVersion}-${env.BUILD_ID}.${commitHash}"
 }
@@ -38,16 +40,17 @@ pipeline {
             )
             image.push()
           }
-          writeFile "build.properties", text: """
+          def propFileContents = """
 semVer=${semVer}
 imageName=${imageName}
 """
+          writeFile file:propFileName, text: propFileContents
           }
       }
     }
     stage('archive') {
       steps {
-        sh "tar cvfz helm.tar.gz shipitclicker"
+        sh "tar cvfz ${helmArchive} shipitclicker"
         withCredentials([[$class: 'UsernamePasswordMultiBinding',
           credentialsId: 'github',
           usernameVariable: 'githubUsername',
@@ -57,7 +60,7 @@ imageName=${imageName}
             // S3 or 
             // elsewhere that Spinnaker can read
           }
-        archiveArtifacts("build.properties,helm.tar.gz")
+        archiveArtifacts("${propFileName},${helmArchive}")
       }
     }
   }
