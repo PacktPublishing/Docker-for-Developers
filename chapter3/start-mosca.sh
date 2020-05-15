@@ -34,6 +34,6 @@ docker run \
   -e TITLE=$SERVICE \
   -p 1883:1883 \
   -p 80:80 \
-  -v /var/db/mosca:/db \
+  -v /tmp/mosca:/db \
   matteocollina/mosca
 
