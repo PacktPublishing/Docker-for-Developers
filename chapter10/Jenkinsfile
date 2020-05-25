@@ -1,0 +1,68 @@
+#!/usr/bin/env groovy
+def appName = 'shipitclicker'
+def dockerfile = 'chapter7/Dockerfile'
+def registry = 'https://registry-1.docker.io/'
+def appVersion = '0.5.3'
+def propFileName = "build.properties"
+def helmArchive = "helm.tar.gz"
+def getSemVer(appVersion, commitHash) {
+      "${appVersion}-${env.BUILD_ID}.${commitHash}"
+}
+def getImageName(appName, semVer) {
+  withCredentials([[$class: 'UsernamePasswordMultiBinding',
+    credentialsId: 'shipit.dockerhub.id',
+    usernameVariable: 'dh_user',
+    passwordVariable: 'dh_password']]) {
+      "${dh_user}/${appName}:${semVer}"
+  }
+}
+def getTarget() {
+  env.BRANCH_NAME == 'staging' ? 'staging' : 'prod'
+}
+def semVer
+pipeline {
+  agent any
+  stages {
+    stage('build') {
+      steps {
+        checkout scm
+        script {
+          // Credit to https://github.com/jenkinsci/pipeline-examples/blob/master/pipeline-examples/gitcommit/gitcommit.groovy
+          shortCommit = sh(
+            returnStdout: true, 
+            script: "git log -n 1 --pretty=format:'%h'").trim()
+          semVer = getSemVer(appVersion, shortCommit)
+          def imageName
+          docker.withRegistry(registry, 'shipit.dockerhub.id') {
+            imageName = getImageName(appName, semVer)
+            def image = docker.build(
+              imageName,
+              "-f ${dockerfile} --network host ./chapter9"
+            )
+            image.push()
+          }
+          def propFileContents = """
+semVer=${semVer}
+imageName=${imageName}
+"""
+          writeFile file:propFileName, text: propFileContents
+          }
+      }
+    }
+    stage('archive') {
+      steps {
+        sh "cd chapter9 && tar cvfz ${WORKSPACE}/${helmArchive} shipitclicker"
+        withCredentials([[$class: 'UsernamePasswordMultiBinding',
+          credentialsId: 'github',
+          usernameVariable: 'githubUsername',
+          passwordVariable: 'githubToken']]) {
+            // TODO: archive Helm chart artifacts to:
+            // GitHub Artifacts or 
+            // S3 or 
+            // elsewhere that Spinnaker can read
+          }
+        archiveArtifacts("${propFileName},${helmArchive}")
+      }
+    }
+  }
+}

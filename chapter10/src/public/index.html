@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="generator" content="HTML Tidy for HTML5 for Apple macOS version 5.6.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, height=device-height, minmal-ui">
+  <title>ShipIt Clicker</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <noscript>This game requires JavaScript to play</noscript>
+  <div id="background">
+    <img class="stretch" src="img/shipit-640x640-lc.jpg" alt="ShipIt Squirrel!">
+  </div>
+  <div id="splash">
+    <h1>ShipIt Clicker!</h1>
+    <form>
+      <input type="button" id="start_button" value="Start" onclick="clickStart();"><br>
+      <input type="button" id="resume_button" value="Resume Game" onclick="clickResume();"><br>
+      <input type="button" id="restart_button" value="Restart Game" onclick="clickRestart();"><br>
+      <input type="button" id="credits_button" value="Credits" onclick="clickCredits();">
+    </form>
+    <div class="content">
+      <h3 class="api"><a href="/api-explorer/">Interactive API docs</a></h3>
+    </div>
+  </div>
+  <div id="credits">
+    <h1>Credits</h1>
+    <div class="content">
+      <img class="about" src="img/Richard-Cartoon-Headshot-Jaunty-180x180.png" alt="Richard's Jaunty Headshot">
+      <p>This game is a part of Packt Publishing's <a href="https://github.com/ModusCreateOrg/docker-book/">Docker for Developers</a> book sample code, and all code and assets are <a href="https://opensource.org/licenses/MIT">MIT Licensed</a>.</p>
+      <p>I'd like to thank my children Parker, Oliver, Norah, and Declan for providing game design inspiration and critiques, and my wife Patricia for supporting this effort.</p>
+      <p>Copyright © 2020 Richard Bullington-McGuire<br>
+      Copyright © 2020 Packt Publishing</p>
+      <h3 class="endmark">❖</h3>
+    </div>
+    <form>
+      <input type="button" id="ok_button" value="OK" onclick="clickOkCredits();">
+    </form>
+  </div>
+  <div id="game">
+    <h1>ShipIt!</h1>
+    <div id="stage" class="content" onclick="clickDeploy();">
+      <p class="animate">🐳</p>
+    </div>
+    <form>
+      <input type="button" id="deploy_button" value="Deploy" onclick="clickDeploy();">
+      <input type="button" id="store_button" value="Store" onclick="clickStore();"> 
+      <input type="button" id="quit_button" value="Quit" onclick="clickQuit();">
+    </form>
+  </div>
+  <div id="store">
+    <h1>ShipIt Store</h1>
+    <div class="content" onclick="clickBuy();">
+      <table>
+        <thead>
+          <tr>
+            <th class="currency">Cost</th>
+            <th>Item</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="currency">200 SQ$</td>
+            <td id="upgrade1">Script</td>
+            <td>click ships 2x</td>
+          </tr>
+          <tr>
+            <td class="currency">400 SQ$</td>
+            <td id="upgrade2">Composer</td>
+            <td>Auto ship 4x every 8 seconds</td>
+          </tr>
+          <tr>
+            <td class="currency">800 SQ$</td>
+            <td id="upgrade3">Host</td>
+            <td>click ships 8x</td>
+          </tr>
+          <tr>
+            <td class="currency">1,600 SQ$</td>
+            <td id="upgrade4">Engine</td>
+            <td>auto ship 16x every second</td>
+          </tr>
+          <tr>
+            <td class="currency">32,000 SQ$</td>
+            <td id="upgrade5">Cluster</td>
+            <td>click ships 32x</td>
+          </tr>
+          <tr>
+            <td class="currency">64,000 SQ$</td>
+            <td id="upgrade6">Orchestrator</td>
+            <td>auto ships 64x every second</td>
+          </tr>
+          <tr>
+            <td class="currency">128,000 SQ$</td>
+            <td id="upgrade7">Multi-Cloud</td>
+            <td>click ships 128x</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 class="endmark">❖</h3>
+    </div>
+    <form>
+      <input type="button" id="buy_button" value="Buy Upgrade" onclick="clickBuy();"><br>
+      <input type="button" id="continue_button" value="Continue Game" onclick="clickContinue();">
+    </form>
+  </div>
+  <div id="footer">
+    <h2 id="statusBar">SQ$: <span id="score">0</span> 📦: <span id="deploys">0</span><br>
+      Per click <span id="deployMultiplier">1</span>x Score&nbsp;<span id="scoreMultiplier">1</span>x<br>Auto&nbsp;<span id="autoMultiplier">0</span>x/<span id="autoTick">0</span>s<br>
+    Items: <span id="upgrades">none</span><br>Next Item: <span id="nextItem"></span></h2> 
+    <h3 id="heartbeat">💔</h3>
+  </div>
+  <script src="app.js"></script>
+  <noscript><h1>ShipIt Clicker requires JavaScript and a modern browser to run.</h1></noscript>
+</body>
+</html>
