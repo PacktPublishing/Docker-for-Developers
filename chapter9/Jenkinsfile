@@ -16,12 +16,7 @@ def getRegistry() {
     }
 }
 def getImageName(appName, semVer) {
-  withCredentials([[$class: 'UsernamePasswordMultiBinding',
-    credentialsId: 'shipit.dockerhub.id',
-    usernameVariable: 'dh_user',
-    passwordVariable: 'dh_password']]) {
-      "dockerfordevelopers/${dh_user}/${appName}:${semVer}"
-  }
+  "dockerfordevelopers/${appName}:${semVer}"
 }
 def getTarget() {
   env.BRANCH_NAME == 'staging' ? 'staging' : 'prod'
