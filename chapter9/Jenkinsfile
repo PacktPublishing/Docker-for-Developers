@@ -12,7 +12,7 @@ def getRegistry() {
     withCredentials([string(
         credentialsId: 'shipit.ecr.id',
         variable: 'registryId')]) {
-        "${registryId}"
+        "https://${registryId}"
     }
 }
 def getImageName(appName, semVer) {
