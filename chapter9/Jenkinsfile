@@ -20,7 +20,7 @@ def getImageName(appName, semVer) {
     credentialsId: 'shipit.dockerhub.id',
     usernameVariable: 'dh_user',
     passwordVariable: 'dh_password']]) {
-      "${dh_user}/${appName}:${semVer}"
+      "dockerfordevelopers/${dh_user}/${appName}:${semVer}"
   }
 }
 def getTarget() {
