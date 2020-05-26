@@ -12,11 +12,11 @@ def getRegistry() {
     withCredentials([string(
         credentialsId: 'shipit.ecr.id',
         variable: 'registryId')]) {
-        "https://${registryId}"
+        "${registryId}"
     }
 }
-def getImageName(appName, semVer) {
-  "dockerfordevelopers/${appName}:${semVer}"
+def getImageName(registry, appName, semVer) {
+  "${registry}/dockerfordevelopers/${appName}:${semVer}"
 }
 def getTarget() {
   env.BRANCH_NAME == 'staging' ? 'staging' : 'prod'
@@ -34,8 +34,9 @@ pipeline {
             script: "git log -n 1 --pretty=format:'%h'").trim()
           semVer = getSemVer(appVersion, shortCommit)
           def imageName
-          docker.withRegistry(getRegistry(), 'ecr:us-east-2:shipit.aws.key') {
-            imageName = getImageName(appName, semVer)
+          def registry = getRegistry()
+          docker.withRegistry("https://${registry}", 'ecr:us-east-2:shipit.aws.key') {
+            imageName = getImageName(registry, appName, semVer)
             def image = docker.build(
               imageName,
               "-f ${dockerfile} --network host ./chapter9"
