@@ -3,7 +3,7 @@
 # persist.sh
 
 # run container without making it a daemon - useful to see logging output
-# we are adding an anonymous volume for /tmp in the container so the
+# we are adding a named volume for /data in the container so the
 # counter persists between runs.
 
 docker run \
