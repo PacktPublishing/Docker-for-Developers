@@ -1,12 +1,17 @@
 #!/usr/bin/env groovy
 def appName = 'shipitclicker'
 def dockerfile = 'chapter7/Dockerfile'
-def registry = 'https://registry-1.docker.io/'
 def appVersion = '0.5.3'
 def propFileName = "build.properties"
 def helmArchive = "helm.tar.gz"
+def semVer
 def getSemVer(appVersion, commitHash) {
       "${appVersion}-${env.BUILD_ID}.${commitHash}"
+}
+def getRegistry() {
+    withCredentials([string(credentialsId: 'shipit.ecr.id', variable: 'registry')]) {
+        registry
+    }
 }
 def getImageName(appName, semVer) {
   withCredentials([[$class: 'UsernamePasswordMultiBinding',
@@ -19,7 +24,6 @@ def getImageName(appName, semVer) {
 def getTarget() {
   env.BRANCH_NAME == 'staging' ? 'staging' : 'prod'
 }
-def semVer
 pipeline {
   agent any
   stages {
@@ -33,7 +37,8 @@ pipeline {
             script: "git log -n 1 --pretty=format:'%h'").trim()
           semVer = getSemVer(appVersion, shortCommit)
           def imageName
-          docker.withRegistry(registry, 'shipit.dockerhub.id') {
+          def registry = getRegistry()
+          docker.withRegistry(registry, 'ecr:us-east-2:shipit.aws.key') {
             imageName = getImageName(appName, semVer)
             def image = docker.build(
               imageName,
