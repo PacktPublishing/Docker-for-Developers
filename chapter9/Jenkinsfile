@@ -9,8 +9,10 @@ def getSemVer(appVersion, commitHash) {
       "${appVersion}-${env.BUILD_ID}.${commitHash}"
 }
 def getRegistry() {
-    withCredentials([string(credentialsId: 'shipit.ecr.id', variable: 'registry')]) {
-        registry
+    withCredentials([string(
+        credentialsId: 'shipit.ecr.id',
+        variable: 'registryId')]) {
+        registryId
     }
 }
 def getImageName(appName, semVer) {
@@ -37,8 +39,7 @@ pipeline {
             script: "git log -n 1 --pretty=format:'%h'").trim()
           semVer = getSemVer(appVersion, shortCommit)
           def imageName
-          def registry = getRegistry()
-          docker.withRegistry(registry, 'ecr:us-east-2:shipit.aws.key') {
+          docker.withRegistry(getRegistry(), 'ecr:us-east-2:shipit.aws.key') {
             imageName = getImageName(appName, semVer)
             def image = docker.build(
               imageName,
