@@ -4,10 +4,12 @@ import l from '../../common/logger';
 
 class RedisDatabase {
   constructor() {
-    var redis_host = process.env.REDIS_HOST ?? 'localhost';
-    var redis_port = process.env.REDIS_PORT ?? 6379;
-    var redis_options = {};
-    var redis_url = `redis://${redis_host}:${redis_port}`;
+    const redis_host = process.env.REDIS_HOST ?? 'localhost';
+    const redis_port = process.env.REDIS_PORT ?? 6379;
+    const redis_secret = process.env.REDIS_SECRET ?? '';
+    const redis_secret_uri = redis_secret === '' ? '' `:${redis_secret}@`
+    const redis_options = {};
+    const redis_url = `redis://${redis_secret_uri}${redis_host}:${redis_port}`;
     this._client = redis.createClient(redis_url, redis_options);
     l.info({
       msg: 'Redis connection established',

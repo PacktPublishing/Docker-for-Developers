@@ -73,6 +73,14 @@ spec:
                 configMapKeyRef:
                   name: {{ .Release.Name }}-configmap
                   key: REDIS_PORT
+            - name: REDIS_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: redis
+                  key: redis-password
+                configMapKeyRef:
+                  name: {{ .Release.Name }}-configmap
+                  key: REDIS_PORT
             - name: SESSION_SECRET
               valueFrom:
                 secretKeyRef:
@@ -90,27 +98,6 @@ spec:
             httpGet:
               path: /
               port: http
-          resources:
-            {{- toYaml .Values.resources | nindent 12 }}
-        - name: {{ .Chart.Name }}-redis
-          securityContext:
-            {{- toYaml .Values.securityContext | nindent 12 }}
-          image: "redis:5-alpine3.10"
-          imagePullPolicy: {{ .Values.image.pullPolicy }}
-          ports:
-            - name: redis
-              containerPort: 6379
-              protocol: TCP
-          livenessProbe:
-            tcpSocket:
-              port: redis
-            initialDelaySeconds: 3
-            periodSeconds: 10
-          readinessProbe:
-            tcpSocket:
-              port: redis
-            initialDelaySeconds: 3
-            periodSeconds: 10
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}
