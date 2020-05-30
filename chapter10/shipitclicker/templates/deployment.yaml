@@ -68,6 +68,11 @@ spec:
                 configMapKeyRef:
                   name: {{ .Release.Name }}-configmap
                   key: REDIS_HOST
+            - name: REDIS_REPLICA
+              valueFrom:
+                configMapKeyRef:
+                  name: {{ .Release.Name }}-configmap
+                  key: REDIS_REPLICA
             - name: REDIS_PORT
               valueFrom:
                 configMapKeyRef:
@@ -78,9 +83,6 @@ spec:
                 secretKeyRef:
                   name: redis
                   key: redis-password
-                configMapKeyRef:
-                  name: {{ .Release.Name }}-configmap
-                  key: REDIS_PORT
             - name: SESSION_SECRET
               valueFrom:
                 secretKeyRef:

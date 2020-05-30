@@ -1,10 +1,11 @@
 #!/usr/bin/env groovy
 def appName = 'shipitclicker'
-def dockerfile = 'chapter7/Dockerfile'
+def baseDir = "chapter10"
+def dockerfile = "${baseDir}/Dockerfile"
 def registry = 'https://registry-1.docker.io/'
-def appVersion = '0.5.3'
+def appVersion = '0.5.4'
 def propFileName = "build.properties"
-def helmArchive = "helm.tar.gz"
+def helmArchive = "shipitclicker-${appVersion}.tgz"
 def getSemVer(appVersion, commitHash) {
       "${appVersion}-${env.BUILD_ID}.${commitHash}"
 }
@@ -37,7 +38,7 @@ pipeline {
             imageName = getImageName(appName, semVer)
             def image = docker.build(
               imageName,
-              "-f ${dockerfile} --network host ./chapter9"
+              "-f ${dockerfile} --network host ./${baseDir}"
             )
             image.push()
           }
@@ -51,7 +52,7 @@ imageName=${imageName}
     }
     stage('archive') {
       steps {
-        sh "cd chapter9 && tar cvfz ${WORKSPACE}/${helmArchive} shipitclicker"
+        sh "cd ${baseDir} && helm archive shipitclicker"
         withCredentials([[$class: 'UsernamePasswordMultiBinding',
           credentialsId: 'github',
           usernameVariable: 'githubUsername',
