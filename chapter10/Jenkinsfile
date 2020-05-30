@@ -54,13 +54,7 @@ imageName=${imageName}
     }
     stage('archive') {
       steps {
-        sh """
-           #!/usr/bin/env bash
-           set -euo pipefail
-           cd ${baseDir}
-           helm archive shipitclicker
-           cp shipitclicker-${appVersion}.tgz ${WORKSPACE}/${helmArchive}
-           """
+        sh "cd ${baseDir} && tar cfz ${helmArchive}/shipitclicker"
         withCredentials([[$class: 'UsernamePasswordMultiBinding',
           credentialsId: 'github',
           usernameVariable: 'githubUsername',
