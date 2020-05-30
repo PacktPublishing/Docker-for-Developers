@@ -1,26 +1,27 @@
 #!/usr/bin/env groovy
 def appName = 'shipitclicker'
-def baseDir = "chapter10"
+dev baseDir = 'chapter10'
 def dockerfile = "${baseDir}/Dockerfile"
-def registry = 'https://registry-1.docker.io/'
 def appVersion = '0.5.4'
 def propFileName = "build.properties"
-def helmArchive = "shipitclicker-${appVersion}.tgz"
+def helmArchive = "helm.tar.gz"
+def semVer
 def getSemVer(appVersion, commitHash) {
       "${appVersion}-${env.BUILD_ID}.${commitHash}"
 }
-def getImageName(appName, semVer) {
-  withCredentials([[$class: 'UsernamePasswordMultiBinding',
-    credentialsId: 'shipit.dockerhub.id',
-    usernameVariable: 'dh_user',
-    passwordVariable: 'dh_password']]) {
-      "${dh_user}/${appName}:${semVer}"
-  }
+def getRegistry() {
+    withCredentials([string(
+        credentialsId: 'shipit.ecr.id',
+        variable: 'registryId')]) {
+        "${registryId}"
+    }
+}
+def getImageName(registry, appName, semVer) {
+  "${registry}/dockerfordevelopers/${appName}:${semVer}"
 }
 def getTarget() {
   env.BRANCH_NAME == 'staging' ? 'staging' : 'prod'
 }
-def semVer
 pipeline {
   agent any
   stages {
@@ -34,8 +35,9 @@ pipeline {
             script: "git log -n 1 --pretty=format:'%h'").trim()
           semVer = getSemVer(appVersion, shortCommit)
           def imageName
-          docker.withRegistry(registry, 'shipit.dockerhub.id') {
-            imageName = getImageName(appName, semVer)
+          def registry = getRegistry()
+          docker.withRegistry("https://${registry}", 'ecr:us-east-2:shipit.aws.key') {
+            imageName = getImageName(registry, appName, semVer)
             def image = docker.build(
               imageName,
               "-f ${dockerfile} --network host ./${baseDir}"
@@ -52,15 +54,17 @@ imageName=${imageName}
     }
     stage('archive') {
       steps {
-        sh "cd ${baseDir} && helm archive shipitclicker"
+        sh """
+           #!/usr/bin/env bash
+           set -euo pipefail
+           cd ${baseDir}
+           helm archive shipitclicker
+           cp shipitclicker-${appVersion}.tgz ${WORKSPACE}/${helmArchive}
+           """
         withCredentials([[$class: 'UsernamePasswordMultiBinding',
           credentialsId: 'github',
           usernameVariable: 'githubUsername',
           passwordVariable: 'githubToken']]) {
-            // TODO: archive Helm chart artifacts to:
-            // GitHub Artifacts or 
-            // S3 or 
-            // elsewhere that Spinnaker can read
           }
         archiveArtifacts("${propFileName},${helmArchive}")
       }
