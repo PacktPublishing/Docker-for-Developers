@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 def appName = 'shipitclicker'
-dev baseDir = 'chapter10'
+def baseDir = 'chapter10'
 def dockerfile = "${baseDir}/Dockerfile"
 def appVersion = '0.5.4'
 def propFileName = "build.properties"
