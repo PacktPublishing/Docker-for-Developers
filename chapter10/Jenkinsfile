@@ -4,7 +4,6 @@ def baseDir = 'chapter10'
 def dockerfile = "${baseDir}/Dockerfile"
 def appVersion = '0.5.4'
 def propFileName = "build.properties"
-def helmArchive = "helm.tar.gz"
 def semVer
 def getSemVer(appVersion, commitHash) {
       "${appVersion}-${env.BUILD_ID}.${commitHash}"
@@ -49,18 +48,8 @@ semVer=${semVer}
 imageName=${imageName}
 """
           writeFile file:propFileName, text: propFileContents
+          archiveArtifacts("${propFileName}")
           }
-      }
-    }
-    stage('archive') {
-      steps {
-        sh "cd ${baseDir} && tar cfz ${helmArchive} shipitclicker"
-        withCredentials([[$class: 'UsernamePasswordMultiBinding',
-          credentialsId: 'github',
-          usernameVariable: 'githubUsername',
-          passwordVariable: 'githubToken']]) {
-          }
-        archiveArtifacts("${propFileName},${helmArchive}")
       }
     }
   }
