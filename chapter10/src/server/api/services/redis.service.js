@@ -12,15 +12,21 @@ class RedisDatabase {
       msg: 'Connecting to Redis',
       redis_host: redis_host,
       redis_port: redis_port,
-      redis_password: redis_password,
+      redis_password: redis_password.replace(/./g, 'X'),
     });
-    const redis_userinfo_uri = redis_password === '' ? '' : `${redis_password}@`;
-    const redis_url = `redis://${redis_userinfo_uri}${redis_host}:${redis_port}`;
+    const redis_url = `redis://${redis_host}:${redis_port}`;
     this._client = redis.createClient(redis_url, redis_options);
     l.info({
-      msg: 'Redis connection established',
+      msg: 'Redis connected',
       redis_url: redis_url,
     });
+    if (redis_password !== '') {
+      this._client.auth(redis_password);
+      l.info({
+        msg: 'Redis authenticated OK',
+        redis_url: redis_url,
+      });
+    }
     this._client.getAsync = promisify(this._client.get).bind(this._client);
     this._client.setAsync = promisify(this._client.set).bind(this._client);
     this._client.incrbyAsync = promisify(this._client.incrby).bind(
