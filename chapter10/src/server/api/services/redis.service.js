@@ -6,7 +6,7 @@ class RedisDatabase {
   constructor() {
     const redis_host = process.env.REDIS_HOST ?? 'localhost';
     const redis_port = process.env.REDIS_PORT ?? 6379;
-    const redis_secret_uri = process.env.REDIS_SECRET ?? '' : `${process.env.REDIS_SECRET}@`;
+    const redis_secret_uri = process.env.REDIS_SECRET ? '' : `${process.env.REDIS_SECRET}@`;
     const redis_options = {};
     const redis_url = `redis://${redis_secret_uri}${redis_host}:${redis_port}`;
     l.info({
