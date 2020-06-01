@@ -7,16 +7,15 @@ class RedisDatabase {
     const redis_host = process.env.REDIS_HOST ?? 'localhost';
     const redis_port = process.env.REDIS_PORT ?? 6379;
     const redis_password = process.env.REDIS_PASSWORD ?? '';
-    const redis_userinfo_uri = redis_password ? '' : `${redis_password}@`;
     const redis_options = {};
-    const redis_url = `redis://${redis_userinfo_uri}${redis_host}:${redis_port}`;
     l.info({
       msg: 'Connecting to Redis',
       redis_host: redis_host,
       redis_port: redis_port,
-      redis_userinfo_uri: redis_userinfo_uri,
-      redis_url: redis_url,
+      redis_password: redis_password,
     });
+    const redis_userinfo_uri = redis_password === '' ? '' : `${redis_password}@`;
+    const redis_url = `redis://${redis_userinfo_uri}${redis_host}:${redis_port}`;
     this._client = redis.createClient(redis_url, redis_options);
     l.info({
       msg: 'Redis connection established',
