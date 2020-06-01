@@ -14,7 +14,7 @@ class RedisDatabase {
       redis_host: redis_host,
       redis_port: redis_port,
       redis_secret_uri: redis_secret_uri,
-      redis_url: redis_secret_url,
+      redis_url: redis_url,
     });
     this._client = redis.createClient(redis_url, redis_options);
     l.info({
