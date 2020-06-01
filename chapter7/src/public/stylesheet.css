@@ -17,8 +17,8 @@ body {
 h1, noscript { font-size: 24px }
 h3 { font-size: 12px }
 h1, h2 { font-weight: bold }
-h1 { 
-  position: fixed; 
+h1 {
+  position: fixed;
   top: 0;
   left: 0;
   margin-top: 0;
@@ -75,7 +75,7 @@ h1 {
   position: fixed;
   top: 64px;
   right: 1em;
-  font-size: 18px; 
+  font-size: 18px;
   line-height: 36px;
 }
 #continue_button, #credits_button {
@@ -101,7 +101,7 @@ h1 {
 }
 #credits .content {
   background-color: white;
-  color: black; 
+  color: black;
 }
 #credits .content img {
   background-color: transparent;
@@ -156,11 +156,11 @@ p {
   user-select: text;
 }
 @keyframes deploy {
-  0% { 
-    transform: translateX(-150%) scale(-1, 1); 
+  0% {
+    transform: translateX(-150%) scale(-1, 1);
     opacity: 1;
   }
-  100% { 
+  100% {
     transform: translateX(0%) scale(-1, 1);
     opacity: 0.75;
   }
@@ -189,17 +189,24 @@ table {
   color: red;
   font-weight: normal;
 }
-/* Background image div - thanks https://stackoverflow.com/a/1208392 */
+/* Background image div
+ *  thanks https://stackoverflow.com/a/1208392
+ *  thanks https://stackoverflow.com/a/43703129
+ */
 #background {
-  width: 100%; 
-  height: 100%; 
-  position: fixed; 
-  left: 0px; 
-  top: 64px; 
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  overflow: hidden;
+  margin-top: 64px;
   z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
 }
 .stretch {
-  width:100%;
+  flex-grow: 1 ;
+  -webkit-flex-grow: 1;
+  flex-shrink: 1 ;
+  -webkit-flex-shrink: 1;
 }
 .api {
   position: fixed;
@@ -210,4 +217,36 @@ table {
 }
 .api a {
   background-color: yellow;
+}
+
+@media (min-aspect-ratio: 1/1) {
+  #background {
+    margin-top: 64;
+    justify-content: center;
+  }
+  .stretch {
+    flex-grow: 0 ;
+    -webkit-flex-grow: 0;
+    flex-shrink: 1 ;
+    -webkit-flex-shrink: 1;
+  }
+}
+
+@media (min-aspect-ratio: 10/5) {
+  #background {
+    height: 50%;
+  }
+  .stretch {
+    flex-grow: 0 ;
+    -webkit-flex-grow: 0;
+    flex-shrink: 1 ;
+    -webkit-flex-shrink: 1;
+  }
+}
+
+@media (max-aspect-ratio: 40/55) {
+  #background {
+    align-items: center;
+    margin-top: 0;
+  }
 }
