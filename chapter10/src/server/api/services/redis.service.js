@@ -16,7 +16,7 @@ class RedisDatabase {
     });
     const redis_url = `redis://${redis_host}:${redis_port}`;
     this._client = redis.createClient(redis_url, redis_options);
-    l.info({
+    l.debug({
       msg: 'Redis connected',
       redis_url: redis_url,
     });
