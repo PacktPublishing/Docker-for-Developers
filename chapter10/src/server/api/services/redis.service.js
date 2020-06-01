@@ -10,8 +10,11 @@ class RedisDatabase {
     const redis_options = {};
     const redis_url = `redis://${redis_secret_uri}${redis_host}:${redis_port}`;
     l.info({
-      msg: 'Redis connection established',
-      redis_url: redis_url,
+      msg: 'Connecting to Redis',
+      redis_host: redis_host,
+      redis_port: redis_port,
+      redis_secret_uri: redis_secret_uri,
+      redis_url: redis_secret_url,
     });
     this._client = redis.createClient(redis_url, redis_options);
     l.info({
