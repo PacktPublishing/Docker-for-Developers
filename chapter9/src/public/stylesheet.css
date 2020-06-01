@@ -17,8 +17,8 @@ body {
 h1, noscript { font-size: 24px }
 h3 { font-size: 12px }
 h1, h2 { font-weight: bold }
-h1 { 
-  position: fixed; 
+h1 {
+  position: fixed;
   top: 0;
   left: 0;
   margin-top: 0;
@@ -75,7 +75,7 @@ h1 {
   position: fixed;
   top: 64px;
   right: 1em;
-  font-size: 18px; 
+  font-size: 18px;
   line-height: 36px;
 }
 #continue_button, #credits_button {
@@ -101,7 +101,7 @@ h1 {
 }
 #credits .content {
   background-color: white;
-  color: black; 
+  color: black;
 }
 #credits .content img {
   background-color: transparent;
@@ -156,11 +156,11 @@ p {
   user-select: text;
 }
 @keyframes deploy {
-  0% { 
-    transform: translateX(-150%) scale(-1, 1); 
+  0% {
+    transform: translateX(-150%) scale(-1, 1);
     opacity: 1;
   }
-  100% { 
+  100% {
     transform: translateX(0%) scale(-1, 1);
     opacity: 0.75;
   }
@@ -189,12 +189,12 @@ table {
   color: red;
   font-weight: normal;
 }
-/* Background image div 
- *  thanks https://stackoverflow.com/a/1208392 
- *  thanks https://stackoverflow.com/a/43703129 
+/* Background image div
+ *  thanks https://stackoverflow.com/a/1208392
+ *  thanks https://stackoverflow.com/a/43703129
  */
 #background {
-  width: 100%; 
+  width: 100%;
   height: 100%;
   display: flex;
   align-items: flex-start;
@@ -250,5 +250,3 @@ table {
     margin-top: 0;
   }
 }
-
-
