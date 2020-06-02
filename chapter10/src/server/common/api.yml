@@ -150,6 +150,35 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Error'
+  /games/ready:
+    get:
+      tags:
+        - Game
+      responses:
+        200:
+          description: Is the game ready to take requests?
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Message'
+        4XX:
+          description: Request Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        503:
+          description: Service Unavailable
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Message'
+        5XX:
+          description: Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
   /spec:
     get:
       tags:
@@ -166,6 +195,15 @@ components:
     Empty:
       type: object
       additionalProperties: false
+    Message:
+      type: object
+      properties:
+        status:
+          type: integer
+          example: 503
+        msg:
+          type: string
+          example: Service Unvailable
     Game:
       type: object
       properties:

@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: {{ .Release.Name }}-configmap
 data:
-  APP_ID: "shipit-clicker-v4-{{ .Release.Name }}"
+  APP_ID: "Shipit-Clicker-{{ .Release.Name }}"
   OPENAPI_SPEC: "/api/v1/spec"
   OPENAPI_ENABLE_RESPONSE_VALIDATION: "false"
   PORT: "3000"
