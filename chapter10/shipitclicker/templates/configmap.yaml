@@ -9,6 +9,6 @@ data:
   PORT: "3000"
   LOG_LEVEL: "info"
   REQUEST_LIMIT: "100kb"
-  REDIS_HOST: "redis-master.default.svc.cluster.local"
-  REDIS_REPLICA: "redis-slave.default.svc.cluster.local"
+  REDIS_HOST: "redis-master"
+  REDIS_REPLICA: "redis-slave"
   REDIS_PORT: "6379"
