@@ -1,11 +1,11 @@
 ---
 version: '3'
 services:
-  shipit-clicker-web-v5:
-    image: ${DOCKER_IMAGE:-dockerfordevelopers/shipitclicker:0.5.0}
+  shipit-clicker-web-v7:
+    image: ${DOCKER_IMAGE:-dockerfordevelopers/shipitclicker:0.10.0}
     build: .
     environment:
-        - APP_ID=shipit-clicker-v5
+        - APP_ID=shipit-clicker-v7
         - OPENAPI_SPEC=/api/v1/spec
         - OPENAPI_ENABLE_RESPONSE_VALIDATION=false
         - PORT=3000
@@ -13,11 +13,11 @@ services:
         - REQUEST_LIMIT=100kb
         - REDIS_HOST=${REDIS_HOST:-redis}
         - REDIS_PORT=${REDIS_PORT:-6379}
-        - SESSION_SECRET=${SESSION_SECRET:-mySecret-v5}
+        - SESSION_SECRET=${SESSION_SECRET:-mySecret-v7}
     ports:
         - "${PORT:-3009}:3000"
     networks:
-      - private-redis-shipit-clicker-v5
+      - private-redis-shipit-clicker-v7
     links:
       - redis
     depends_on:
@@ -29,10 +29,10 @@ services:
     volumes:
       - redis-data-shipit-clicker:/data
     networks:
-      - private-redis-shipit-clicker-v5
+      - private-redis-shipit-clicker-v7
 
 volumes:
   redis-data-shipit-clicker: {}
 
 networks:
-  private-redis-shipit-clicker-v5:
+  private-redis-shipit-clicker-v7:
