@@ -2,10 +2,15 @@ const redis = require('redis');
 const { promisify } = require('util');
 import l from '../../common/logger';
 
-let _instance;
-
 class RedisDatabase {
-  constructor() {
+
+  constructor () {
+    l.debug({
+      msg: 'Redis Database - deferred init via lazy loading'
+    });
+  }
+
+  init() {
     const redis_host = process.env.REDIS_HOST ?? 'localhost';
     const redis_port = process.env.REDIS_PORT ?? 6379;
     const redis_password = process.env.REDIS_PASSWORD ?? '';
@@ -17,43 +22,46 @@ class RedisDatabase {
       redis_password: redis_password.replace(/./g, 'X'),
     });
     const redis_url = `redis://${redis_host}:${redis_port}`;
-    this._client = redis.createClient(redis_url, redis_options);
+    let client = redis.createClient(redis_url, redis_options);
     l.debug({
       msg: 'Redis configured',
       redis_url: redis_url,
     });
     // Thanks https://stackoverflow.com/a/18560304
-    this._client.on("error", err => l.error({msg: "Redis error", err:err}));
+    client.on("error", err => l.error({msg: "Redis error", err:err}));
     if (redis_password !== '') {
-      this._client.auth(redis_password);
+      client.auth(redis_password);
       l.info({
         msg: 'Redis authenticated OK',
         redis_url: redis_url,
       });
     }
-    this._client.pingAsync = promisify(this._client.ping).bind(this._client);
-    this._client.getAsync = promisify(this._client.get).bind(this._client);
-    this._client.setAsync = promisify(this._client.set).bind(this._client);
-    this._client.incrbyAsync = promisify(this._client.incrby).bind(
-      this._client
-    );
+    client.pingAsync = promisify(client.ping).bind(client);
+    client.getAsync = promisify(client.get).bind(client);
+    client.setAsync = promisify(client.set).bind(client);
+    client.incrbyAsync = promisify(client.incrby).bind(client);
+    return client;
+  }
+
+  instance() { 
+    return this._client ? this._client : this._client = this.init();
   }
 
   async ping() {
-    return this._client.pingAsync();
+    return this.instance().pingAsync();
   }
 
   async set(id, value) {
-    return this._client.setAsync(id, value);
+    return this.instance().setAsync(id, value);
   }
 
   async get(id) {
-    return this._client.getAsync(id);
+    return this.instance().getAsync(id);
   }
 
   async incrby(id, value) {
-    return this._client.incrbyAsync(id, value);
+    return this.instance().incrbyAsync(id, value);
   }
 }
 
-export default () => _instance ? _instance : _instance = new RedisDatabase();
+export default new RedisDatabase();
