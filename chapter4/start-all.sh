@@ -3,5 +3,5 @@
 ./start-mosca.sh
 ./start-mongodb.sh
 ./start-redis.sh
-./subscriber/start-subscriber.sh
-./publisher/start-publisher.sh
+cd subscriber && ./start-subscriber.sh & cd..
+cd publisher && ./start-publisher.sh & cd..

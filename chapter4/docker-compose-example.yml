@@ -6,21 +6,21 @@ services:
   redis:
     image: redis
     volumes:
-      - /var/db/redis:/data
+      - /tmp/redis:/data
     ports:
       - 6379:6379
 
   mongodb:
     image: mongo
     volumes:
-      - /var/db/mongo:/data/db
+      - /tmp/mongo:/data/db
     ports:
       - 27017:27017
 
   mosca:
     image: matteocollina/mosca
     volumes:
-      - /var/db/mosca:/db
+      - /tmp/mosca:/db
     ports:
       - 1883:1883
       - 80:80
