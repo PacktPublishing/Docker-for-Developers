@@ -12,10 +12,22 @@
 import http from "k6/http";
 import { sleep } from "k6";
 
+const DEBUG = __ENV.DEBUG;
 // Number of moves/clicks to simulate
 const MOVES = __ENV.MOVES;
 const target = __ENV.TARGET;
 console.log(`Testing ${target}`);
+
+const log = {
+  debug(msg) { 
+    if (DEBUG) {
+      console.log(msg);
+    }
+  },
+  info(msg) {
+    console.log(msg);
+  }
+}
 
 // Box-Muller transform to normalize random number distribution.
 // from https://stackoverflow.com/a/49434653
@@ -29,9 +41,12 @@ function randn_bm() {
     return num;
 }
 
+const random_gaussian = (mean, variance) =>
+  mean + (variance * (randn_bm() - 0.5) / 0.0627);
+
 const deploy = (id) => {
     http.patch(
-	`${target}/api/v2/games/71o6wXE9kh9x_NHyWOy2M/deploys`,
+	`${target}/api/v2/games/${id}/deploys`,
 	JSON.stringify({
 	    id: id,
 	    element: "deploys",
@@ -39,7 +54,7 @@ const deploy = (id) => {
 	})
     );
     http.patch(
-	`${target}/api/v2/games/71o6wXE9kh9x_NHyWOy2M/score`,
+	`${target}/api/v2/games/${id}/score`,
 	JSON.stringify({
 	    id: id,
 	    element: "score",
@@ -48,27 +63,51 @@ const deploy = (id) => {
     );
 };
 
-export default function() {
+const getStaticAssets = () => {
     http.get(target);
     http.get(`${target}/stylesheet.css`);
     http.get(`${target}/img/shipit-640x640-lc.jpg`);
     http.get(`${target}/img/ichard-Cartoon-Headshot-Jaunty-180x180.png`);
     http.get(`${target}/app.js`);
-    const headers = { 'Content-Type': 'application/json'};
-    const response = http.post(`${target}/api/v2/games/`, {}, { headers: {'Content-Type' : 'application/json'}  });
-    const result = JSON.parse(response.body);
-    const GAMEID = result.id;
-    http.get(`${target}/api/v2/games/${GAMEID}/score`);
-    http.get(`${target}/api/v2/games/${GAMEID}/deploys`);
-    http.get(`${target}/api/v2/games/${GAMEID}/nextPurchase`);
-    
-    console.log(`Simulating ${MOVES} moves for game ID '${GAMEID}'`);
+}
 
+
+const getGameId = () => {
+    const headers = { 'Content-Type': 'application/json'};
+    const response = http.post(
+      `${target}/api/v2/games/`,
+      {},
+      {headers: {'Content-Type' : 'application/json'}}
+    );
+    return JSON.parse(response.body).id;
+}
+
+const getScores = (id) => {
+    http.get(`${target}/api/v2/games/${id}/score`);
+    http.get(`${target}/api/v2/games/${id}/deploys`);
+    http.get(`${target}/api/v2/games/${id}/nextPurchase`);
+}
+
+
+export default function() {
+    const startDelay = random_gaussian(6000, 1000) / 1000;
+    log.debug(`Loading static assets, then wait ${startDelay}s to start game`);
+    getStaticAssets();
+    sleep(startDelay);
+
+    const id = getGameId();
+    const gameDelay = random_gaussian(1500, 250) / 1000;
+    log.debug(`Game ${id}: Getting game scores, then wait ${startDelay}s to start game`);
+    getScores(id);
+    sleep(gameDelay);
+
+    log.info(`Game ${id}: Simulating ${MOVES} moves, starting in ${gameDelay}s`);
     for (let i = 0; i < MOVES; i++) {
-      const delay = (randn_bm() * 50 + 100) / 1000;
-    	console.log(` move #${i}, then sleep ${delay}s`);
-    	deploy(GAMEID);
-      sleep(delay);
+      const moveDelay = random_gaussian(125, 25) / 1000;
+      log.debug(`Game ${id}: move #${i}, then sleep ${moveDelay}s`);
+    	deploy(id);
+      sleep(moveDelay);
     }
-    console.log("DONE\n");
+
+    log.info(`Game ${id}: Done`);
 }
