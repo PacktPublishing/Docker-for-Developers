@@ -1,2 +1,4 @@
 *.yaml
 *.yml
+*.har
+har-session.js
