@@ -1,22 +1,12 @@
-/*
- *Test script for k6.io docker container.
- *
- * This script mimics a human playng the game:
- * 1) Fetching the html, stylesheets, images, and JavaScript files that make up the application.
- * 2) Perform HTTP post to start a new game.
- * 3) Get the initial score, deploys, and nextPurchase values.
- * 4) Attempt to simulate MOVES clicks.
- *
- */
-
 import http from "k6/http";
 import { sleep } from "k6";
 
 const DEBUG = __ENV.DEBUG;
-// Number of moves/clicks to simulate
 const MOVES = __ENV.MOVES;
 const target = __ENV.TARGET;
 console.log(`Testing ${target}`);
+
+const ENDPOINTS = ['score', 'deploys', 'nextPurchase'];
 
 const log = {
   debug(msg) { 
@@ -71,7 +61,6 @@ const getStaticAssets = () => {
     http.get(`${target}/app.js`);
 }
 
-
 const getGameId = () => {
     const headers = { 'Content-Type': 'application/json'};
     const response = http.post(
@@ -83,11 +72,22 @@ const getGameId = () => {
 }
 
 const getScores = (id) => {
-    http.get(`${target}/api/v2/games/${id}/score`);
-    http.get(`${target}/api/v2/games/${id}/deploys`);
-    http.get(`${target}/api/v2/games/${id}/nextPurchase`);
+  ENDPOINTS.forEach( element => 
+    http.get(`${target}/api/v2/games/${id}/${element}`));
 }
 
+const putScores = (id, score) => {
+  ENDPOINTS.forEach( element =>
+    http.put(
+	`${target}/api/v2/games/${id}/${element}`,
+	JSON.stringify({
+	    id: id,
+	    element: element,
+	    value: score
+	})
+    )
+    );
+}
 
 export default function() {
     const startDelay = random_gaussian(6000, 1000) / 1000;
@@ -95,10 +95,10 @@ export default function() {
     getStaticAssets();
     sleep(startDelay);
 
-    const id = getGameId();
     const gameDelay = random_gaussian(1500, 250) / 1000;
-    log.debug(`Game ${id}: Getting game scores, then wait ${startDelay}s to start game`);
-    getScores(id);
+    const id = getGameId();
+    log.debug(`Game ${id}: Reset game scores, then wait ${startDelay}s to start game`);
+    putScores(id, 0);
     sleep(gameDelay);
 
     log.info(`Game ${id}: Simulating ${MOVES} moves, starting in ${gameDelay}s`);
@@ -109,5 +109,5 @@ export default function() {
       sleep(moveDelay);
     }
 
-    log.info(`Game ${id}: Done`);
+    log.info(`Game ${id}: Done with ${MOVES} moves`);
 }

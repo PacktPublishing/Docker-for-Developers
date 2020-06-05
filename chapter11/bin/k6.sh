@@ -31,7 +31,7 @@ docker run \
     --rm \
     -i \
     --name k6 \
-    -eDEBUG="${DEBUG:-false}" \
+    -eDEBUG="${DEBUG:-}" \
     -eTARGET="$TARGET" \
     -eMOVES="$MOVES" \
     loadimpact/k6 \
