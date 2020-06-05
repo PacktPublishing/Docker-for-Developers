@@ -1,7 +1,6 @@
 // Demo publisher container
 //
 // publisher/index.js
-//
 
 process.env.DEBUG = "publisher,mqtt-traffic";
 

@@ -7,12 +7,12 @@ services:
   mongodb:
     image: mongo
     volumes:
-      - /var/db/mongo:/data/db
+      - /tmp/mongo:/data/db
 
   mosca:
     image: matteocollina/mosca
     volumes:
-      - /var/db/mosca:/db
+      - /tmp/mosca:/db
 
   publisher:
     build: publisher
