@@ -55,7 +55,7 @@ export default (
   while (current_time < end_time) {
     calcs++;
     scratch = (scratch * scratch) % upper_max;
-    current_time = Date.now()/ 1000;
+    current_time = Date.now() / 1000;
     interval = current_time - start_time;
     if (current_time > time_limit) {
       throw new Error(
