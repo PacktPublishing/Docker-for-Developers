@@ -3,7 +3,7 @@ set -euo pipefail
 
 # Thanks https://stackoverflow.com/a/246128
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-TEST_DIR="$DIR/k6"
+TEST_DIR="$DIR/../src/test/k6"
 
 ${DEBUG:-false} && set -vx
 # Credit to https://stackoverflow.com/a/17805088

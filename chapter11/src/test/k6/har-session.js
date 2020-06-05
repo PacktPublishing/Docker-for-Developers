@@ -10,14 +10,14 @@ export let options = {
 
 export default function() {
 
-	group("page_5 - http://yyz:3011/", function() {
+	group("page_5 - http://shipitclicker.example.com:80/", function() {
 		let req, res;
 		req = [{
 			"method": "get",
-			"url": "http://yyz:3011/",
+			"url": "http://shipitclicker.example.com:80/",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -31,119 +31,119 @@ export default function() {
 			}
 		},{
 			"method": "get",
-			"url": "http://yyz:3011/stylesheet.css",
+			"url": "http://shipitclicker.example.com:80/stylesheet.css",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"DNT": "1",
 					"Accept": "text/css,*/*;q=0.1",
-					"Referer": "http://yyz:3011/",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "get",
-			"url": "http://yyz:3011/img/shipit-640x640-lc.jpg",
+			"url": "http://shipitclicker.example.com:80/img/shipit-640x640-lc.jpg",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"DNT": "1",
 					"Accept": "image/webp,image/apng,image/*,*/*;q=0.8",
-					"Referer": "http://yyz:3011/",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "get",
-			"url": "http://yyz:3011/img/Richard-Cartoon-Headshot-Jaunty-180x180.png",
+			"url": "http://shipitclicker.example.com:80/img/Richard-Cartoon-Headshot-Jaunty-180x180.png",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"DNT": "1",
 					"Accept": "image/webp,image/apng,image/*,*/*;q=0.8",
-					"Referer": "http://yyz:3011/",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "get",
-			"url": "http://yyz:3011/app.js",
+			"url": "http://shipitclicker.example.com:80/app.js",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"DNT": "1",
 					"Accept": "*/*",
-					"Referer": "http://yyz:3011/",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "get",
-			"url": "http://yyz:3011/api/v2/games/71o6wXE9kh9x_NHyWOy2M/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/71o6wXE9kh9x_NHyWOy2M/score",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"DNT": "1",
 					"Accept": "*/*",
-					"Referer": "http://yyz:3011/",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "get",
-			"url": "http://yyz:3011/api/v2/games/71o6wXE9kh9x_NHyWOy2M/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/71o6wXE9kh9x_NHyWOy2M/deploys",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"DNT": "1",
 					"Accept": "*/*",
-					"Referer": "http://yyz:3011/",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "get",
-			"url": "http://yyz:3011/api/v2/games/71o6wXE9kh9x_NHyWOy2M/nextPurchase",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/71o6wXE9kh9x_NHyWOy2M/nextPurchase",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"DNT": "1",
 					"Accept": "*/*",
-					"Referer": "http://yyz:3011/",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
@@ -153,11 +153,11 @@ export default function() {
 		sleep(7.10);
 		req = [{
 			"method": "post",
-			"url": "http://yyz:3011/api/v2/games/",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/",
 			"body": "{}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -165,19 +165,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "put",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":0}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -185,19 +185,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "put",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":0}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -205,19 +205,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "put",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/nextPurchase",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/nextPurchase",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"nextPurchase\",\"value\":0}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -225,8 +225,8 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
@@ -236,11 +236,11 @@ export default function() {
 		sleep(1.59);
 		req = [{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -248,19 +248,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -268,19 +268,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -288,19 +288,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -308,19 +308,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -328,19 +328,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -348,19 +348,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -368,19 +368,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -388,19 +388,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -408,19 +408,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":4}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -428,19 +428,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -448,19 +448,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -468,19 +468,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -488,19 +488,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -508,19 +508,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -528,19 +528,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -548,19 +548,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -568,19 +568,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -588,19 +588,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -608,19 +608,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -628,19 +628,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -648,19 +648,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -668,19 +668,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -688,19 +688,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -708,19 +708,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -728,19 +728,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":4}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -748,19 +748,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -768,19 +768,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -788,19 +788,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -808,19 +808,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -828,19 +828,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -848,19 +848,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -868,19 +868,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -888,19 +888,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -908,19 +908,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -928,19 +928,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -948,19 +948,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -968,19 +968,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -988,19 +988,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1008,19 +1008,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1028,19 +1028,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1048,19 +1048,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1068,19 +1068,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1088,19 +1088,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1108,19 +1108,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1128,19 +1128,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1148,19 +1148,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1168,19 +1168,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1188,19 +1188,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1208,19 +1208,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1228,19 +1228,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1248,19 +1248,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1268,19 +1268,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1288,19 +1288,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1308,19 +1308,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1328,19 +1328,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1348,19 +1348,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1368,19 +1368,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1388,19 +1388,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1408,19 +1408,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1428,19 +1428,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1448,19 +1448,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1468,19 +1468,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1488,19 +1488,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1508,19 +1508,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1528,19 +1528,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1548,19 +1548,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1568,19 +1568,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1588,19 +1588,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1608,19 +1608,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1628,19 +1628,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1648,19 +1648,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1668,19 +1668,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1688,19 +1688,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1708,19 +1708,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1728,19 +1728,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1748,19 +1748,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1768,19 +1768,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1788,19 +1788,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1808,19 +1808,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1828,19 +1828,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1848,19 +1848,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1868,19 +1868,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1888,19 +1888,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1908,19 +1908,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1928,19 +1928,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1948,19 +1948,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1968,19 +1968,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -1988,19 +1988,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2008,19 +2008,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2028,19 +2028,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2048,19 +2048,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2068,19 +2068,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2088,19 +2088,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2108,19 +2108,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2128,19 +2128,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2148,19 +2148,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2168,19 +2168,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2188,19 +2188,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2208,19 +2208,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2228,19 +2228,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2248,19 +2248,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2268,19 +2268,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2288,19 +2288,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2308,19 +2308,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2328,19 +2328,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2348,19 +2348,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2368,19 +2368,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2388,19 +2388,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2408,19 +2408,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2428,19 +2428,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2448,19 +2448,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2468,19 +2468,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2488,19 +2488,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2508,19 +2508,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2528,19 +2528,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2548,19 +2548,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2568,19 +2568,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2588,19 +2588,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2608,19 +2608,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2628,19 +2628,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2648,19 +2648,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2668,19 +2668,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2688,19 +2688,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2708,19 +2708,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2728,19 +2728,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2748,19 +2748,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2768,19 +2768,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2788,19 +2788,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2808,19 +2808,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2828,19 +2828,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2848,19 +2848,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2868,19 +2868,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2888,19 +2888,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2908,19 +2908,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2928,19 +2928,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2948,19 +2948,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2968,19 +2968,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -2988,19 +2988,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3008,19 +3008,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3028,19 +3028,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3048,19 +3048,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3068,19 +3068,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3088,19 +3088,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3108,19 +3108,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3128,19 +3128,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3148,19 +3148,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3168,19 +3168,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3188,19 +3188,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3208,19 +3208,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3228,19 +3228,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3248,19 +3248,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3268,19 +3268,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3288,19 +3288,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3308,19 +3308,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3328,19 +3328,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3348,19 +3348,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3368,19 +3368,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3388,19 +3388,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3408,19 +3408,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3428,19 +3428,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3448,19 +3448,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3468,19 +3468,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3488,19 +3488,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3508,19 +3508,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3528,19 +3528,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3548,19 +3548,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3568,19 +3568,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3588,19 +3588,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3608,19 +3608,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3628,19 +3628,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3648,19 +3648,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3668,19 +3668,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3688,19 +3688,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3708,19 +3708,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3728,19 +3728,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3748,19 +3748,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3768,19 +3768,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3788,19 +3788,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3808,19 +3808,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3828,19 +3828,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3848,19 +3848,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3868,19 +3868,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3888,19 +3888,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3908,19 +3908,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3928,19 +3928,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3948,19 +3948,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3968,19 +3968,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -3988,19 +3988,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4008,19 +4008,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4028,19 +4028,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4048,19 +4048,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4068,19 +4068,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4088,19 +4088,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4108,19 +4108,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4128,19 +4128,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4148,19 +4148,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4168,19 +4168,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4188,19 +4188,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4208,19 +4208,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4228,19 +4228,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4248,19 +4248,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4268,19 +4268,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4288,19 +4288,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4308,19 +4308,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4328,19 +4328,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":8}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4348,19 +4348,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4368,19 +4368,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4388,19 +4388,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4408,19 +4408,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4428,19 +4428,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4448,19 +4448,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4468,19 +4468,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4488,19 +4488,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4508,19 +4508,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4528,19 +4528,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4548,19 +4548,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4568,19 +4568,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4588,19 +4588,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4608,19 +4608,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4628,19 +4628,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4648,19 +4648,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":8}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4668,19 +4668,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4688,19 +4688,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4708,19 +4708,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4728,19 +4728,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4748,19 +4748,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4768,19 +4768,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4788,19 +4788,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4808,19 +4808,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4828,19 +4828,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4848,19 +4848,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4868,19 +4868,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4888,19 +4888,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4908,19 +4908,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4928,19 +4928,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4948,19 +4948,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4968,19 +4968,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -4988,19 +4988,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5008,19 +5008,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5028,19 +5028,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5048,19 +5048,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5068,19 +5068,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5088,19 +5088,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5108,19 +5108,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5128,19 +5128,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5148,19 +5148,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5168,19 +5168,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5188,19 +5188,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5208,19 +5208,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5228,19 +5228,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5248,19 +5248,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5268,19 +5268,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5288,19 +5288,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5308,19 +5308,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5328,19 +5328,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5348,19 +5348,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5368,19 +5368,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5388,19 +5388,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5408,19 +5408,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5428,19 +5428,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5448,19 +5448,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5468,19 +5468,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5488,19 +5488,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5508,19 +5508,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5528,19 +5528,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5548,19 +5548,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5568,19 +5568,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5588,19 +5588,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5608,19 +5608,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5628,19 +5628,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5648,19 +5648,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5668,19 +5668,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5688,19 +5688,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5708,19 +5708,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5728,19 +5728,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5748,19 +5748,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5768,19 +5768,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5788,19 +5788,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5808,19 +5808,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5828,19 +5828,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5848,19 +5848,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5868,19 +5868,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5888,19 +5888,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5908,19 +5908,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5928,19 +5928,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5948,19 +5948,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5968,19 +5968,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -5988,19 +5988,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6008,19 +6008,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6028,19 +6028,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6048,19 +6048,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6068,19 +6068,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6088,19 +6088,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6108,19 +6108,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6128,19 +6128,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6148,19 +6148,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6168,19 +6168,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6188,19 +6188,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6208,19 +6208,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6228,19 +6228,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6248,19 +6248,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6268,19 +6268,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6288,19 +6288,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6308,19 +6308,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6328,19 +6328,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6348,19 +6348,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6368,19 +6368,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6388,19 +6388,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6408,19 +6408,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6428,19 +6428,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6448,19 +6448,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6468,19 +6468,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6488,19 +6488,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6508,19 +6508,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6528,19 +6528,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6548,19 +6548,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6568,19 +6568,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6588,19 +6588,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6608,19 +6608,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6628,19 +6628,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6648,19 +6648,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6668,19 +6668,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6688,19 +6688,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6708,19 +6708,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6728,19 +6728,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6748,19 +6748,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6768,19 +6768,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6788,19 +6788,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6808,19 +6808,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6828,19 +6828,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6848,19 +6848,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6868,19 +6868,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6888,19 +6888,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6908,19 +6908,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6928,19 +6928,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6948,19 +6948,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6968,19 +6968,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -6988,19 +6988,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7008,19 +7008,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7028,19 +7028,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7048,19 +7048,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7068,19 +7068,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7088,19 +7088,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7108,19 +7108,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7128,19 +7128,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7148,19 +7148,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7168,19 +7168,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7188,19 +7188,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7208,19 +7208,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7228,19 +7228,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7248,19 +7248,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7268,19 +7268,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7288,19 +7288,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7308,19 +7308,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7328,19 +7328,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7348,19 +7348,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7368,19 +7368,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7388,19 +7388,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7408,19 +7408,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7428,19 +7428,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7448,19 +7448,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7468,19 +7468,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7488,19 +7488,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7508,19 +7508,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7528,19 +7528,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7548,19 +7548,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7568,19 +7568,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7588,19 +7588,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7608,19 +7608,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7628,19 +7628,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7648,19 +7648,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7668,19 +7668,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7688,19 +7688,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7708,19 +7708,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7728,19 +7728,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7748,19 +7748,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7768,19 +7768,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7788,19 +7788,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7808,19 +7808,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7828,19 +7828,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7848,19 +7848,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7868,19 +7868,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7888,19 +7888,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7908,19 +7908,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7928,19 +7928,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7948,19 +7948,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7968,19 +7968,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -7988,19 +7988,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8008,19 +8008,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8028,19 +8028,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8048,19 +8048,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8068,19 +8068,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8088,19 +8088,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8108,19 +8108,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8128,19 +8128,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8148,19 +8148,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8168,19 +8168,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8188,19 +8188,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8208,19 +8208,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8228,19 +8228,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8248,19 +8248,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8268,19 +8268,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8288,19 +8288,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8308,19 +8308,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8328,19 +8328,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8348,19 +8348,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8368,19 +8368,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8388,19 +8388,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8408,19 +8408,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8428,19 +8428,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8448,19 +8448,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8468,19 +8468,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8488,19 +8488,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8508,19 +8508,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8528,19 +8528,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8548,19 +8548,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8568,19 +8568,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8588,19 +8588,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8608,19 +8608,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8628,19 +8628,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8648,19 +8648,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8668,19 +8668,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8688,19 +8688,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8708,19 +8708,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8728,19 +8728,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8748,19 +8748,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8768,19 +8768,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8788,19 +8788,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8808,19 +8808,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8828,19 +8828,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8848,19 +8848,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8868,19 +8868,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8888,19 +8888,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":6}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8908,19 +8908,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/score",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"score\",\"value\":7}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8928,19 +8928,19 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
 			}
 		},{
 			"method": "patch",
-			"url": "http://yyz:3011/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
+			"url": "http://shipitclicker.example.com:80/api/v2/games/aJ7vbTPNbGAIHyus_ZcIy/deploys",
 			"body": "{\"id\":\"aJ7vbTPNbGAIHyus_ZcIy\",\"element\":\"deploys\",\"value\":1}",
 			"params": {
 				"headers": {
-					"Host": "yyz:3011",
+					"Host": "shipitclicker.example.com:80",
 					"Connection": "keep-alive",
 					"Pragma": "no-cache",
 					"Cache-Control": "no-cache",
@@ -8948,8 +8948,8 @@ export default function() {
 					"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36",
 					"Content-Type": "application/json",
 					"Accept": "*/*",
-					"Origin": "http://yyz:3011",
-					"Referer": "http://yyz:3011/",
+					"Origin": "http://shipitclicker.example.com:80",
+					"Referer": "http://shipitclicker.example.com:80/",
 					"Accept-Encoding": "gzip, deflate",
 					"Accept-Language": "en-US,en;q=0.9"
 				}
