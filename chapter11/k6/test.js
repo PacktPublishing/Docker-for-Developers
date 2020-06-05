@@ -56,12 +56,6 @@ const deploy = (id) => {
 	    value: 1
 	})
     );
-
-    // sleep 175 milliseconds plus 0-50 random milliseconds more.
-    // this simulates clicking at about 5 clicks/second, or about what
-    // a human probably does when clicking as fast as possible.
-    const millis = (randn_bm() * 50 + 175) / 1000;
-    sleep(millis);
 };
 
 export default function() {
@@ -81,8 +75,10 @@ export default function() {
     console.log(`Simulating ${MOVES} moves for game ID '${GAMEID}'`);
 
     for (let i = 0; i < MOVES; i++) {
-    	console.log(` move #${i}`);
+      const delay = (randn_bm() * 50 + 100) / 1000;
+    	console.log(` move #${i}, then sleep ${delay}s`);
     	deploy(GAMEID);
+      sleep(delay);
     }
     console.log("DONE\n");
 }
