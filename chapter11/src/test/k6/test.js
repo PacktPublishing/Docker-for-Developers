@@ -5,9 +5,17 @@ import { sleep } from 'k6';
 const DEBUG = __ENV.DEBUG;
 const MOVES = __ENV.MOVES;
 const target = __ENV.TARGET;
-console.log(`Testing ${target}`);
-
 const ENDPOINTS = ['score', 'deploys', 'nextPurchase'];
+
+const params = {
+  headers: {
+    'Content-Type': 'application/json',
+    Accept: '*/*',
+    'Accept-Encoding': 'gzip, deflate',
+  },
+};
+
+console.log(`Testing ${target}`);
 
 const log = {
   debug(msg) {
@@ -17,6 +25,9 @@ const log = {
   },
   info(msg) {
     console.log(msg);
+  },
+  warn(msg) {
+    console.log(`WARNING: ${msg}`);
   },
 };
 
@@ -36,59 +47,77 @@ function randn_bm() {
 const random_gaussian = (mean, variance) =>
   mean + (variance * (randn_bm() - 0.5)) / 0.0627;
 
+const validate = response => {
+  const msg = `${response.request.method} ${response.request.url}: status ${response.status}`;
+  if (response.status >= 200 && response.status < 400) {
+    log.debug(msg);
+  } else {
+    log.warn(msg);
+    log.debug(JSON.stringify(response, null, 2));
+  }
+  return response;
+};
+
 const deploy = id => {
-  http.patch(
-    `${target}/api/v2/games/${id}/deploys`,
-    JSON.stringify({
-      id: id,
-      element: 'deploys',
-      value: 1,
-    })
+  validate(
+    http.patch(
+      `${target}/api/v2/games/${id}/deploys`,
+      JSON.stringify({
+        id: id,
+        element: 'deploys',
+        value: 1,
+      }),
+      params
+    )
   );
-  http.patch(
-    `${target}/api/v2/games/${id}/score`,
-    JSON.stringify({
-      id: id,
-      element: 'score',
-      value: 1,
-    })
+  validate(
+    http.patch(
+      `${target}/api/v2/games/${id}/score`,
+      JSON.stringify({
+        id: id,
+        element: 'score',
+        value: 1,
+      }),
+      params
+    )
   );
 };
 
-const getStaticAssets = () => {
-  http.get(target);
-  http.get(`${target}/stylesheet.css`);
-  http.get(`${target}/img/shipit-640x640-lc.jpg`);
-  http.get(`${target}/img/ichard-Cartoon-Headshot-Jaunty-180x180.png`);
-  http.get(`${target}/app.js`);
-};
+const getStaticAssets = () =>
+  [
+    target,
+    `${target}/stylesheet.css`,
+    `${target}/img/shipit-640x640-lc.jpg`,
+    `${target}/img/Richard-Cartoon-Headshot-Jaunty-180x180.png`,
+    `${target}/app.js`,
+  ]
+    .map(http.get)
+    .map(validate);
 
 const getGameId = () => {
-  const response = http.post(
-    `${target}/api/v2/games/`,
-    {},
-    { headers: { 'Content-Type': 'application/json' } }
-  );
+  const uri = `${target}/api/v2/games/`;
+  const response = validate(http.post(uri, {}, params));
   return JSON.parse(response.body).id;
 };
 
 const getScores = id => {
-  ENDPOINTS.forEach(element =>
+  return ENDPOINTS.map(element =>
     http.get(`${target}/api/v2/games/${id}/${element}`)
-  );
+  ).map(validate);
 };
 
 const putScores = (id, score) => {
-  ENDPOINTS.forEach(element =>
+  return ENDPOINTS.map(element =>
     http.put(
       `${target}/api/v2/games/${id}/${element}`,
       JSON.stringify({
         id: id,
         element: element,
         value: score,
-      })
+      }),
+      params
     )
-  );
+  ).map(validate);
 };
 
 export default function() {
