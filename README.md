@@ -14,7 +14,7 @@ This book provides a synthesis of three important areas of Docker based developm
 
 You’ll learn how containers works and how to create and development projects within them. Following this you will learn how to deploy them to the cloud using DevOps techniques and ensure that security is taken into consideration from start to finish. 
 
-By the end of this book you will understand how containers work, how to develop within them, how to deploy Docker containers to a variety of environments, including Cloud native and serverless and finally security best practices along the way.
+By the end of this book you will understand how containers work, how to develop within them, how to deploy Docker containers to a variety of environments, including both a local learning environment and a Cloud Native Kubernetes cluster using the AWS Elastic Kubernetes Service (EKS), and you will learn security best practices along the way.
 
 Regardless of whether you are a DevOps engineer, a Software Engineering lead, or a software developer looking for ways to create a sane environment, learning how to build and deploy applications in Docker will make you a stronger practitioner!
 
