@@ -10,8 +10,8 @@ export class Prometheus {
     this.register = client.register;
 
     this.deploymentCounter = new client.Counter({
-      name: 'deployment_counter',
-      help: 'This counter tracks the number of containers deployed',
+      name: 'shipitclicker_deploy_total',
+      help: 'Total of in-game deployments in this ShipIt Cicker process',
     });
 
     client.collectDefaultMetrics({
