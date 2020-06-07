@@ -4,6 +4,8 @@ metadata:
   name: {{ include "shipitclicker.fullname" . }}
   labels:
     {{- include "shipitclicker.labels" . | nindent 4 }}
+  annotations:
+    {{- toYaml .Values.annotations | nindent 4 }}
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:

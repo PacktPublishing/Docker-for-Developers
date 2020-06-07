@@ -39,3 +39,7 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+annotations:
+  prometheus.io/scrape: 'true'
+  prometheus.io/port: 3000
