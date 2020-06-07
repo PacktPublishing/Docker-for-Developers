@@ -1,4 +1,5 @@
 import RedisService from '../../services/redis.service';
+import PrometheusService from '../../services/prometheus.service';
 import l from '../../../common/logger';
 import { nanoid } from 'nanoid';
 
@@ -107,6 +108,9 @@ export class Controller {
     try {
       const key = `${req.body.id}/${req.body.element}`;
       var redis = await RedisService.incrby(key, req.body.value);
+      if (req.body.element === 'deploys') {
+        PrometheusService.counter.inc(req.body.value);
+      }
       l.info({
         msg: 'Game item Redis INCRBY complete',
         key: key,
