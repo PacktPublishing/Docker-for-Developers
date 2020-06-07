@@ -14,7 +14,8 @@ spec:
       labels:
         {{- include "shipitclicker.selectorLabels" . | nindent 8 }}
       annotations:
-        {{- toYaml .Values.deployment.annotations | nindent 8 }}
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "3000"
     spec:
     {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
