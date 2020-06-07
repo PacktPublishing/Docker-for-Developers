@@ -3,19 +3,18 @@ import l from '../../../common/logger';
 import { nanoid } from 'nanoid';
 
 export class Controller {
-
   async isReady(req, res) {
     try {
       var redis = await RedisService.ping();
       l.debug({ msg: 'isReady: Redis PING complete', value: redis });
       return res.json({
-        msg: "ready"
+        msg: 'ready',
       });
     } catch (err) {
       l.error({ msg: 'Redis PING errored', error: err });
       return res.status(503).json({
         status: 503,
-        msg: "Service Unavailable"
+        msg: 'Service Unavailable',
       });
     }
   }
@@ -33,7 +32,7 @@ export class Controller {
       l.warn({ msg: 'Redis GET errored', key: req.params.id, error: err });
       return res.status(404).json({
         status: 404,
-        msg: "Not Found"
+        msg: 'Not Found',
       });
     }
   }
@@ -52,7 +51,7 @@ export class Controller {
       l.error({ msg: 'createGame Redis SET errored', error: err });
       return res.status(500).json({
         status: 500,
-        msg: "Server Error"
+        msg: 'Server Error',
       });
     }
   }
@@ -76,7 +75,7 @@ export class Controller {
       });
       return res.status(404).json({
         status: 404,
-        msg: "Not Found"
+        msg: 'Not Found',
       });
     }
   }
@@ -99,7 +98,7 @@ export class Controller {
       });
       return res.status(500).json({
         status: 500,
-        msg: "Server Error"
+        msg: 'Server Error',
       });
     }
   }
@@ -108,7 +107,11 @@ export class Controller {
     try {
       const key = `${req.body.id}/${req.body.element}`;
       var redis = await RedisService.incrby(key, req.body.value);
-      l.info({ msg: 'Game item Redis INCRBY complete', key: key, value: redis });
+      l.info({
+        msg: 'Game item Redis INCRBY complete',
+        key: key,
+        value: redis,
+      });
       return res.json({
         id: req.params.id,
         element: req.params.element,
@@ -123,7 +126,7 @@ export class Controller {
       });
       return res.status(404).json({
         status: 404,
-        msg: "Not Found"
+        msg: 'Not Found',
       });
     }
   }
