@@ -4,4 +4,4 @@ import controller from './controller';
 export default express
   .Router()
   .get('/', controller.getMetrics)
-  .get('/counter', controller.getCounter);
+  .get('/shipitclicker_deploy_total', controller.getDeployTotal);
