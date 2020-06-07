@@ -4,8 +4,6 @@ metadata:
   name: {{ include "shipitclicker.fullname" . }}
   labels:
     {{- include "shipitclicker.labels" . | nindent 4 }}
-  annotations:
-    {{- toYaml .Values.deployment.annotations | nindent 4 }}
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
@@ -15,6 +13,8 @@ spec:
     metadata:
       labels:
         {{- include "shipitclicker.selectorLabels" . | nindent 8 }}
+      annotations:
+        {{- toYaml .Values.deployment.annotations | nindent 8 }}
     spec:
     {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
