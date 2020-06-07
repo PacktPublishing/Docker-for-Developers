@@ -12,7 +12,7 @@ export class Controller {
         msg: 'ready',
       });
     } catch (err) {
-      l.error({ msg: 'Redis PING errored', error: err });
+      l.warn({ msg: 'Redis PING errored', error: err.stack });
       return res.status(503).json({
         status: 503,
         msg: 'Service Unavailable',
@@ -30,7 +30,11 @@ export class Controller {
         started_on: redis,
       });
     } catch (err) {
-      l.warn({ msg: 'Redis GET errored', key: req.params.id, error: err });
+      l.warn({
+        msg: 'Redis GET errored',
+        key: req.params.id,
+        error: err.stack,
+      });
       return res.status(404).json({
         status: 404,
         msg: 'Not Found',
@@ -49,7 +53,7 @@ export class Controller {
         started_on: started_on,
       });
     } catch (err) {
-      l.error({ msg: 'createGame Redis SET errored', error: err });
+      l.warn({ msg: 'createGame Redis SET errored', error: err.stack });
       return res.status(500).json({
         status: 500,
         msg: 'Server Error',
@@ -68,11 +72,11 @@ export class Controller {
         value: redis,
       });
     } catch (err) {
-      l.error({
+      l.warn({
         msg: 'getGameItem Redis GET errored',
         id: req.params.id,
         element: req.params.element,
-        error: err,
+        error: err.stack,
       });
       return res.status(404).json({
         status: 404,
@@ -92,10 +96,10 @@ export class Controller {
         value: req.body.value,
       });
     } catch (err) {
-      l.error({
+      l.warn({
         msg: 'setGameItem Redis SET errored',
         key: req.body.id,
-        error: err,
+        error: err.stack,
       });
       return res.status(500).json({
         status: 500,
@@ -109,7 +113,8 @@ export class Controller {
       const key = `${req.body.id}/${req.body.element}`;
       var redis = await RedisService.incrby(key, req.body.value);
       if (req.body.element === 'deploys') {
-        PrometheusService.counter.inc(req.body.value);
+        const incr = parseInt(req.body.value, 10);
+        PrometheusService.deploymentCounter.inc(incr);
       }
       l.info({
         msg: 'Game item Redis INCRBY complete',
@@ -126,7 +131,7 @@ export class Controller {
         msg: 'incrementGameItem Redis INCRBY errored',
         key: req.body.id,
         element: req.body.element,
-        error: err,
+        error: err.stack,
       });
       return res.status(404).json({
         status: 404,

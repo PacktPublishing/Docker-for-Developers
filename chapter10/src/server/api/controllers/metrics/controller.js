@@ -4,16 +4,43 @@ const register = PrometheusService.register;
 
 export class Controller {
   async getMetrics(req, res) {
-    l.debug('metrics getMetrics called', req);
-    res.set('Content-Type', register.contentType);
-    res.end(register.metrics());
+    try {
+      l.debug({
+        msg: 'metrics getMetrics called',
+      });
+      res.set('Content-Type', register.contentType);
+      res.end(register.metrics());
+    } catch (err) {
+      l.warn({
+        msg: 'getMetrics errored',
+        error: err.stack,
+      });
+      return res.status(500).json({
+        status: 500,
+        msg: 'Server Error',
+      });
+    }
   }
 
   async getCounter(req, res) {
-    const test_counter = register.getSingleMetricAsString('test_counter');
-    l.debug('metrics getCounter called', req);
-    res.set('Content-Type', register.contentType);
-    res.end(test_counter);
+    try {
+      const test_counter = register.getSingleMetricAsString('deployment_counter');
+      l.debug({
+        msg: 'metrics getCounter called',
+        counter: test_counter,
+      });
+      res.set('Content-Type', register.contentType);
+      res.end(test_counter);
+    } catch (err) {
+      l.warn({
+        msg: 'getMetrics errored',
+        error: err.stack,
+      });
+      return res.status(500).json({
+        status: 500,
+        msg: 'Server Error',
+      });
+    }
   }
 }
 export default new Controller();
