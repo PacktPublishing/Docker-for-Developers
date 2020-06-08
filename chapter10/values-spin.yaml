@@ -10,12 +10,3 @@ ingress:
     - host: "shipit-staging.eks.example.com"
       paths: ['/*']
   tls: []
-
-resources:
-   limits:
-     cpu: 500m
-     memory: 512Mi
-   requests:
-     cpu: 500m
-     memory: 512Mi
-
