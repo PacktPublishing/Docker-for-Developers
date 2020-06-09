@@ -18,12 +18,12 @@ TARGET=${1:?$0: Target URL parameter is required.}
 USERS=${USERS:-1}   # number of simultaneous virtual users (VUs) to simulate
 DURATION=${DURATION:-60}  # number of seconds
 MOVES=${MOVES:-200} # number of moves/clicks to simulate per VU
-K6_STAGES={$STAGES:-""}
+STAGES=${STAGES:-""}
 
-if [ "$K6_STAGES" == "" ]; then
-    TYPE="STRESS"
-else
+if [ "STAGES" == "" ]; then
     TYPE="SOAK"
+else
+    TYPE="STRESS"
 fi
 
 cat <<EOF
@@ -41,7 +41,7 @@ docker run \
        --name k6 \
        -eDEBUG="${DEBUG:-}" \
        -eTARGET="$TARGET" \
-       -eK6_STAGES="$K6_STAGES" \
+       -eK6_STAGES="$STAGES" \
        -eMOVES="$MOVES" \
        loadimpact/k6 \
        run \
