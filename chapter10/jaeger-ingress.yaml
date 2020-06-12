@@ -1,0 +1,51 @@
+# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    alb.ingress.kubernetes.io/actions.http-redirect: '{"Type": "redirect", "RedirectConfig":
+      { "Protocol": "HTTPS", "Port": "443", "StatusCode": "HTTP_301"}}'
+    alb.ingress.kubernetes.io/inbound-cidrs: 192.2.0.10/32
+    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS":443}]'
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/target-type: ip
+    kubernetes.io/ingress.class: alb
+  creationTimestamp: "2020-06-12T05:39:00Z"
+  generation: 2
+  labels:
+    app: jaeger
+    app.kubernetes.io/component: query-ingress
+    app.kubernetes.io/instance: jaeger
+    app.kubernetes.io/managed-by: jaeger-operator
+    app.kubernetes.io/name: jaeger-query
+    app.kubernetes.io/part-of: jaeger
+  name: jaeger-query
+  namespace: observability
+  ownerReferences:
+  - apiVersion: jaegertracing.io/v1
+    controller: true
+    kind: Jaeger
+    name: jaeger
+    uid: 5fb4b4e6-0c52-4036-8e52-f9b5f2be33f7
+  resourceVersion: "9606546"
+  selfLink: /apis/extensions/v1beta1/namespaces/observability/ingresses/jaeger-query
+  uid: 219d4e36-5616-405d-884a-c51ac25b19d8
+spec:
+  backend:
+    serviceName: jaeger-query
+    servicePort: 16686
+  rules:
+  - host: jaeger.eks.example.com
+    http:
+      paths:
+      - backend:
+          serviceName: http-redirect
+          servicePort: use-annotation
+        path: /*
+      - backend:
+          serviceName: jaeger-query
+          servicePort: 16686
+        path: /*
