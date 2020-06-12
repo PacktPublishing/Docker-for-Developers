@@ -91,6 +91,26 @@ spec:
                 secretKeyRef:
                   name: {{ .Release.Name }}-secrets
                   key: SESSION_SECRET
+            - name: JAEGER_AGENT_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: {{ .Release.Name }}-configmap
+                  key: JAEGER_AGENT_HOST
+            - name: JAEGER_AGENT_PORT
+              valueFrom:
+                configMapKeyRef:
+                  name: {{ .Release.Name }}-configmap
+                  key: JAEGER_AGENT_PORT
+            - name: JAEGER_SAMPLING_ENDPOINT
+              valueFrom:
+                configMapKeyRef:
+                  name: {{ .Release.Name }}-configmap
+                  key: JAEGER_SAMPLING_ENDPOINT
+            - name: JAEGER_COLLECTOR_ENDPOINT
+              valueFrom:
+                configMapKeyRef:
+                  name: {{ .Release.Name }}-configmap
+                  key: JAEGER_COLLECTOR_ENDPOINT
           ports:
             - name: http
               containerPort: 3000
