@@ -1,6 +1,4 @@
-import { PrometheusMetricsFactory } from 'jaeger-client';
 import { track } from 'express-jaeger';
-import promClient from 'prom-client';
 import l from './logger';
 
 const namespace = 'shipitclicker';
@@ -31,9 +29,7 @@ const config = {
   sampler: sampler,
 };
 
-const metrics = new PrometheusMetricsFactory(promClient, namespace);
 var options = {
-  metrics: metrics,
   logger: l,
 };
 
