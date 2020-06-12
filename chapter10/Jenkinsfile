@@ -2,7 +2,7 @@
 def appName = 'shipitclicker'
 def baseDir = 'chapter10'
 def dockerfile = "${baseDir}/Dockerfile"
-def appVersion = '0.5.4'
+def appVersion = '0.10.0'
 def propFileName = "build.properties"
 def semVer
 def getSemVer(appVersion, commitHash) {
