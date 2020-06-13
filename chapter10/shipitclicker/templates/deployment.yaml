@@ -36,6 +36,8 @@ spec:
                 configMapKeyRef:
                   name: {{ .Release.Name }}-configmap
                   key: APP_ID
+            - name: APP_VERSION
+              value: {{ .Values.appVersion }}
             - name: OPENAPI_SPEC
               valueFrom:
                 configMapKeyRef:

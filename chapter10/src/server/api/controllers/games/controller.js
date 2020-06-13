@@ -1,7 +1,10 @@
+import { nanoid } from 'nanoid';
+import opentracing from 'opentracing';
 import RedisService from '../../services/redis.service';
 import PrometheusService from '../../services/prometheus.service';
 import l from '../../../common/logger';
-import { nanoid } from 'nanoid';
+import { tracer } from '../../../common/jaeger';
+
 
 export class Controller {
   async isReady(req, res) {
@@ -111,7 +114,10 @@ export class Controller {
   async incrementGameItem(req, res) {
     try {
       const key = `${req.body.id}/${req.body.element}`;
+      const span = tracer.startSpan('redis_incrby');
       var redis = await RedisService.incrby(key, req.body.value);
+      span.log({'result': redis});
+      span.finish();
       if (req.body.element === 'deploys') {
         const incr = parseInt(req.body.value, 10);
         PrometheusService.deploymentCounter.inc(incr);

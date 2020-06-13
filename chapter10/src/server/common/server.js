@@ -3,7 +3,6 @@ import * as path from 'path';
 import * as bodyParser from 'body-parser';
 import * as http from 'http';
 import * as os from 'os';
-import jaeger from './jaeger';
 import cookieParser from 'cookie-parser';
 
 import oas from './oas';
@@ -27,7 +26,6 @@ export default class ExpressServer {
     app.use(bodyParser.text({ limit: process.env.REQUEST_LIMIT || '100kb' }));
     app.use(cookieParser(process.env.SESSION_SECRET));
     app.use(Express.static(`${root}/public`));
-    app.use(jaeger('/api'));
   }
 
   router(routes) {
