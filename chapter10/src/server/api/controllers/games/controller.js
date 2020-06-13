@@ -124,11 +124,7 @@ export class Controller {
     });
     try {
       var redis = await RedisService.incrby(key, value);
-      span.log({ result: redis });
-      if (req.body.element === 'deploys') {
-        const incr = parseInt(req.body.value, 10);
-        PrometheusService.deploymentCounter.inc(incr);
-      }
+      span.log({ result: redis }).finish();
       const msg = {
         msg: 'Game item Redis INCRBY complete',
         key: key,
@@ -136,24 +132,28 @@ export class Controller {
       };
       req.span.log(msg);
       l.info(msg);
+      if (req.body.element === 'deploys') {
+        const incr = parseInt(req.body.value, 10);
+        PrometheusService.deploymentCounter.inc(incr);
+      }
       return res.json({
         id: req.params.id,
         element: req.params.element,
         value: redis,
       });
     } catch (err) {
-      l.warn({
-        msg: 'incrementGameItem Redis INCRBY errored',
+      const msg = {
         key: req.body.id,
         element: req.body.element,
-        error: err.stack,
-      });
+        message: err.message,
+        stack: err.stack,
+      };
+      span.log(msg).finish();
+      l.warn(msg);
       return res.status(404).json({
         status: 404,
         msg: 'Not Found',
       });
-    } finally {
-      span.finish();
     }
   }
 }
