@@ -3,7 +3,7 @@ import RedisService from '../../services/redis.service';
 import PrometheusService from '../../services/prometheus.service';
 import l from '../../../common/logger';
 import tracer from '../../../common/jaeger';
-import opentracing from 'opentracing';
+const opentracing = require('opentracing');
 
 export class Controller {
   async isReady(req, res) {
@@ -116,6 +116,7 @@ export class Controller {
     const span = tracer.startSpan('redis', {
       childOf: req.span,
       tags: {
+        [opentracing.Tags.SPAN_KIND]: opentracing.Tags.SPAN_KIND_RPC_CLIENT,
         'span.kind': 'client',
         'db.type': 'redis',
         'db.statement': `INCRBY ${key} ${value}`,
@@ -128,11 +129,13 @@ export class Controller {
         const incr = parseInt(req.body.value, 10);
         PrometheusService.deploymentCounter.inc(incr);
       }
-      l.info({
+      const msg = {
         msg: 'Game item Redis INCRBY complete',
         key: key,
         value: redis,
-      });
+      };
+      req.span.log(msg);
+      l.info(msg);
       return res.json({
         id: req.params.id,
         element: req.params.element,
