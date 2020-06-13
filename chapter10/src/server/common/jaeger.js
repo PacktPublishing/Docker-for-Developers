@@ -1,5 +1,4 @@
-import { track } from 'express-jaeger';
-import { initTracer } from 'jaeger-client';
+import { initTracerFromEnv } from 'jaeger-client';
 import l from './logger';
 
 const namespace = 'shipitclicker';
@@ -37,12 +36,6 @@ var options = {
   },
 };
 
-//const jaeger = op => (req, res, next) => track(`${req.baseUrl.slice[1]}${op}`, null, config, options);
-const jaeger = op => track(op, null, config, options);
-const tracer = initTracer(config, options);
+const tracer = initTracerFromEnv(config, options);
 
-export {
-    jaeger as default,
-    jaeger as track,
-    tracer,
-};
+export default tracer;

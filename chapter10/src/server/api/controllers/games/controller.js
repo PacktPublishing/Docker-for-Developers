@@ -1,10 +1,9 @@
 import { nanoid } from 'nanoid';
-import opentracing from 'opentracing';
 import RedisService from '../../services/redis.service';
 import PrometheusService from '../../services/prometheus.service';
 import l from '../../../common/logger';
-import { tracer } from '../../../common/jaeger';
-
+import tracer from '../../../common/jaeger';
+import opentracing from 'opentracing';
 
 export class Controller {
   async isReady(req, res) {
@@ -112,12 +111,19 @@ export class Controller {
   }
 
   async incrementGameItem(req, res) {
+    const key = `${req.body.id}/${req.body.element}`;
+    const value = req.body.value;
+    const span = tracer.startSpan('redis', {
+      childOf: req.span,
+      tags: {
+        'span.kind': 'client',
+        'db.type': 'redis',
+        'db.statement': `INCRBY ${key} ${value}`,
+      },
+    });
     try {
-      const key = `${req.body.id}/${req.body.element}`;
-      const span = tracer.startSpan('redis_incrby');
-      var redis = await RedisService.incrby(key, req.body.value);
-      span.log({'result': redis});
-      span.finish();
+      var redis = await RedisService.incrby(key, value);
+      span.log({ result: redis });
       if (req.body.element === 'deploys') {
         const incr = parseInt(req.body.value, 10);
         PrometheusService.deploymentCounter.inc(incr);
@@ -143,6 +149,8 @@ export class Controller {
         status: 404,
         msg: 'Not Found',
       });
+    } finally {
+      span.finish();
     }
   }
 }
