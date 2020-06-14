@@ -9,4 +9,3 @@ export default express
   .get('/:id/:element', controller.getGameItem)
   .put('/:id/:element', controller.setGameItem)
   .patch('/:id/:element', controller.incrementGameItem);
-
