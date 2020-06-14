@@ -62,12 +62,6 @@ data:
         log_group_name      fluentbit-cloudwatch
         log_stream_prefix   fluentbit-
         auto_create_group   true
-
-    [OUTPUT]
-        Name              firehose
-        Match             **
-        delivery_stream   eks-stream
-        region            us-east-2 
 ---
 apiVersion: apps/v1
 kind: DaemonSet
