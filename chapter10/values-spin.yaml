@@ -10,4 +10,8 @@ ingress:
   hosts:
     - host: "shipit-staging.eks.example.com"
       paths: ['/*']
+      redirect: true
+      redirectService: "http-redirect"
+      redirectPort: "use-annotation"
+
   tls: []
