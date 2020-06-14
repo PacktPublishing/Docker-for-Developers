@@ -12,3 +12,7 @@ data:
   REDIS_HOST: "redis-master"
   REDIS_REPLICA: "redis-slave"
   REDIS_PORT: "6379"
+  JAEGER_AGENT_HOST: "localhost"
+  JAEGER_AGENT_PORT: "6831"
+  JAEGER_SAMPLING_ENDPOINT: "http://localhost:5778/sampling"
+  JAEGER_COLLECTOR_ENDPOINT: "http://jaeger-collector.observability.svc:14268/api/traces"

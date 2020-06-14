@@ -27,3 +27,6 @@ Please purchase the book and follow the exercises in each chapter to follow alon
 Copyright (c) 2020 Packt
 
 This project is [MIT licensed](./LICENSE).
+
+See the [Chapter 10 README.md](chapter10/README.md) for an additional copyright statement and license variation, as a few files from that chapter are [Apache 2.0 licensed](https://www.apache.org/licenses/LICENSE-2.0).
+

@@ -5,34 +5,48 @@ services:
     image: ${DOCKER_IMAGE:-dockerfordevelopers/shipitclicker:0.10.0}
     build: .
     environment:
-        - APP_ID=shipit-clicker-v7
-        - OPENAPI_SPEC=/api/v1/spec
-        - OPENAPI_ENABLE_RESPONSE_VALIDATION=false
+        - APP_ID=${APP_ID:-shipitclicker-v7}
+        - APP_VERSION=${APP_VERSION:-0.10.0}
+        - OPENAPI_SPEC=${OPENAPI_SPEC:-/api/v1/spec}
+        - OPENAPI_ENABLE_RESPONSE_VALIDATION=${OPENAPI_ENABLE_RESPONSE_VALIDATION:-false}
         - PORT=3000
         - LOG_LEVEL=${LOG_LEVEL:-info}
-        - REQUEST_LIMIT=100kb
+        - REQUEST_LIMIT=${REQUEST_LIMIT:-100kb}
         - REDIS_HOST=${REDIS_HOST:-redis}
         - REDIS_PORT=${REDIS_PORT:-6379}
         - SESSION_SECRET=${SESSION_SECRET:-mySecret-v7}
+        - JAEGER_AGENT_HOST=${JAEGER_AGENT_HOST:-jaeger}
+        - JAEGER_AGENT_PORT=${JAEGER_AGENT_PORT:-6831}
+        - JAEGER_SAMPLING_ENDPOINT=${JAEGER_SAMPLING_ENDPOINT:-http://jaeger:5778/sampling}
+        - JAEGER_COLLECTOR_ENDPOINT=${JAEGER_COLLECTOR_ENDPOINT:-http://jaeger:14268/api/traces}
     ports:
-        - "${PORT:-3009}:3000"
-    networks:
-      - private-redis-shipit-clicker-v7
+        - "${PORT:-3010}:3000"
     links:
       - redis
+      - jaeger
     depends_on:
       - redis
+      - jaeger
 
   redis:
     command: ["redis-server", "--appendonly", "yes"]
     image: redis:5-alpine3.10
     volumes:
       - redis-data-shipit-clicker:/data
-    networks:
-      - private-redis-shipit-clicker-v7
+    ports:
+        - "6379:6379"
+
+  jaeger: 
+    image: jaegertracing/all-in-one:latest
+    ports:
+      - "5775:5775/udp"
+      - "6831:6831/udp"
+      - "6832:6832/udp"
+      - "5778:5778"
+      - "16686:16686"
+      - "14268:14268"
+      - "9411:9411"  
 
 volumes:
   redis-data-shipit-clicker: {}
 
-networks:
-  private-redis-shipit-clicker-v7:

@@ -1,12 +1,11 @@
-const redis = require('redis');
-const { promisify } = require('util');
+import redis from 'redis';
+import { promisify } from 'util';
 import l from '../../common/logger';
 
 class RedisDatabase {
-
-  constructor () {
+  constructor() {
     l.debug({
-      msg: 'Redis Database - deferred init via lazy loading'
+      msg: 'Redis Database - deferred init via lazy loading',
     });
   }
 
@@ -28,7 +27,7 @@ class RedisDatabase {
       redis_url: redis_url,
     });
     // Thanks https://stackoverflow.com/a/18560304
-    client.on("error", err => l.error({msg: "Redis error", err:err}));
+    client.on('error', err => l.error({ msg: 'Redis error', err: err }));
     if (redis_password !== '') {
       client.auth(redis_password);
       l.info({
@@ -43,8 +42,8 @@ class RedisDatabase {
     return client;
   }
 
-  instance() { 
-    return this._client ? this._client : this._client = this.init();
+  instance() {
+    return this._client ? this._client : (this._client = this.init());
   }
 
   async ping() {

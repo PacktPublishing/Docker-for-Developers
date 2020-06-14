@@ -1,0 +1,110 @@
+---
+apiVersion: rbac.authorization.k8s.io/v1beta1
+kind: ClusterRole
+metadata:
+  name: fluentbit
+rules:
+  - apiGroups: [""]
+    resources:
+      - namespaces
+      - pods
+    verbs: ["get", "list", "watch"]
+---
+apiVersion: rbac.authorization.k8s.io/v1beta1
+kind: ClusterRoleBinding
+metadata:
+  name: fluentbit
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: fluentbit
+subjects:
+  - kind: ServiceAccount
+    name: fluentbit
+    namespace: fluentbit-system
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: fluentbit-config
+  namespace: fluentbit-system
+  labels:
+    app.kubernetes.io/name: fluentbit
+data:
+  fluent-bit.conf: |
+    [SERVICE]
+        Parsers_File /fluent-bit/parsers/parsers.conf
+
+    [INPUT]
+        Name              tail
+        Tag               kube.*
+        Path              /var/log/containers/*.log
+        DB                /var/log/flb_kube.db
+        Parser            docker
+        Docker_Mode       On
+        Mem_Buf_Limit     5MB
+        Skip_Long_Lines   On
+        Refresh_Interval  10
+
+    [FILTER]
+        Name                kubernetes
+        Match               kube.*
+        Kube_URL            https://kubernetes.default.svc.cluster.local:443
+        Merge_Log           On
+        Merge_Log_Key       data
+        K8S-Logging.Parser  On
+        K8S-Logging.Exclude On
+
+    [OUTPUT]
+        Name                cloudwatch
+        Match               **
+        region              us-east-2
+        log_group_name      fluentbit-cloudwatch
+        log_stream_prefix   fluentbit-
+        auto_create_group   true
+---
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: fluentbit
+  namespace: fluentbit-system
+  labels:
+    app.kubernetes.io/name: fluentbit
+spec:
+  selector:
+    matchLabels:
+      name: fluentbit
+  template:
+    metadata:
+      labels:
+        name: fluentbit
+    spec:
+      serviceAccountName: fluentbit
+      containers:
+        - name: aws-for-fluent-bit
+          imagePullPolicy: Always
+          image: amazon/aws-for-fluent-bit:latest
+          volumeMounts:
+            - name: varlog
+              mountPath: /var/log
+            - name: varlibdockercontainers
+              mountPath: /var/lib/docker/containers
+              readOnly: true
+            - name: fluentbit-config
+              mountPath: /fluent-bit/etc/
+          resources:
+            limits:
+              memory: 500Mi
+            requests:
+              cpu: 500m
+              memory: 100Mi
+      volumes:
+        - name: varlog
+          hostPath:
+            path: /var/log
+        - name: varlibdockercontainers
+          hostPath:
+            path: /var/lib/docker/containers
+        - name: fluentbit-config
+          configMap:
+            name: fluentbit-config
