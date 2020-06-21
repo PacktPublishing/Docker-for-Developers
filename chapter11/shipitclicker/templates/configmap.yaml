@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-configmap
+data:
+  APP_ID: "Shipit-Clicker-{{ .Release.Name }}"
+  OPENAPI_SPEC: "/api/v1/spec"
+  OPENAPI_ENABLE_RESPONSE_VALIDATION: "false"
+  PORT: "3000"
+  LOG_LEVEL: "info"
+  REQUEST_LIMIT: "100kb"
+  REDIS_HOST: "redis-master"
+  REDIS_REPLICA: "redis-slave"
+  REDIS_PORT: "6379"
