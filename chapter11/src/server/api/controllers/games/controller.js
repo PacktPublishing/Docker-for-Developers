@@ -1,23 +1,24 @@
-import RedisService from '../../services/redis.service';
-import l from '../../../common/logger';
 import { nanoid } from 'nanoid';
-import spin from '../../../common/spin';
+import RedisService from '../../services/redis.service';
+import PrometheusService from '../../services/prometheus.service';
+import l from '../../../common/logger';
+import tracer from '../../../common/jaeger';
+const opentracing = require('opentracing');
 
 export class Controller {
-  async getSpin(req, res) {
-    const started_on = new Date().getTime();
+  async isReady(req, res) {
     try {
-      const spin_status = spin();
-      l.debug('spin_status: ', spin_status);
+      var redis = await RedisService.ping();
+      l.debug({ msg: 'isReady: Redis PING complete', value: redis });
       return res.json({
-        msg: 'SPIN API',
-        spin: spin_status,
-        started_on: started_on,
+        msg: 'ready',
       });
     } catch (err) {
-      console.log('ERROR', err);
-      l.warn({ msg: 'Spin GET errored', key: req.params.id, error: err });
-      return res.status(404);
+      l.warn({ msg: 'Redis PING errored', error: err.stack });
+      return res.status(503).json({
+        status: 503,
+        msg: 'Service Unavailable',
+      });
     }
   }
 
@@ -31,8 +32,15 @@ export class Controller {
         started_on: redis,
       });
     } catch (err) {
-      l.warn({ msg: 'Redis GET errored', key: req.params.id, error: err });
-      return res.status(404);
+      l.warn({
+        msg: 'Redis GET errored',
+        key: req.params.id,
+        error: err.stack,
+      });
+      return res.status(404).json({
+        status: 404,
+        msg: 'Not Found',
+      });
     }
   }
 
@@ -41,14 +49,17 @@ export class Controller {
       const id = nanoid();
       const started_on = new Date().getTime();
       var redis = await RedisService.set(id, started_on);
-      l.debug({ msg: 'Redis SET complete', key: id, value: redis });
+      l.info({ msg: 'Game created in Redis', key: id, value: redis });
       return res.status(201).json({
         id: id,
         started_on: started_on,
       });
     } catch (err) {
-      l.error({ msg: 'createGame Redis SET errored', error: err });
-      return res.status(500);
+      l.warn({ msg: 'createGame Redis SET errored', error: err.stack });
+      return res.status(500).json({
+        status: 500,
+        msg: 'Server Error',
+      });
     }
   }
 
@@ -56,48 +67,7 @@ export class Controller {
     try {
       const key = `${req.params.id}/${req.params.element}`;
       var redis = await RedisService.get(key);
-      l.debug({ msg: 'Redis GET complete', key: key, value: redis });
-      return res.json({
-        id: req.params.id,
-        element: req.params.element,
-        value: redis,
-      });
-    } catch (err) {
-      l.error({
-        msg: 'getGameItem Redis GET errored',
-        id: req.params.id,
-        element: req.params.element,
-        error: err,
-      });
-      return res.status(404);
-    }
-  }
-
-  async setGameItem(req, res) {
-    try {
-      const key = `${req.body.id}/${req.body.element}`;
-      var redis = await RedisService.set(key, req.body.value);
-      l.debug({ msg: 'Redis SET complete', key: key, value: redis });
-      return res.status(201).json({
-        id: req.body.id,
-        element: req.body.element,
-        value: req.body.value,
-      });
-    } catch (err) {
-      l.error({
-        msg: 'setGameItem Redis SET errored',
-        key: req.body.id,
-        error: err,
-      });
-      return res.status(500);
-    }
-  }
-
-  async incrementGameItem(req, res) {
-    try {
-      const key = `${req.body.id}/${req.body.element}`;
-      var redis = await RedisService.incrby(key, req.body.value);
-      l.debug({ msg: 'Redis INCRBY complete', key: key, value: redis });
+      l.debug({ msg: 'Game item Redis GET complete', key: key, value: redis });
       return res.json({
         id: req.params.id,
         element: req.params.element,
@@ -105,12 +75,85 @@ export class Controller {
       });
     } catch (err) {
       l.warn({
-        msg: 'incrementGameItem Redis INCRBY errored',
+        msg: 'getGameItem Redis GET errored',
+        id: req.params.id,
+        element: req.params.element,
+        error: err.stack,
+      });
+      return res.status(404).json({
+        status: 404,
+        msg: 'Not Found',
+      });
+    }
+  }
+
+  async setGameItem(req, res) {
+    try {
+      const key = `${req.body.id}/${req.body.element}`;
+      var redis = await RedisService.set(key, req.body.value);
+      l.info({ msg: 'Game item Redis SET complete', key: key, value: redis });
+      return res.status(201).json({
+        id: req.body.id,
+        element: req.body.element,
+        value: req.body.value,
+      });
+    } catch (err) {
+      l.warn({
+        msg: 'setGameItem Redis SET errored',
+        key: req.body.id,
+        error: err.stack,
+      });
+      return res.status(500).json({
+        status: 500,
+        msg: 'Server Error',
+      });
+    }
+  }
+
+  async incrementGameItem(req, res) {
+    const key = `${req.body.id}/${req.body.element}`;
+    const value = req.body.value;
+    const span = tracer.startSpan('redis', {
+      childOf: req.span,
+      tags: {
+        [opentracing.Tags.SPAN_KIND]: opentracing.Tags.SPAN_KIND_RPC_CLIENT,
+        'span.kind': 'client',
+        'db.type': 'redis',
+        'db.statement': `INCRBY ${key} ${value}`,
+      },
+    });
+    try {
+      var redis = await RedisService.incrby(key, value);
+      span.log({ result: redis }).finish();
+      const msg = {
+        msg: 'Game item Redis INCRBY complete',
+        key: key,
+        value: redis,
+      };
+      req.span.log(msg);
+      l.info(msg);
+      if (req.body.element === 'deploys') {
+        const incr = parseInt(req.body.value, 10);
+        PrometheusService.deploymentCounter.inc(incr);
+      }
+      return res.json({
+        id: req.params.id,
+        element: req.params.element,
+        value: redis,
+      });
+    } catch (err) {
+      const msg = {
         key: req.body.id,
         element: req.body.element,
-        error: err,
+        message: err.message,
+        stack: err.stack,
+      };
+      span.log(msg).finish();
+      l.warn(msg);
+      return res.status(404).json({
+        status: 404,
+        msg: 'Not Found',
       });
-      return res.status(404);
     }
   }
 }

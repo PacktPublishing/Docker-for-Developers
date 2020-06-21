@@ -1,12 +1,12 @@
 ---
 version: '3'
 services:
-  shipit-clicker-web-v7:
-    image: ${DOCKER_IMAGE:-dockerfordevelopers/shipitclicker:0.10.0}
+  shipit-clicker-web-v8:
+    image: ${DOCKER_IMAGE:-dockerfordevelopers/shipitclicker:1.11.0}
     build: .
     environment:
-        - APP_ID=${APP_ID:-shipitclicker-v7}
-        - APP_VERSION=${APP_VERSION:-0.10.0}
+        - APP_ID=${APP_ID:-shipitclicker-v8}
+        - APP_VERSION=${APP_VERSION:-1.11.0}
         - OPENAPI_SPEC=${OPENAPI_SPEC:-/api/v1/spec}
         - OPENAPI_ENABLE_RESPONSE_VALIDATION=${OPENAPI_ENABLE_RESPONSE_VALIDATION:-false}
         - PORT=3000
@@ -14,13 +14,13 @@ services:
         - REQUEST_LIMIT=${REQUEST_LIMIT:-100kb}
         - REDIS_HOST=${REDIS_HOST:-redis}
         - REDIS_PORT=${REDIS_PORT:-6379}
-        - SESSION_SECRET=${SESSION_SECRET:-mySecret-v7}
+        - SESSION_SECRET=${SESSION_SECRET:-mySecret-v8}
         - JAEGER_AGENT_HOST=${JAEGER_AGENT_HOST:-jaeger}
         - JAEGER_AGENT_PORT=${JAEGER_AGENT_PORT:-6831}
         - JAEGER_SAMPLING_ENDPOINT=${JAEGER_SAMPLING_ENDPOINT:-http://jaeger:5778/sampling}
         - JAEGER_COLLECTOR_ENDPOINT=${JAEGER_COLLECTOR_ENDPOINT:-http://jaeger:14268/api/traces}
     ports:
-        - "${PORT:-3010}:3000"
+        - "${PORT:-3011}:3000"
     links:
       - redis
       - jaeger

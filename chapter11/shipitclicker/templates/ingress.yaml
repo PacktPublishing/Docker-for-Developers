@@ -31,6 +31,12 @@ spec:
     - host: {{ .host | quote }}
       http:
         paths:
+        {{- if .redirect }}
+          - path: '/*'
+            backend:
+              serviceName: {{ .redirectService }}
+              servicePort: {{ .redirectPort }}
+        {{- end }}
         {{- range .paths }}
           - path: {{ . }}
             backend:

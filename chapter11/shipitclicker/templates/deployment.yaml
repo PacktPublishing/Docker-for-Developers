@@ -13,6 +13,9 @@ spec:
     metadata:
       labels:
         {{- include "shipitclicker.selectorLabels" . | nindent 8 }}
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "3000"
     spec:
     {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
@@ -33,6 +36,8 @@ spec:
                 configMapKeyRef:
                   name: {{ .Release.Name }}-configmap
                   key: APP_ID
+            - name: APP_VERSION
+              value: {{ .Values.appVersion }}
             - name: OPENAPI_SPEC
               valueFrom:
                 configMapKeyRef:
@@ -88,6 +93,26 @@ spec:
                 secretKeyRef:
                   name: {{ .Release.Name }}-secrets
                   key: SESSION_SECRET
+            - name: JAEGER_AGENT_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: {{ .Release.Name }}-configmap
+                  key: JAEGER_AGENT_HOST
+            - name: JAEGER_AGENT_PORT
+              valueFrom:
+                configMapKeyRef:
+                  name: {{ .Release.Name }}-configmap
+                  key: JAEGER_AGENT_PORT
+            - name: JAEGER_SAMPLING_ENDPOINT
+              valueFrom:
+                configMapKeyRef:
+                  name: {{ .Release.Name }}-configmap
+                  key: JAEGER_SAMPLING_ENDPOINT
+            - name: JAEGER_COLLECTOR_ENDPOINT
+              valueFrom:
+                configMapKeyRef:
+                  name: {{ .Release.Name }}-configmap
+                  key: JAEGER_COLLECTOR_ENDPOINT
           ports:
             - name: http
               containerPort: 3000
