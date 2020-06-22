@@ -1,4 +1,7 @@
-replicaCount: 1
+replicaCount: 2
+
+podDisruptionBudget:
+  minAvailable: 1
 
 image:
   repository: dockerfordevelopers/shipitclicker:0.10.0

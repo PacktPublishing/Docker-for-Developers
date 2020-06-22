@@ -1,0 +1,11 @@
+apiVersion: policy/v1beta1
+kind: PodDisruptionBudget
+metadata:
+  name: {{ include "shipitclicker.fullname" . }}-pdb
+  labels:
+    {{- include "shipitclicker.selectorLabels" . | nindent 4 }}
+spec:
+  minAvailable: {{ .Values.podDisruptionBudget.minAvailable }}
+  selector:
+    matchLabels:
+      {{- include "shipitclicker.selectorLabels" . | nindent 6 }}

@@ -14,3 +14,10 @@ ingress:
       redirectService: "http-redirect"
       redirectPort: "use-annotation"
   tls: []
+resources:
+ limits:
+   cpu: 500m
+   memory: 256Mi
+ requests:
+   cpu: 100m
+   memory: 128M
