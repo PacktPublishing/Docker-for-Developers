@@ -32,16 +32,11 @@ export default (
   const end_time = start_time + (delay + congestion_slowdown) * pareto_factor;
   const time_limit = start_time + max_duration;
   let calcs = 0;
-  while (current_time < end_time) {
+  while (current_time < end_time && current_time <= time_limit) {
     calcs++;
     scratch = (scratch * scratch) % upper_max;
     current_time = Date.now() / 1000;
     interval = current_time - start_time;
-    if (current_time > time_limit) {
-      throw new Error(
-        `Allowed transaction time exceeded ${interval} ms elapsd`
-      );
-    }
   }
   last_time = current_time;
   let rate = calcs / interval;
