@@ -30,9 +30,9 @@ export default (
   }
 
   const end_time = start_time + (delay + congestion_slowdown) * pareto_factor;
-  const time_limit = start_time + max_duration;
+  const time_limit = Math.min(start_time + max_duration, end_time);
   let calcs = 0;
-  while (current_time < end_time && current_time <= time_limit) {
+  while (current_time <= time_limit) {
     calcs++;
     scratch = (scratch * scratch) % upper_max;
     current_time = Date.now() / 1000;
