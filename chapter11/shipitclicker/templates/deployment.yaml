@@ -15,7 +15,6 @@ spec:
         {{- include "shipitclicker.selectorLabels" . | nindent 8 }}
       annotations:
         prometheus.io/scrape: "true"
-        prometheus.io/port: "3000"
     spec:
     {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
@@ -127,6 +126,39 @@ spec:
               port: http
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
+        - name: envoy-sidecar
+          image: "{{ .Values.envoy.repository }}"
+          imagePullPolicy: {{ .Values.envoy.pullPolicy }}
+          command: ["/usr/local/bin/envoy"]
+          args: ["-c", "/etc/envoy-config/config.yaml"]
+          ports:
+            - name: envoy-admin
+              containerPort: 9102
+              protocol: TCP
+            - name: metrics
+              containerPort: 9103
+              protocol: TCP
+            - name: envoy-web
+              containerPort: 4000
+              protocol: TCP
+          volumeMounts:
+            - name: envoy-config-vol
+              mountPath: /etc/envoy-config/
+              #livenessProbe:
+              #httpGet:
+              #path: /server_info
+              #port: envoy-admin
+              #readinessProbe:
+              #httpGet:
+              # path: /api/v2/games/ready
+              # port: envoy-web
+      volumes:
+        - name: envoy-config-vol
+          configMap:
+            name: {{ .Release.Name }}-envoy-sidecar-configmap
+            items:
+              - key: envoy-config
+                path: config.yaml
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}

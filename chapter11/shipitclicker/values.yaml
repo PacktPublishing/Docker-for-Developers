@@ -7,6 +7,11 @@ image:
   repository: dockerfordevelopers/shipitclicker:0.10.0
   pullPolicy: IfNotPresent
 
+envoy:
+  repository: envoyproxy/envoy:v1.14.2
+  pullPolicy: IfNotPresent
+  accessLog: "/dev/null"
+
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
@@ -23,7 +28,7 @@ securityContext: {}
 service:
   type: ClusterIP
   port: 8008
-  targetPort: 3000
+  targetPort: 4000
 
 ingress:
   enabled: true
