@@ -135,9 +135,6 @@ spec:
             - name: envoy-admin
               containerPort: 9102
               protocol: TCP
-            - name: metrics
-              containerPort: 9103
-              protocol: TCP
             - name: envoy-web
               containerPort: 4000
               protocol: TCP
