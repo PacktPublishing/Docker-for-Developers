@@ -33,7 +33,7 @@ pipeline {
             script: "git log -n 1 --pretty=format:'%h'").trim()
           def appVersion = sh(
             returnStdout: true, 
-            script: "awk '/appVersion/{print $2}' shipitclicker/Chart.yaml").trim()
+            script: 'awk \'/appVersion/{print $2}\' shipitclicker/Chart.yaml').trim()
           semVer = getSemVer(appVersion, shortCommit)
           def imageName
           def registry = getRegistry()
