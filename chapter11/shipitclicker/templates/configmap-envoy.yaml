@@ -51,3 +51,11 @@ data:
                   socket_address:
                     address: "127.0.0.1"
                     port_value: 3000
+        circuit_breakers:
+          thresholds:
+            - priority: DEFAULT
+              max_requests: {{ .Values.envoy.maxRequests }}
+              max_connections: {{ .Values.envoy.maxRequests }}
+            - priority: HIGH
+              max_requests: {{ .Values.envoy.maxRequests }}
+              max_connections: {{ .Values.envoy.maxRequests }}

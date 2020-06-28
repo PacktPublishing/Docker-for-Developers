@@ -11,6 +11,7 @@ envoy:
   repository: envoyproxy/envoy:v1.14.2
   pullPolicy: IfNotPresent
   accessLog: "/dev/null"
+  maxRequests: 2000
 
 imagePullSecrets: []
 nameOverride: ""
