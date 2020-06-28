@@ -1,0 +1,59 @@
+#!/usr/bin/env groovy
+def appName = 'shipitclicker'
+def baseDir = 'chapter10'
+def dockerfile = "${baseDir}/Dockerfile"
+def propFileName = "build.properties"
+def semVer
+def getSemVer(appVersion, commitHash) {
+      "${appVersion}-${env.BUILD_ID}.${commitHash}"
+}
+def getRegistry() {
+    withCredentials([string(
+        credentialsId: 'shipit.ecr.id',
+        variable: 'registryId')]) {
+        "${registryId}"
+    }
+}
+def getImageName(registry, appName, semVer) {
+  "${registry}/dockerfordevelopers/${appName}:${semVer}"
+}
+def getTarget() {
+  env.BRANCH_NAME == 'staging' ? 'staging' : 'prod'
+}
+pipeline {
+  agent any
+  stages {
+    stage('build') {
+      steps {
+        checkout scm
+        script {
+          // Credit to https://github.com/jenkinsci/pipeline-examples/blob/master/pipeline-examples/gitcommit/gitcommit.groovy
+          shortCommit = sh(
+            returnStdout: true, 
+            script: "git log -n 1 --pretty=format:'%h'").trim()
+          def appVersion = sh(
+            returnStdout: true, 
+            script: "awk '/appVersion/{print $2}' shipitclicker/Chart.yaml").trim()
+          semVer = getSemVer(appVersion, shortCommit)
+          def imageName
+          def registry = getRegistry()
+          docker.withRegistry("https://${registry}", 'ecr:us-east-2:shipit.aws.key') {
+            imageName = getImageName(registry, appName, semVer)
+            def image = docker.build(
+              imageName,
+              "-f ${dockerfile} --network host ./${baseDir}"
+            )
+            image.push()
+          }
+          def propFileContents = """
+semVer=${semVer}
+imageName=${imageName}
+"""
+          writeFile file:propFileName, text: propFileContents
+          archiveArtifacts("${propFileName}")
+          }
+      }
+    }
+  }
+}
+
