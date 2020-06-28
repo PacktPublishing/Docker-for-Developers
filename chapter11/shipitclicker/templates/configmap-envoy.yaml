@@ -12,7 +12,7 @@ data:
           port_value: 9901
     static_resources:
       listeners:
-        - name: "shipitclicker-http-listener"
+        - name: shipitclicker_listener
           address:
             socket_address:
               address: "0.0.0.0"
@@ -34,12 +34,28 @@ data:
                       - match:
                           prefix: "/"
                         route:
-                          cluster: shipitclicker
+                          cluster: shipitclicker_cluster
                   http_filters:
                   - name: envoy.filters.http.router
                     typed_config: {}
+        - name: redis_listener
+          address:
+            socket_address:
+              address: 0.0.0.0
+              port_value: 6379
+          filter_chains:
+          - filters:
+            - name: envoy.filters.network.redis_proxy
+              typed_config:
+                "@type": type.googleapis.com/envoy.config.filter.network.redis_proxy.v2.RedisProxy
+                stat_prefix: egress_redis
+                settings:
+                  op_timeout: 5s
+                prefix_routes:
+                  catch_all_route:
+                    cluster: redis_cluster
       clusters:
-      - name: shipitclicker
+      - name: shipitclicker_cluster
         connect_timeout: 0.25s
         type: static
         load_assignment:
@@ -54,8 +70,20 @@ data:
         circuit_breakers:
           thresholds:
             - priority: DEFAULT
-              max_requests: {{ .Values.envoy.maxRequests }}
               max_connections: {{ .Values.envoy.maxRequests }}
-            - priority: HIGH
+              max_pending_requests: {{ .Values.envoy.maxRequests }}
               max_requests: {{ .Values.envoy.maxRequests }}
-              max_connections: {{ .Values.envoy.maxRequests }}
+              max_retries: {{ .Values.envoy.maxRetries }}
+      - name: redis_cluster
+        connect_timeout: 1s
+        type: strict_dns
+        lb_policy: MAGLEV
+        load_assignment:
+          cluster_name: redis
+          endpoints:
+          - lb_endpoints:
+            - endpoint:
+                address:
+                  socket_address:
+                    address: redis-master
+                    port_value: 6379

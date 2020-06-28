@@ -4,14 +4,15 @@ podDisruptionBudget:
   minAvailable: 1
 
 image:
-  repository: dockerfordevelopers/shipitclicker:0.10.0
+  repository: dockerfordevelopers/shipitclicker:1.11.5
   pullPolicy: IfNotPresent
 
 envoy:
   repository: envoyproxy/envoy:v1.14.2
   pullPolicy: IfNotPresent
   accessLog: "/dev/null"
-  maxRequests: 2000
+  maxRequests: 1024
+  maxRetries: 2
 
 imagePullSecrets: []
 nameOverride: ""
@@ -29,7 +30,7 @@ securityContext: {}
 service:
   type: ClusterIP
   port: 8008
-  targetPort: 4000
+  targetPort: envoy-http
 
 ingress:
   enabled: true

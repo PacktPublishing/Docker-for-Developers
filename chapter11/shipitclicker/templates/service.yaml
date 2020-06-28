@@ -10,6 +10,6 @@ spec:
     - port: {{ .Values.service.port }}
       targetPort: envoy-http
       protocol: TCP
-      name: http
+      name: shipitclicker-svc-http
   selector:
     {{- include "shipitclicker.selectorLabels" . | nindent 4 }}
