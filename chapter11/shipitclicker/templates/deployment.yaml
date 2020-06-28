@@ -133,22 +133,22 @@ spec:
           args: ["-c", "/etc/envoy-config/config.yaml"]
           ports:
             - name: envoy-admin
-              containerPort: 9102
+              containerPort: 9901
               protocol: TCP
-            - name: envoy-web
+            - name: envoy-http
               containerPort: 4000
               protocol: TCP
+          livenessProbe:
+            httpGet:
+              path: /server_info
+              port: envoy-admin
+          readinessProbe:
+            httpGet:
+              path: /ready
+              port: envoy-admin
           volumeMounts:
             - name: envoy-config-vol
               mountPath: /etc/envoy-config/
-              #livenessProbe:
-              #httpGet:
-              #path: /server_info
-              #port: envoy-admin
-              #readinessProbe:
-              #httpGet:
-              # path: /api/v2/games/ready
-              # port: envoy-web
       volumes:
         - name: envoy-config-vol
           configMap:

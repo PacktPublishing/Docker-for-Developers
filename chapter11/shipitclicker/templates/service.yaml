@@ -8,7 +8,7 @@ spec:
   type: {{ .Values.service.type }}
   ports:
     - port: {{ .Values.service.port }}
-      targetPort: envoy-web
+      targetPort: envoy-http
       protocol: TCP
       name: http
   selector:
