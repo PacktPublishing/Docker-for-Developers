@@ -2,7 +2,6 @@
 def appName = 'shipitclicker'
 def baseDir = 'chapter10'
 def dockerfile = "${baseDir}/Dockerfile"
-def appVersion = '0.10.0'
 def propFileName = "build.properties"
 def semVer
 def getSemVer(appVersion, commitHash) {
@@ -32,6 +31,9 @@ pipeline {
           shortCommit = sh(
             returnStdout: true, 
             script: "git log -n 1 --pretty=format:'%h'").trim()
+          def appVersion = sh(
+            returnStdout: true, 
+            script: "awk '/appVersion/{print $2}' shipitclicker/Chart.yaml").trim()
           semVer = getSemVer(appVersion, shortCommit)
           def imageName
           def registry = getRegistry()
