@@ -1,0 +1,170 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "shipitclicker.fullname" . }}
+  labels:
+    {{- include "shipitclicker.labels" . | nindent 4 }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      {{- include "shipitclicker.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      labels:
+        {{- include "shipitclicker.selectorLabels" . | nindent 8 }}
+      annotations:
+        prometheus.io/scrape: "true"
+    spec:
+    {{- with .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+    {{- end }}
+      serviceAccountName: {{ include "shipitclicker.serviceAccountName" . }}
+      securityContext:
+        {{- toYaml .Values.podSecurityContext | nindent 8 }}
+      containers:
+        - name: {{ .Chart.Name }}
+          securityContext:
+            {{- toYaml .Values.securityContext | nindent 12 }}
+          image: "{{ .Values.image.repository }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          env:
+            - name: APP_ID
+              valueFrom:
+                configMapKeyRef:
+                  name: {{ .Release.Name }}-configmap
+                  key: APP_ID
+            - name: APP_VERSION
+              value: {{ .Values.appVersion }}
+            - name: OPENAPI_SPEC
+              valueFrom:
+                configMapKeyRef:
+                  name: {{ .Release.Name }}-configmap
+                  key: OPENAPI_SPEC
+            - name: OPENAPI_ENABLE_RESPONSE_VALIDATION
+              valueFrom:
+                configMapKeyRef:
+                  name: {{ .Release.Name }}-configmap
+                  key: OPENAPI_ENABLE_RESPONSE_VALIDATION
+            - name: OPENAPI_ENABLE_RESPONSE_VALIDATION
+              valueFrom:
+                configMapKeyRef:
+                  name: {{ .Release.Name }}-configmap
+                  key: OPENAPI_ENABLE_RESPONSE_VALIDATION
+            - name: PORT
+              valueFrom:
+                configMapKeyRef:
+                  name: {{ .Release.Name }}-configmap
+                  key: PORT
+            - name: LOG_LEVEL
+              valueFrom:
+                configMapKeyRef:
+                  name: {{ .Release.Name }}-configmap
+                  key: LOG_LEVEL
+            - name: REQUEST_LIMIT
+              valueFrom:
+                configMapKeyRef:
+                  name: {{ .Release.Name }}-configmap
+                  key: REQUEST_LIMIT
+            - name: REDIS_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: {{ .Release.Name }}-configmap
+                  key: REDIS_HOST
+            - name: REDIS_REPLICA
+              valueFrom:
+                configMapKeyRef:
+                  name: {{ .Release.Name }}-configmap
+                  key: REDIS_REPLICA
+            - name: REDIS_PORT
+              valueFrom:
+                configMapKeyRef:
+                  name: {{ .Release.Name }}-configmap
+                  key: REDIS_PORT
+            - name: REDIS_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: redis
+                  key: redis-password
+            - name: SESSION_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Release.Name }}-secrets
+                  key: SESSION_SECRET
+            - name: JAEGER_AGENT_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: {{ .Release.Name }}-configmap
+                  key: JAEGER_AGENT_HOST
+            - name: JAEGER_AGENT_PORT
+              valueFrom:
+                configMapKeyRef:
+                  name: {{ .Release.Name }}-configmap
+                  key: JAEGER_AGENT_PORT
+            - name: JAEGER_SAMPLING_ENDPOINT
+              valueFrom:
+                configMapKeyRef:
+                  name: {{ .Release.Name }}-configmap
+                  key: JAEGER_SAMPLING_ENDPOINT
+            - name: JAEGER_COLLECTOR_ENDPOINT
+              valueFrom:
+                configMapKeyRef:
+                  name: {{ .Release.Name }}-configmap
+                  key: JAEGER_COLLECTOR_ENDPOINT
+          ports:
+            - name: http
+              containerPort: 3000
+              protocol: TCP
+          livenessProbe:
+            httpGet:
+              path: /
+              port: http
+          readinessProbe:
+            httpGet:
+              path: /api/v2/games/ready
+              port: http
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+        - name: envoy-sidecar
+          image: "{{ .Values.envoy.repository }}"
+          imagePullPolicy: {{ .Values.envoy.pullPolicy }}
+          command: ["/usr/local/bin/envoy"]
+          args: ["-c", "/etc/envoy-config/config.yaml"]
+          ports:
+            - name: envoy-admin
+              containerPort: 9901
+              protocol: TCP
+            - name: envoy-http
+              containerPort: 4000
+              protocol: TCP
+          livenessProbe:
+            httpGet:
+              path: /server_info
+              port: envoy-admin
+          readinessProbe:
+            httpGet:
+              path: /ready
+              port: envoy-admin
+          volumeMounts:
+            - name: envoy-config-vol
+              mountPath: /etc/envoy-config/
+      volumes:
+        - name: envoy-config-vol
+          configMap:
+            name: {{ .Release.Name }}-envoy-sidecar-configmap
+            items:
+              - key: envoy-config
+                path: config.yaml
+      {{- with .Values.nodeSelector }}
+      nodeSelector:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+    {{- with .Values.affinity }}
+      affinity:
+        {{- toYaml . | nindent 8 }}
+    {{- end }}
+    {{- with .Values.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
+    {{- end }}

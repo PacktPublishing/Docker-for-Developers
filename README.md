@@ -28,5 +28,5 @@ Copyright (c) 2020 Packt
 
 This project is [MIT licensed](./LICENSE).
 
-See the [Chapter 10 README.md](chapter10/README.md) for an additional copyright statement and license variation, as a few files from that chapter are [Apache 2.0 licensed](https://www.apache.org/licenses/LICENSE-2.0).
+See the [Chapter 10 README.md](chapter10/README.md) and the [Chapter 11 README.md](chapter11/README.md) for an additional copyright statement and license variation, as a few files from those chapters are [Apache 2.0 licensed](https://www.apache.org/licenses/LICENSE-2.0).
 

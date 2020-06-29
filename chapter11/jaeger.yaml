@@ -1,0 +1,22 @@
+apiVersion: jaegertracing.io/v1
+kind: Jaeger
+metadata:
+  name: jaeger
+spec:
+  strategy: production
+  collector:
+    maxReplicas: 3
+    resources:
+      limits:
+        cpu: 100m
+        memory: 128Mi
+  storage:
+    type: memory
+    options:
+      memory:
+        max-traces: 100000
+  agent:
+    strategy: DaemonSet
+    options:
+        log-level: debug
+

@@ -1,0 +1,51 @@
+replicaCount: 2
+
+podDisruptionBudget:
+  minAvailable: 1
+
+image:
+  repository: dockerfordevelopers/shipitclicker:1.11.5
+  pullPolicy: IfNotPresent
+
+envoy:
+  repository: envoyproxy/envoy:v1.14.2
+  pullPolicy: IfNotPresent
+  accessLog: "/dev/null"
+  maxRequests: 1024
+  maxRetries: 2
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+serviceAccount:
+  create: true
+  annotations: {}
+  name:
+
+podSecurityContext: {}
+
+securityContext: {}
+
+service:
+  type: ClusterIP
+  port: 8008
+  targetPort: envoy-http
+
+ingress:
+  enabled: true
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    kubernetes.io/tls-acme: "true"
+  hosts:
+    -  host: localhost
+       paths: ['/']
+  tls: []
+
+resources: {}
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}

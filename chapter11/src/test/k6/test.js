@@ -142,6 +142,5 @@ export default function() {
     deploy(id);
     sleep(moveDelay);
   }
-
   log.info(`Game ${id}: Done with ${MOVES} moves`);
 }
