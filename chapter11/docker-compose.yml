@@ -2,11 +2,11 @@
 version: '3'
 services:
   shipit-clicker-web-v8:
-    image: ${DOCKER_IMAGE:-dockerfordevelopers/shipitclicker:1.11.0}
+    image: ${DOCKER_IMAGE:-dockerfordevelopers/shipitclicker:1.11.5}
     build: .
     environment:
         - APP_ID=${APP_ID:-shipitclicker-v8}
-        - APP_VERSION=${APP_VERSION:-1.11.0}
+        - APP_VERSION=${APP_VERSION:-1.11.5}
         - OPENAPI_SPEC=${OPENAPI_SPEC:-/api/v1/spec}
         - OPENAPI_ENABLE_RESPONSE_VALIDATION=${OPENAPI_ENABLE_RESPONSE_VALIDATION:-false}
         - PORT=3000
