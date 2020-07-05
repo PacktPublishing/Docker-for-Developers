@@ -1,0 +1,3 @@
+fields @message
+| filter @message like /Game created in Redis/
+| stats count()
