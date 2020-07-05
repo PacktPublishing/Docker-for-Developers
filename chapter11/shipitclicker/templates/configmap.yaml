@@ -7,6 +7,7 @@ data:
   OPENAPI_SPEC: "/api/v1/spec"
   OPENAPI_ENABLE_RESPONSE_VALIDATION: "false"
   PORT: "3000"
+  METRICS_PORT: "9090"
   LOG_LEVEL: "info"
   REQUEST_LIMIT: "100kb"
   REDIS_HOST: "localhost"

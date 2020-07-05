@@ -4,7 +4,7 @@ podDisruptionBudget:
   minAvailable: 1
 
 image:
-  repository: dockerfordevelopers/shipitclicker:1.11.5
+  repository: dockerfordevelopers/shipitclicker:1.11.7
   pullPolicy: IfNotPresent
 
 envoy:

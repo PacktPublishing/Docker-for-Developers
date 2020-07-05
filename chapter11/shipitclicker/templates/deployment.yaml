@@ -52,6 +52,11 @@ spec:
                 configMapKeyRef:
                   name: {{ .Release.Name }}-configmap
                   key: OPENAPI_ENABLE_RESPONSE_VALIDATION
+            - name: METRICS_PORT
+              valueFrom:
+                configMapKeyRef:
+                  name: {{ .Release.Name }}-configmap
+                  key: METRICS_PORT
             - name: PORT
               valueFrom:
                 configMapKeyRef:
@@ -115,6 +120,9 @@ spec:
           ports:
             - name: http
               containerPort: 3000
+              protocol: TCP
+            - name: metrics
+              containerPort: 9090
               protocol: TCP
           livenessProbe:
             httpGet:
