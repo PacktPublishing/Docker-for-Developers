@@ -146,6 +146,9 @@ spec:
             - name: envoy-http
               containerPort: 4000
               protocol: TCP
+            - name: metrics
+              containerPort: 9902
+              protocol: TCP
           livenessProbe:
             httpGet:
               path: /server_info
