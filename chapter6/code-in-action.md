@@ -19,7 +19,7 @@ running Docker and docker-compose on a single host.
 ## Using operating system packages to install Docker and git
 On the Internet-connected host:
 - [ ] Install Docker
-- [ ] Add the non-root user to toe Docker user group, and add it to your session
+- [ ] Add the non-root user to the Docker user group, and add it to your session
 - [ ] Make sure the Docker service is enabled
 - [ ] Install docker-compose
 - [ ] Install git
