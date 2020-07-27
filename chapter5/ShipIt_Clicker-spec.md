@@ -4,7 +4,7 @@ This is part of the [Docker for Developers](https://github.com/ModusCreateOrg/do
 
 _ShipIt Clicker_, is an [incremental game](https://en.wikipedia.org/wiki/Incremental_game) where the [ShipIt Squirrel](https://www.quora.com/On-GitHub-what-is-the-significance-of-the-Ship-It-squirrel) encourages you to deploy Docker containers to production at an ever higher rate. 
 
-Chapters 5 through 12 will feature successively more sophisticated versions of _ShipIt Clicker_, along with varied and sophisticated means to deploy it to production.
+Chapters 5 through 11 will feature successively more sophisticated versions of _ShipIt Clicker_, along with varied and sophisticated means to deploy it to production.
 
 ## _ShipIt Clicker_ Vision
 
@@ -46,13 +46,18 @@ Future chapters will have versions that add more features, related to the concep
 
 ### Technology Plan
 
-Build a first cut prototype with a plain HTML5 front end, with [Zepto](https://zeptojs.com/) handling DOM manipulation and AJAX calls.
+#### First-cut prototype plan
+Build a first cut prototype with a plain HTML5 front end, with vanilla JavaScript handling handling DOM manipulation and AJAX calls.
+
+Use [docker-compose](https://docs.docker.com/compose/) to assemble the initial application components.
 
 Use [Yeoman](https://yeoman.io/) to generate an application skeleton with [generator-express-no-stress](https://github.com/cdimascio/generator-express-no-stress) to get a decent RESTful API platform.
 
-Use [Cocos to build an HTML 5 game shell with a JavaScript front end](https://www.cocos.com/en/creator).
-
 Use [Redis](https://redis.io/) as the database. Redis is a mostly-in-memory NoSQL data structure store, suitable for high-performance applications that require low latency and atomic updates. Redis has an [HINCRBY](https://redis.io/commands/hincrby) operator that we can use to update the score for a user in a performant way. Redis Labs supports multiple [redis](https://hub.docker.com/_/redis/) images on Docker Hub.
+
+#### Future development plan
+
+Introduce [Zepto](https://zeptojs.com/) if more complex DOM manipulation and AJAX call handling is needed.
 
 Use [NGINX](https://www.nginx.com/) as a web server in order to terminate SSL. NGINX supports an [nginx](https://hub.docker.com/_/nginx/) image on Docker Hub. To support the nginx deployment use [nginx-docker-gen](https://github.com/jwilder/docker-gen) and [jrcs/letsencrypt-nginx-proxy-companion](https://github.com/JrCs/docker-letsencrypt-nginx-proxy-companion).
 
@@ -60,7 +65,8 @@ Use [LetsEncrypt](https://letsencrypt.org/) to automatically renew SSL certifica
 
 Use [SAMLify](https://github.com/tngan/samlify) to implement the SAML authentication handshake with GitHub.
 
-Use [docker-compose](https://docs.docker.com/compose/) to assemble the initial application components.
+Use [Cocos to build an HTML 5 game shell with a JavaScript front end](https://www.cocos.com/en/creator).
+
 
 ### Assets
 
@@ -127,4 +133,3 @@ sox shipit-Daniel.au shipit-squirrel.au pitch +600
 sox shipit-squirrel.au shipit-squirrel.mp3
 ```
 
-This voice 
