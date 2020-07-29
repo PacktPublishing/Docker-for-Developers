@@ -15,6 +15,7 @@ RUN useradd --user-group --create-home --shell /bin/false app
 ENV HOME=/usr/app
 WORKDIR /home/app
 COPY . /home/app
+RUN yarn install
 
 # we run a script to stat the server; the array syntax makes it so ^C will work as we want
 CMD  ["yarn", "start"]
