@@ -2,7 +2,7 @@
 set -euo pipefail
 port=${port:-80}
 prod="${shipit_prod_user}@${shipit_prod_host}"
-staging="${shipit_staging_user}@${shipit_staging_host}"
+staging="${shipit_staging_user:-centos}@${shipit_staging_host:-staging.example.com}"
 image=${image:-dockerfordevelopers/shipitclicker:latest}
 if [[ "$target" = "staging" ]]; then
     targetEnv="$staging"
