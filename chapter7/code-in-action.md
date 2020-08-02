@@ -12,7 +12,7 @@ a Docker-based application.
 - [ ] Change directory to Docker-for-Developers/chapter7
 
 ### Setting up a new Jenkins server
-- [ ] Provision a new host for Jenkins, add a DNS name for it
+- [ ] Provision a new host for Jenkins, add a DNS name for it - 34.239.228.39 jenkins.shipitclicker.com
 - [ ] Set up Docker and docker-compose on the Jenkins server
 - [ ] Install Jenkins on the Jenkins server via the command line
 - [ ] Complete the Jenkins install through the GUI
@@ -33,10 +33,12 @@ a Docker-based application.
 - [ ] Configure a Jenkins Item with a Hello World Jenkinsfile (Hello Docker)
 - [ ] Build the item and test that SSH connectivity is working
 
-### Ensuring Jenkins has a GitHub username and security token credential
+### Using Git and GitHub to store your Jenkinsfile
 - [ ] Use GitHub to generate a security token credential
 - [ ] Enter the token into Jenkins through Credentials
+- [ ] Fork the repository to your organization or user
 - [ ] Set up the GitHub Organization plugin
+- [ ] Reset the URL for the origin to your new forked repo
 - [ ] Check that GitHub is talking to Jenkins via a webhook
 
 ### Creating Jenkins environment variables for production support
