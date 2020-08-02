@@ -34,16 +34,12 @@ sudo systemctl enable yum-cron
 sudo systemctl restart docker
 sudo systemctl restart jenkins
 sudo systemctl restart yum-cron
-sudo systemctl restart firewalld
 sudo curl -L "https://github.com/docker/compose/releases/download/1.25.3/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 # Thanks https://serverfault.com/a/713849
 sudo firewall-cmd --permanent --zone=public --add-service=http
 sudo firewall-cmd --permanent --zone=public --add-masquerade
-sudo firewall-cmd --permanent --add-forward-port=port=80:proto=tcp:toaddr=127.0.0.1:toport=8080
+sudo firewall-cmd --permanent --add-forward-port=port=80:proto=tcp:toport=8080
 # See https://bugzilla.redhat.com/show_bug.cgi?id=1445918#c6
 sudo firewall-cmd --permanent --direct --add-rule ipv4 nat OUTPUT 0 -p tcp -o lo --dport 80 -j REDIRECT --to-ports 8080
 sudo firewall-cmd --reload
-sudo grep -A 3 password /var/log/jenkins/jenkins.log
-
-
-
+sudo systemctl restart firewalld

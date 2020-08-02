@@ -5,14 +5,14 @@ This chapter shows how to use Jenkins for continuous deployment of
 a Docker-based application.
 
 ### Technical Requirements
-- [ ] You must have Git, Docker and docker-compose on your workstation
-- [ ] You must have cloned the Git repository to your workstation:
+- [X] You must have Git, Docker and docker-compose on your workstation
+- [X] You must have cloned the Git repository to your workstation:
       https://github.com/PacktPublishing/Docker-for-Developers.git
-- [ ] You need to have the application set up as shown in Chapter 6
-- [ ] Change directory to Docker-for-Developers/chapter7
+- [X] You need to have the application set up as shown in Chapter 6
+- [X] Change directory to Docker-for-Developers/chapter7
 
 ### Setting up a new Jenkins server
-- [ ] Provision a new host for Jenkins, add a DNS name for it - 34.239.228.39 jenkins.shipitclicker.com
+- [ ] Provision a new host for Jenkins, add a DNS name for it
 - [ ] Set up Docker and docker-compose on the Jenkins server
 - [ ] Install Jenkins on the Jenkins server via the command line
 - [ ] Complete the Jenkins install through the GUI
