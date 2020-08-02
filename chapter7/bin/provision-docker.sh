@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 set -euo pipefail
 sudo yum -q install -y \
-    yum-utils \
     device-mapper-persistent-data \
-    lvm2
+    git \
+    lvm2 \
+    yum-utils
 sudo yum-config-manager --add-repo \
    https://download.docker.com/linux/centos/docker-ce.repo
 sudo yum -q install -y \
