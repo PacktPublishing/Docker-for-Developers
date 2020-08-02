@@ -28,5 +28,6 @@ node_modules/
 
 ## Project-specific files
 jenkins.shipit
+jenkins.shipit.pub
 # Build files
 dist/
