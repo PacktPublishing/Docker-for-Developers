@@ -11,7 +11,7 @@ sudo yum -q install -y \
 sudo yum-config-manager --add-repo \
    https://download.docker.com/linux/centos/docker-ce.repo
 sudo rpm --import \
-   https://jenkins-ci.org/redhat/jenkins-ci.org.key
+   https://pkg.jenkins.io/redhat/jenkins.io.key
 sudo yum-config-manager --add-repo \
    https://pkg.jenkins.io/redhat/jenkins.repo
 sudo yum -q install -y \
@@ -20,10 +20,10 @@ sudo yum -q install -y \
     containerd.io \
     jenkins
 # Thanks https://serverfault.com/questions/871597/unable-to-access-jenkins-centos-7
-if ! grep java.net.preferIPv4Stack=true /etc/sysconfig/jenkins > /dev/null; then
+if ! sudo grep java.net.preferIPv4Stack=true /etc/sysconfig/jenkins > /dev/null; then
     #shellcheck disable=SC2016
     echo 'JENKINS_JAVA_OPTIONS="$JENKINS_JAVA_OPTIONS -Djava.net.preferIPv4Stack=true"' \
-        >> /etc/sysconfig/jenkins
+        | sudo tee -a /etc/sysconfig/jenkins
 fi
 sudo usermod -aG docker "$USER"
 sudo usermod -aG docker jenkins
