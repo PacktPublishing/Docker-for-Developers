@@ -10,13 +10,9 @@ sudo yum -q install -y \
     docker-ce \
     docker-ce-cli \
     containerd.io
-sudo usermod -aG docker $USER
+sudo usermod -aG docker "$USER"
 newgrp docker
 sudo systemctl enable docker
 sudo systemctl restart docker
 sudo curl -L "https://github.com/docker/compose/releases/download/1.25.3/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod 755 /usr/local/bin/docker-compose
-# Install Jenkins
-sudo yum -q install openjdk
-
-
