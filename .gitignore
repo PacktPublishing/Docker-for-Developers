@@ -27,5 +27,7 @@ node_modules/
 # yarn.lock
 
 ## Project-specific files
+jenkins.shipit
+jenkins.shipit.pub
 # Build files
 dist/
