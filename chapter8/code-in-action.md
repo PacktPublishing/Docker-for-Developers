@@ -4,13 +4,12 @@
 This chapter shows how to deploy Docker apps to Kubernetes in both a local learning environment, and in the cloud through Amazon EKS.
 
 ### Technical Requirements
-- [ ] You must have Kubernetes distribution set up on your workstation, for example Docker Desktop or Minikube.
-- [ ] You must have Git installed and you must have cloned the Git repository to your workstation:
-      https://github.com/PacktPublishing/Docker-for-Developers.git
+- [ ] You must have Kubernetes distribution downloaded to your workstation, for example Docker Desktop or Minikube.
+- [ ] You must have Git installed on your workstation
 - [ ] You must have access to an AWS account with administrator privileges
 
-### Docker Desktop with Kubernetes
-- [ ] Enable Kubernetes in the menu
+### Options for Kubernetes local installation
+- [ ] Enable Kubernetes in the Docker Desktop preferences
 
 ### Verifying that your Kubernetes installation works
 - [ ] test your config with `kubectl get pods -A`
