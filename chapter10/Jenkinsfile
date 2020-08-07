@@ -9,7 +9,7 @@ def getSemVer(appVersion, commitHash) {
 }
 def getRegistry() {
     withCredentials([string(
-        credentialsId: 'shipit.ecr.id',
+        credentialsId: 'shipit.ecr.container.id',
         variable: 'registryId')]) {
         "${registryId}"
     }

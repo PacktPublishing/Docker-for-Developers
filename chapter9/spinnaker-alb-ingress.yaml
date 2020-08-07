@@ -10,13 +10,13 @@ metadata:
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS":443}]'
     alb.ingress.kubernetes.io/actions.http-redirect: '{"Type": "redirect", "RedirectConfig": { "Protocol": "HTTPS", "Port": "443", "StatusCode": "HTTP_301"}}'
-    alb.ingress.kubernetes.io/inbound-cidrs: 192.2.0.10/32, 192.2.0.200/32
+    alb.ingress.kubernetes.io/inbound-cidrs: 71.163.169.22/32, 18.209.157.80/32
   labels:
     app: spin
     cluster: spin-gate
 spec:
   rules:
-    - host: "spinnaker-gate.eks.example.com"
+    - host: "spinnaker-gate.eks.shipitclicker.com"
       http:
         paths:
           - path: /*
@@ -39,13 +39,13 @@ metadata:
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS":443}]'
     alb.ingress.kubernetes.io/actions.http-redirect: '{"Type": "redirect", "RedirectConfig": { "Protocol": "HTTPS", "Port": "443", "StatusCode": "HTTP_301"}}'
-    alb.ingress.kubernetes.io/inbound-cidrs: 192.2.0.10/32, 192.2.0.200/32
+    alb.ingress.kubernetes.io/inbound-cidrs: 71.163.169.22/32, 18.209.157.80/32
   labels:
     app: spin
     cluster: spin-deck
 spec:
   rules:
-    - host: "spinnaker.eks.example.com"
+    - host: "spinnaker.eks.shipitclicker.com"
       http:
         paths:
           - path: /*
