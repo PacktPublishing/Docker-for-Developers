@@ -54,15 +54,6 @@ imageName=${imageName}
     stage('archive') {
       steps {
         sh "cd chapter9 && tar cvfz ${WORKSPACE}/${helmArchive} shipitclicker"
-        withCredentials([[$class: 'UsernamePasswordMultiBinding',
-          credentialsId: 'github',
-          usernameVariable: 'githubUsername',
-          passwordVariable: 'githubToken']]) {
-            // TODO: archive Helm chart artifacts to:
-            // GitHub Artifacts or 
-            // S3 or 
-            // elsewhere that Spinnaker can read
-          }
         archiveArtifacts("${propFileName},${helmArchive}")
       }
     }
