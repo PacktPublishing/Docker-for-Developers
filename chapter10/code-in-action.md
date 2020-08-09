@@ -4,6 +4,7 @@
 This chapter shows how to set up monitoring and alerting using a variety of cloud-native tools.
 
 ### Technical Requirements
+- [ ] You must have an AWS account with Administrator privileges
 - [ ] You must have a working Kubernetes cluster in the cloud, as set up in Chapter 8
 - [ ] You must have Git, the AWS CLI, Helm 3.x, and kubectl installed on your workstation
 - [ ] Optional: you may use Spinnaker and Jenkins, as set up in Chapter 9 and Chapter 7, to support continuous deployment
