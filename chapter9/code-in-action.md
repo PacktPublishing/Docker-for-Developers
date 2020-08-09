@@ -12,7 +12,7 @@ evolve.
 
 ### Managing the EKS cluster from your local workstation
 - [ ] Update your local Kubernetes configuration to talk to AWS EKS
-- [ ] Ensure your CloudFOrmation template is configured to allow access
+- [ ] Ensure your CloudFormation template is configured to allow access
 
 ### Switching between local and cluster contexts
 - [ ] Switch between local learning environment and cloud cluster contexts
