@@ -1,8 +1,8 @@
-# Docker for Developers
+# [Docker for Developers](https://www.packtpub.com/cloud-networking/docker-for-developers)
 
-A [Packt publishing](https://www.packtpub.com/) book by @mschwartz, @obscurerichard, and @rpigu-i
+A [Packt publishing](https://www.packtpub.com/) [book](https://www.packtpub.com/cloud-networking/docker-for-developers) by @mschwartz, @obscurerichard, and @rpigu-i
 
-[![MIT Licensed](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](./LICENSE)
+[![MIT Licensed](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE)
 
 Docker is the de-facto standard for containerizing applications. It allows developers to run the same software on their workstations in the same way it will run on a cluster of servers in production, while simplifying many configuration and deployment issues. 
 
@@ -26,7 +26,7 @@ Please purchase the book and follow the exercises in each chapter to follow alon
 
 Copyright 2020 Packt Publishing Limited
 
-This project is [MIT licensed](./LICENSE).
+This project is [MIT licensed](LICENSE).
 
 See the [Chapter 10 README.md](chapter10/README.md) and the [Chapter 11 README.md](chapter11/README.md) for an additional copyright statement and license variation, as a few files from those chapters are [Apache 2.0 licensed](https://www.apache.org/licenses/LICENSE-2.0).
 
