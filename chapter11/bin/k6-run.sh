@@ -18,8 +18,13 @@ STAGES=${STAGES:-""}
 
 if [ "STAGES" == "" ]; then
     TYPE="SOAK"
+    ARG_DURATION="--duration ${DURATION}s"
+    ARG_STAGE=""
 else
     TYPE="STRESS"
+    DURATION=""
+    ARG_DURATION=""
+    ARG_STAGE="--stage $STAGES"
 fi
 
 cat <<EOF
@@ -31,6 +36,7 @@ Moves per Game : $MOVES
 Total duration : $DURATION seconds
 EOF
 
+# shellcheck disable=SC2086
 docker run \
        --rm \
        -i \
@@ -42,6 +48,7 @@ docker run \
        loadimpact/k6 \
        run \
        --vus "$USERS" \
-       --duration "$DURATION"s \
+       $ARG_DURATION \
+       $ARG_STAGE    \
        - \
        < "$TEST_DIR/test.js"
