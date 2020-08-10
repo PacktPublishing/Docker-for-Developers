@@ -160,6 +160,13 @@ spec:
           volumeMounts:
             - name: envoy-config-vol
               mountPath: /etc/envoy-config/
+          resources:
+            limits:
+              cpu: 500m
+              memory: 100M
+            requests:
+              cpu: 100m
+              memory: 20M
       volumes:
         - name: envoy-config-vol
           configMap:
