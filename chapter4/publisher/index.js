@@ -25,16 +25,6 @@ const waitOn = require("wait-on"),
 };
 
 const main = async () => {
-  debug("ls");
-  const {exec} = require('child_process');
-  exec("ls -ldg * */node_modules/*", (error, stdout, stderr) => {
-    if (error) {
-      debug("exec error", error);
-    }
-    else {
-      debug(stdout);
-    }
-  });
   debug(`publisher miscroservice, about to wait for MQTT host(${mqtt_host}, ${mqtt_port}`);
   await wait_for_services();
   debug("---> wait succeeded");
