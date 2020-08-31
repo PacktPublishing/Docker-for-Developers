@@ -30,7 +30,7 @@ if (test expression)
   Statement upon condition is true
 }
 ```
-## [Docker for Developers](https://www.packtpub.com/cloud-networking/docker-for-developers)
+### [Docker for Developers](https://www.packtpub.com/cloud-networking/docker-for-developers)
 
 A [Packt publishing](https://www.packtpub.com/) [book](https://www.packtpub.com/cloud-networking/docker-for-developers) by @mschwartz, @obscurerichard, and @rpigu-i
 
@@ -50,11 +50,11 @@ By the end of this book you will understand how containers work, how to develop 
 
 Regardless of whether you are a DevOps engineer, a Software Engineering lead, or a software developer looking for ways to create a sane environment, learning how to build and deploy applications in Docker will make you a stronger practitioner!
 
-## Getting Started
+### Getting Started
 
 Please purchase the book and follow the exercises in each chapter to follow along. The code within is organized by chapter.
 
-## Licensing
+### Licensing
 
 Copyright 2020 Packt Publishing Limited
 
