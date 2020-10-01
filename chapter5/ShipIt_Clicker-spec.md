@@ -1,6 +1,6 @@
 # Specification for _ShipIt Clicker_
 
-This is part of the [Docker for Developers](https://github.com/ModusCreateOrg/docker-book) project.
+This is part of the [Docker for Developers](https://github.com/PacktPublishing/Docker-for-Developers) project.
 
 _ShipIt Clicker_, is an [incremental game](https://en.wikipedia.org/wiki/Incremental_game) where the [ShipIt Squirrel](https://www.quora.com/On-GitHub-what-is-the-significance-of-the-Ship-It-squirrel) encourages you to deploy Docker containers to production at an ever higher rate. 
 
