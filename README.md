@@ -83,7 +83,7 @@ Click on the following link to see the Code in Action:
 
 [YouTube](https://www.youtube.com/playlist?list=PLeLcvrwLe1850ESdRUYRXZkSfhNY8MoI-)
 
-# Related products - _Other books you may enjoy_
+# Related products 
 * Continuous Delivery with Docker and Jenkins [[Packt]](https://www.packtpub.com/product/continuous-delivery-with-docker-and-jenkins-second-edition/9781838552183?utm_source=github&utm_medium=repository&utm_campaign=9781838552183) [[Amazon]](https://www.amazon.com/dp/1838552189)
 
 * Mastering Docker Enterprise [[Packt]](https://www.packtpub.com/product/mastering-docker-enterprise/9781789612073?utm_source=github&utm_medium=repository&utm_campaign=9781789612073) [[Amazon]](https://www.amazon.com/dp/1789612071)
