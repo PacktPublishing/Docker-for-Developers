@@ -1,6 +1,5 @@
 FROM alpine:20191114
-RUN apk update && \
-    apk add nodejs nodejs-npm
+RUN apk add --update nodejs npm
 RUN addgroup -S app && adduser -S -G app app
 RUN mkdir -p /app/public /app/server
 ADD src/package.json* /app/
