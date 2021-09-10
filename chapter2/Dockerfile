@@ -1,5 +1,5 @@
 # we will inherit from  the Debian image on DockerHub
-FROM debian
+FROM debian:10
 
 # set timezone so files' timestamps are correct
 ENV TZ=America/Los_Angeles
