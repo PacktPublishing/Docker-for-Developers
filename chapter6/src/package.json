@@ -28,7 +28,7 @@
     "express-openapi-validator": "^3.0.2",
     "nanoid": "^3.0.2",
     "pino": "^5.13.6",
-    "redis": "^2.8.0"
+    "redis": "^3.1.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.0",
