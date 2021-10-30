@@ -78,6 +78,9 @@ With the following software and hardware list you can run all code files present
   
 We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](http://www.packtpub.com/sites/default/files/downloads/9781789536058_ColorImages.pdf).
 
+## Errata
+Please see [ERRATA.md](ERRATA.md) for a list of significant changes to the code in this repository since the book was published.
+
 # Code in Action
 Click on the following link to see the Code in Action:
 
