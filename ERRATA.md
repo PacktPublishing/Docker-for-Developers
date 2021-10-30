@@ -26,5 +26,8 @@ The [Dockerfile](chapter10/Dockerfile) has been modified to use the Alpine `npm`
 ## Chapter 11
 The [Dockerfile](chapter11/Dockerfile) has been modified to use the Alpine `npm` package which replaces `nodejs-npm`.
 
+## Chapter 13
+The [Dockerfile](chapter13/Dockerfile) has been modified to use the same Docker image printed in the book. You will still need to modify it before building, replacing `user@host` with a valid user and hostname for a server you control.
+
 ## Chapter 14
 The [Dockerfile](chapter14/Dockerfile) has been modified to use an Alpine base container and fixes some erroneous smart quotes that were printed correctly in the book, but not in the repository originally.
