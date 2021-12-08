@@ -7,6 +7,7 @@ error_reporting(E_ALL);
 
 // filename to store counter value.  sys_get_temp_dir() returns a directory with write permissions.
 //$COUNTER_FILE = sys_get_temp_dir() . '/' . 'counter.txt';
+passthru('touch /data/counter.txt');
 $COUNTER_FILE = '/data/counter.txt';
 
 // print a message
