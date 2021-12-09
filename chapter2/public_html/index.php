@@ -9,9 +9,6 @@ error_reporting(E_ALL);
 //$COUNTER_FILE = sys_get_temp_dir() . '/' . 'counter.txt';
 $COUNTER_FILE = '/data/counter.txt';
 
-// check for counter.txt existence
-if(!file_exists($COUNTER_FILE )) passthru('touch /data/counter.txt');
-
 // print a message
 print("Hello, world $COUNTER_FILE\n");
 
