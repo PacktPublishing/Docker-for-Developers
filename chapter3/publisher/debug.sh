@@ -10,4 +10,4 @@ docker run \
     --rm \
     --name="publisher" \
     -e HOSTIP=$HOSTIP \
-    publisher
+    dockerfordevelopers/publisher

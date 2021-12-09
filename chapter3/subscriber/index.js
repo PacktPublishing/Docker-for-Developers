@@ -15,7 +15,7 @@ const debug = require("debug")("subscriber"),
   mqttPort = 1883,
   redisHost = `redis://${process.env.HOSTIP}`;
 
-var Redis = require("async-redis"),
+const Redis = require("async-redis"),
   redis = Redis.createClient(redisHost);
 
 // if you'd like to select database 3, instead of 0 (default), call
