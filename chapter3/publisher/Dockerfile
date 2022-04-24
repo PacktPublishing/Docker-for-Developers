@@ -18,5 +18,5 @@ COPY . /home/app
 # install our NodeJS packages (from package.json)
 RUN yarn install
 
-# we run a script to stat the server; the array syntax makes it so ^C will work as we want
+# we run a script to start the server; the array syntax makes it so ^C will work as we want
 CMD  ["yarn", "start"]
