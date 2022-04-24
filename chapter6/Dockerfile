@@ -1,6 +1,4 @@
-FROM alpine:20191114
-RUN apk update && \
-    apk add nodejs npm
+FROM node:14-alpine
 RUN addgroup -S app && adduser -S -G app app
 RUN mkdir -p /app/public /app/server
 ADD src/package.json* /app/
