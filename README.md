@@ -107,3 +107,7 @@ Copyright 2020 Packt Publishing Limited
 This project is [MIT licensed](LICENSE).
 
 See the [Chapter 10 README.md](chapter10/README.md) and the [Chapter 11 README.md](chapter11/README.md) for an additional copyright statement and license variation, as a few files from those chapters are [Apache 2.0 licensed](https://www.apache.org/licenses/LICENSE-2.0).
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781789536058">https://packt.link/free-ebook/9781789536058 </a> </p>
