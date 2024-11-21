@@ -20,11 +20,11 @@
     "lint:fix": "eslint --fix -c .eslintrc.json {server,test}/** public/*.js"
   },
   "dependencies": {
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.20.1",
     "cookie-parser": "^1.4.5",
     "dotenv": "^8.2.0",
     "esm": "^3.2.25",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "express-openapi-validator": "^3.15.0",
     "express-opentracing": "^0.1.1",
     "jaeger-client": "3.15.0",
